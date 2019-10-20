@@ -1,0 +1,209 @@
+Quest: JF000002
+DisplayName: Sticky Fingers
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             We've got a problem and I need someone
+<ce>             I can trust. Can you help me out with
+<ce>             something unofficial? There's not much
+<ce>             money in it, but I'll make sure the
+<ce>             people upstairs know who they need to
+<ce>             keep happy?
+
+
+RefuseQuest:  [1001]
+<ce>             I just hope this doesn't come back to
+<ce>             bite us all in the you-know-where.
+
+
+AcceptQuest:  [1002]
+<ce>             Thanks %pcf. The problem is that one of our
+<ce>             Guild members has got sticky fingers. All kinds
+<ce>             of things have been going missing. Weapons,
+<ce>             supplies, gold, even stuff we've been hired to
+<ce>             recover. The last thing that's gone missing was
+<ce>             a client's weapon. I'm not sure who's the
+<ce>             culprit, but I've narrowed it down to three.
+<ce>             
+<ce>             _suspect1_ is a veteran fighter but
+<ce>             %g1's not taken many jobs lately.
+<ce>             
+<ce>             _suspect2_ used to be really reliable. Now
+<ce>             %g1 spends most %g3 time in the local tavern.
+<ce>             
+<ce>             _suspect3_ is a newcomer. I don't know much
+<ce>             about %g2 but %g1 usually hangs around the
+<ce>             Guildhall at night.
+<ce>             
+<ce>             Have a nose around and see what you can find.
+<ce>             And keep it low key, eh?
+
+
+QuestComplete:  [1004]
+<ce>             Thanks %pcf, if this rot hadn't been cut out
+<ce>             it could have infected the whole Guild.
+
+
+QuestFail:  [1003]
+<ce>             Disappointing %pcf. The Guild has a
+<ce>             reputation to maintain and yours just
+<ce>             took a right beating. Get out of here.
+
+
+RumorsDuringQuest:  [1005]
+I'm not sure what's going on but some people seem to be losing confidence in the Fighters Guild.
+<--->
+The Sheriff used to regularly call on the Fighters Guild for their services. But lately, not so much.
+
+
+RumorsPostfailure:  [1006]
+Nobody is telling me why but some people are steering well clear of the Fighters Guild these days.
+<--->
+I hear bad rumours about the Fighters Guild. Wouldn't want to say more than that.
+
+
+RumorsPostsuccess:  [1007]
+I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
+
+
+QuestorPostsuccess:  [1008]
+Greetings my dear %pcf. Thanks again for dealing with that problem.
+
+
+QuestorPostfailure:  [1009]
+Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
+
+
+Message: 1019
+<ce>             Yeah, that's the last thing that went missing.
+<ce>             I think that counts as damning evidence. We need
+<ce>             to take of this problem quietly. And permanently.
+<ce>             
+<ce>             I'll arrange a meeting with _suspect2_,
+<ce>             but you'll be waiting to deal with %g2 when %g1
+<ce>             arrives. Understand?
+<ce>             
+<ce>             Wait in _house_. %g1'll arrive
+<ce>             after midnight.
+
+
+Message: 1020
+<ce>             Looks like the only thing %g1'll be taking now
+<ce>             is a space. In the local cemetery.
+<ce>             
+<ce>             Might need to work on that one...
+
+
+Message:  1026
+_suspect1_? I know I've heard the name. Can't remember why.
+<--->
+I'm sure %g1 lives around here. Or %g1 used to. Been a while.
+<--->
+Sorry, couldn't tell you anything about _suspect1_
+
+
+Message:  1027
+_suspect2_ is renting a room at _inn_. It's odd because %g1 has a house here in town.
+<--->
+I've seen _suspect2_ hanging around _inn_. I don't know why, it's not a nice place.
+<--->
+_suspect2_, eh? I'd check out _inn_. But you didn't hear that from me, right?
+
+
+Message:  1028
+Oh yeah, I know _suspect3_. Only been in town a few weeks. Trying to make a name for %g2self.
+<--->
+_suspect3_? Nope. Never heard of a _suspect3_.
+<--->
+_suspect3_? I don't like %g2. Bad knees. Really bad.
+
+
+
+Message:  1040
+%qdt:
+ It seems that the Fighters have a
+ problem with someone who's in the
+ wrong Guild. _questgiver_ gave
+ me three names:
+ _suspect1_
+ _suspect2_
+ _suspect3_
+ I need to find some evidence to nail
+ the thief and then deliver it to
+ _questgiver_ in ___questgiver_.
+
+
+
+Message:  1041
+%qdt:
+ Now the thief is exposed _questgiver_
+ wants me to "expel" them from the
+ Guild. And Nirn. This is to be
+ done in _house_
+ after midnight.
+
+
+
+QBN:
+
+Person _questgiver_ group Questor male
+
+Person _suspect1_ face 97 faction The_Thieves_Guild anyInfo 1026
+Person _suspect2_ face 97 faction The_Thieves_Guild anyInfo 1027
+Person _suspect3_ face 97 faction The_Thieves_Guild anyInfo 1028
+
+Foe _enemy_ is Warrior
+
+Place _inn_ local tavern
+Place _house_ local house1
+
+Item _gold_ gold range 800 to 1200
+Item _weapon_ weapon
+
+Clock _timeLimit_ 2.00:00
+
+
+--	Quest start-up:
+	dialog link for location _inn_ 
+	start timer _timeLimit_
+	log 1040 step 0
+	place item _weapon_ at _inn_
+	pc at _house_ set _inside_
+
+
+_timeLimit_ task:
+	end quest
+
+_day_ task:
+	daily from 3:00 to 23:59
+
+_inside_ task:
+
+_spawn_ task:
+	when _inside_ and not _day_
+	place foe _enemy_ at _house_
+
+_GiveEvidence_ task:
+	toting _weapon_ and _questgiver_ clicked
+	start task _MeetAndKillThief_
+	say 1019
+
+_MeetAndKillThief_ task:
+	log 1041 step 1
+	pc at _house_ set _spawn_
+
+_slain_ task:
+	killed 1 _enemy_ saying 1020
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _slain_
+	give pc _gold_
+	end quest
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _slain_
+	clear _questorClicked_ _clearclick_

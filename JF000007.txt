@@ -1,0 +1,149 @@
+Quest: JF000007
+DisplayName: The Morning After
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             What? Who? oh, it's you %pcf. Apologies for the
+<ce>             groggy welcome. Everyone is still recovering
+<ce>             from last night's annual celebration...ritual.
+<ce>             
+<ce>             Where were you anyway? Never mind, just make
+<ce>             sure you don't miss the next one. Party of the
+<ce>             year! Hmmm, now I think about it I don't remember
+<ce>             how we got back. Probably Recall spells all
+<ce>             around. Anyway, as your head is by far the
+<ce>             clearest around here, can you do us a big favour?
+
+
+RefuseQuest:  [1001]
+<ce>             Suit yourself %pcf. Must be nice to be
+<ce>             able to turn down work, eh?
+
+
+AcceptQuest:  [1002]
+<ce>             Thanks %pcf, nobody here is up for anything
+<ce>             heavier than breathing right now. Anyway...
+<ce>             
+<ce>             Part of the ritual involves the summoning of
+<ce>             various...participants to...participate.
+<ce>             Anyway, at the end of the party, I mean, the
+<ce>             ceremony, we're supposed to dispel them all.
+<ce>             But with everyone being blasted out of our
+<ce>             skulls I don't know if that happened.
+<ce>             
+<ce>             Can you head over to ___cult_ and
+<ce>             make sure that anything supernatural is
+<ce>             shuffled back to where it came from?
+
+
+QuestFail:  [1003]
+<ce>             Disappointing %pcf. The Guild has a
+<ce>             reputation to maintain and yours just
+<ce>             took a right beating. Get out of here.
+
+
+QuestComplete:  [1004]
+<ce>             
+<ce>             
+<ce>             
+<ce>             
+
+
+RumorsDuringQuest:  [1005]
+Did you hear about that platoon of soldiers who went rogue and started pillaging the locals?
+<--->
+The army sent some men to clear up the bandit problem. Then they decided they'd rather be the bandits!
+
+
+RumorsPostfailure:  [1006]
+Seems the Fighters Guild couldn't handle those renegade soldiers. Maybe the army will send more troops? I hope they stay loyal!
+<--->
+The Fighters Guild are fine at dealing with normal bandits. But those army deserters are too much for them. Shame!
+
+
+RumorsPostsuccess:  [1007]
+I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
+
+
+QuestorPostsuccess:  [1008]
+Why if it isn't %pcf. I was just telling someone about how you dealt with those criminal deserters.
+
+
+QuestorPostfailure:  [1009]
+Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
+
+
+Message: 1019
+<ce>             This is the place. I wonder what
+<ce>             they were up to last night?
+
+
+Message:  1020
+<ce>             The shrine is cleansed.
+<ce>             Time to head back.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in
+ ___questgiver_ has asked me to
+ check out ___cult_
+ and make sure that there is
+ nothing untoward left after
+ their "ceremonial ritual".
+
+
+
+QBN:
+
+Item _gold_ gold range 800 to 1200
+
+--Item _map_ letter used 1015
+
+Person _questgiver_ group Questor male
+
+Place _cult_ remote cult
+
+Foe _seducer_ is 2 Daedra_seducer
+Foe _nymph_ is 5 Nymph
+
+Clock _timeLimit_ 10.00:00
+
+Foe _en1_ is 7 Warrior
+
+--	Quest start-up:
+	start timer _timeLimit_
+	reveal _cult_
+	pc at _cult_ set _onsite_
+	log 1040 step 0
+
+_timeLimit_ task:
+	end quest
+
+_onsite_ task:
+	say 1019
+	create foe _seducer_ every 0 minutes 1 times with 100% success
+	create foe _nymph_ every 0 minutes 1 times with 100% success
+
+_slain_ task:
+	killed 2 _seducer_
+
+_slain2_ task:
+	killed 5 _nymph_
+
+_slain3_ task:
+	when _slain_ and _slain2_
+	say 1020
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _slain3_
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _slain3_
+	give pc _gold_
+	end quest

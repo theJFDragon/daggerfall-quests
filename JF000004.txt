@@ -1,0 +1,139 @@
+Quest: JF000004
+DisplayName: Attack the Clones
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Greetings %lev, I trust this day is treating
+<ce>             you well? Whilst you're here, perhaps you
+<ce>             could see your way clear to helping me, I mean,
+<ce>             the Guild, with a minor problemette?
+<ce>             
+<ce>             What do you say?
+
+
+RefuseQuest:  [1001]
+<ce>             You disappoint me %pcf. How can I solve these
+<ce>             problems myself when my duties forbid me from
+<ce>             moving from this exact location? How?!?!
+
+
+AcceptQuest:  [1002]
+<ce>             Jolly good! Now then...it seems that a former Guild member
+<ce>             has turned out to be...how to put it?
+<ce>             
+<ce>             A megalomaniacal, power-crazed, psychopath with delusions
+<ce>             of universal pre-eminence and world domination. Yes, that
+<ce>             about describes it. The Guild should really be more careful
+<ce>             about who they let join us, eh?
+<ce>             
+<ce>             Anyway, this reprobate got hold of a magic gem and fiddled
+<ce>             around with it and the upshot is that %g1 can conjure up
+<ce>             duplicates of %g2self, almost at will, probably got a
+<ce>             small army of %g2self by now.
+<ce>             
+<ce>             I'm told %g1's set %g2self up in ___mondung_.
+<ce>             I don't know why they do that but it seems to be de rigueur
+<ce>             these days. I blame the King of Worms. See if you can't
+<ce>             head over there and sort it out. Oh, and don't forget to
+<ce>             recover the gem. I have need of it.
+<ce>             
+<ce>             I promise I won't move from this spot until you return!
+
+
+QuestFail:  [1003]
+<ce>             Really now %pcf. Was this really so difficult a task?
+
+
+QuestComplete:  [1004]
+<ce>             Excellent! Thanks for helping me, I mean, us, with this.
+<ce>             Now perhaps the Guildmaster will stop moaning about what
+<ce>             my old apprentices get up to, as if that's any of MY
+<ce>             business, am I right?!
+<ce>             
+<ce>             Here, I found these coins in an old box. Why don't you
+<ce>             take them off my hands? Too heavy for these pockets...
+
+
+RumorsDuringQuest:  [1005]
+Do you know that mage who's been showing up all over the kingdom? And at the same time?!?!
+
+
+RumorsPostfailure:  [1006]
+Did you hear about that sorcerer who just took over a whole chunk of the kingdom? Weird.
+
+
+RumorsPostsuccess:  [1007]
+The Mages Guild causes a lot of problems. At least they clean up some of them, eh?
+
+
+QuestorPostsuccess:  [1008]
+Why if it isn't %pcf. I was just telling someone about how you helped me sort out that renegade and %g3 duplicates.
+
+
+QuestorPostfailure:  [1009]
+I still haven't forgiven you for letting me, I mean, the Guild, down over that duplicates business.
+
+
+Message:  1021
+<ce>             Somehow you are sure that this particular
+<ce>             individual is the source of all this trouble.
+<ce>             Check the corpse for that pesky magic gem!
+
+
+Message:  1040
+%qdt:
+ The Mages Guild continue to cause
+ problems with their inefficient
+ recruitment policies. Now I have to
+ clear up the mess.
+ In ___mondung_ 
+ there's yet another renegade who
+ needs to stop being alive. Seems
+ like I'll be finding a lot of evil
+ mage types there...
+ Note to self: Do not forget to
+ bring magic gem from corpse.
+ Also note to self:  This job is
+ for _questgiver_ in ___questgiver_.
+
+
+
+QBN:
+
+Item _gold_ gold range 800 to 1200
+Item _gem_ gem
+
+Person _questgiver_ group Questor male
+
+Place _mondung_ remote dungeon
+
+Clock _timeLimit_ 10.00:00
+
+Foe _RealEnemy_ is Mage
+Foe _CloneEnemy_ is 2 Mage
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	reveal _mondung_
+	place foe _RealEnemy_ at _mondung_
+	give item _gem_ to _RealEnemy_
+	pc at _mondung_ set _inside_
+	log 1040 step 0
+
+
+_inside_ task:
+
+_spawn_ task:
+	when _inside_ and not _slain_
+	create foe _CloneEnemy_ every 3 minutes 100 times with 50% success
+
+_slain_ task:
+	killed _RealEnemy_
+	say 1021
+
+_rewardPlayer_ task:
+	toting _gem_ and _questgiver_ clicked
+	give pc _gold_
+	end quest

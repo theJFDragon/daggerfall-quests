@@ -1,0 +1,196 @@
+Quest: JF000003
+DisplayName: Runaround
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             I'm not gonna lie. This one is a real pain
+<ce>             in the posterior. It involves delivering a
+<ce>             ransom payment to some Thieves Guild scum,
+<ce>             but they're going to make you work for it.
+<ce>             
+<ce>             Are you sure you want to take this one?
+
+
+RefuseQuest:  [1001]
+<ce>             Suit yourself %pcf. Must be nice to be
+<ce>             able to turn down work, eh?
+
+
+AcceptQuest:  [1002]
+<ce>             Ha! You're crazier than I thought!
+<ce>             
+<ce>             You get to deliver the ransom but the kidnappers
+<ce>             are a little paranoid. They're going to bounce
+<ce>             you around town to make sure you're alone. If
+<ce>             they think you've got any backup they'll scratch
+<ce>             the deal, which will be unfortunate for the hostage.
+<ce>             
+<ce>             Your first destination is _house_ here
+<ce>             in town. After that you're on your own.
+<ce>             
+<ce>             Oh, and it's not needed to try anything clever.
+<ce>             Just give them the ransom.
+<ce>             
+<ce>             Good luck %pcf.
+
+
+QuestComplete:  [1004]
+<ce>             Nice work, these things don't always go smoothly.
+<ce>             Here's your reward, you certainly earned it!
+
+
+QuestFail:  [1003]
+<ce>             Disappointing %pcf. The Guild has a reputation
+<ce>             to maintain and yours just took a right beating.
+<ce>             Get out of my sight.
+
+
+Message:  1040
+%qdt:
+ I have to delivery a ransom to
+ some Thieves Guild operatives.
+ They first want me to go to
+ _house_.
+
+
+Message:  1041
+ _inn_.
+ You got 30 minutes. Do not tarry.
+
+
+Message:  1042
+ _shop_.
+ 25 minutes.
+ I hope you've got a good horse.
+
+
+Message:  1043
+ _pawnshop_.
+ 20 minutes.
+ Hurry hurry hurry!
+
+
+Message:  1044
+ Thanks, it's been a pleasure doing business.
+ The merchandise will be delivered directly
+ and in perfect condition.
+
+
+Message:  1045
+ You've run out of time! The Thieves Guild will
+ still deliver the hostage. Just in many, many,
+ small pieces over a long period of time...
+
+
+Message:  1051
+%qdt:
+ The next place to go is  _inn_.
+
+
+Message:  1052
+%qdt:
+ The next place to go is  _shop_.
+
+
+Message:  1053
+%qdt:
+ The next place to go is  _pawnshop_.
+
+
+Message:  1054
+%qdt:
+ The ransom is paid. Time to head back
+ and collect my payment.
+
+
+
+QBN:
+
+Item _gold_ gold range 800 to 1200
+
+Item _note1_ letter used 1041
+Item _note2_ letter used 1042
+Item _note3_ letter used 1043
+Item _bag_ large_sack
+
+Person _questgiver_ group Questor male
+Person _kidnapper_ face 36 faction The_Thieves_Guild
+
+Place _house_ local house2
+Place _inn_ local tavern
+Place _shop_ local generalstore
+Place _pawnshop_ local pawnshop
+
+Clock _timeLimit_ 0.03:00
+Clock _timer1_ 0.0:30
+Clock _timer2_ 0.0:25
+Clock _timer3_ 0.0:20
+
+Foe _bandit_ is Rogue
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	_note1_ used do _readNote1_ 
+	_note2_ used do _readNote2_ 
+	_note3_ used do _readNote3_ 
+	place item _note1_ at _house_
+	get item _bag_
+	log 1040 step 0
+
+
+_timeLimit_ task:
+	say 1045
+	end quest
+
+_timer1 task:
+	say 1045
+	end quest
+
+_timer2_ task:
+	say 1045
+	end quest
+
+_timer3_ task:
+	say 1045
+	end quest
+
+_readNote1_ task:
+	log 1051 step 1
+	place item _note2_ at _inn_
+	start timer _timer1_
+
+_readNote2_ task:
+	log 1052 step 2
+	stop timer _timer1_
+	place item _note3_ at _shop_
+	start timer _timer2_
+
+_readNote3_ task:
+	log 1053 step 3
+	stop timer _timer2_
+	place npc _kidnapper_ at _pawnshop_
+	start timer _timer3_
+
+_dieHard3_ task:
+	stop timer _timer3_
+	toting _bag_ and _kidnapper_ clicked 
+
+_giveRansom_ task:
+	when _dieHard3_
+	say 1044
+	log 1054 step 4
+	hide npc _kidnapper_ 
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _giveRansom_
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _giveRansom_
+	give pc _gold_
+	end quest

@@ -1,0 +1,169 @@
+Quest: JF000006
+DisplayName: Rent-a-Ghost
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             %pcf, thank %god it's you!  There's a little
+<ce>             task that needs doing and you'd surely be the
+<ce>             perfect person to handle it.
+<ce>             
+<ce>             I should warn you that this business is, how
+<ce>             to say, legally ambiguous? Morally opaque?
+<ce>             Ethically imprecise. Definitely NOT illegal!
+<ce>             
+<ce>             Shall I say more?
+
+
+RefuseQuest:  [1001]
+<ce>             With that attitude your future in the
+<ce>             Mages Guild seems pretty static.
+
+
+AcceptQuest:  [1002]
+<ce>             Splendid! It's simple enough, really. We have a special
+<ce>             arrangement, more of an understanding really, with the
+<ce>             local Fighters Guild. One of their main sources of
+<ce>             income is dealing with unwanted vermin. Tigers, bears,
+<ce>             rats, that sort of thing.
+<ce>             
+<ce>             Unfortunately for them there's not a lot of money in
+<ce>             such...conventional...house cleaning. What really brings
+<ce>             in the coin is super-natural infestations. Wraiths,
+<ce>             ghosts and zombies are a lot more expensive to handle.
+<ce>             
+<ce>             Of course these encounters don't happen every day. Some
+<ce>             towns aren't even built on top of old burial grounds!
+<ce>             That's were we come in. For a fair and reasonable
+<ce>             percentage we provide the actors and then the Fighters
+<ce>             Guild takes care of them. Everyone goes home happy!
+<ce>             
+<ce>             I just need you to go to _someHouse_
+<ce>             and use this enchanted gem of conjuration. Once the
+<ce>             spell is cast come back here. Do not engage the
+<ce>             conjured creatures, naturally.
+
+
+QuestFail:  [1003]
+<ce>             Disappointing %pcf. The Guild has a
+<ce>             reputation to maintain and yours just
+<ce>             took a right beating. Get out of here.
+
+
+QuestComplete:  [1004]
+<ce>             Well...here's your share. But let's say no
+<ce>             more about this, %pcf.
+
+
+RumorsDuringQuest:  [1005]
+Did you hear about that platoon of soldiers who went rogue and started pillaging the locals?
+<--->
+The army sent some men to clear up the bandit problem. Then they decided they'd rather be the bandits!
+
+
+RumorsPostfailure:  [1006]
+Seems the Fighters Guild couldn't handle those renegade soldiers. Maybe the army will send more troops? I hope they stay loyal!
+<--->
+The Fighters Guild are fine at dealing with normal bandits. But those army deserters are too much for them. Shame!
+
+
+RumorsPostsuccess:  [1007]
+I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
+
+
+QuestorPostsuccess:  [1008]
+Why if it isn't %pcf. I was just telling someone about how you dealt with those criminal deserters.
+
+
+QuestorPostfailure:  [1009]
+Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ has got me working on a genius scam!
+ The Mages Guild conjure up a host
+ of ghosts and then the Fighters
+ Guild get paid to take care of them.
+ Then we split the profits!
+ I need to conjure some angry
+ spirits in _someHouse_.
+
+
+Message:  1041
+ This is the place. Time to bring
+ back the dead for fun and profit!
+
+
+Message:  1042
+ The deed is done! Now to head
+ back to the Mages Guild. I am
+ totally certain that nothing
+ unexpected or untoward could
+ possibly have happened...
+
+
+Message:  1050
+ I'm not sure what you did but
+ it wasn't entirely correct. It
+ seems we have a few uninvited
+ guests ourselves. Take care of
+ this, would you, %pcf?
+
+
+QBN:
+
+Item _gold_ gold range 100 to 250
+Item _gem_ gem
+
+Person _questgiver_ group Questor male
+
+Foe _wraith_ is 3 Wraith
+Foe _wraith2_ is 4 Wraith
+
+Place _someHouse_ local house2
+Place _magesGuild_ local magery
+
+Clock _timeLimit_ 1.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	get item _gem_ 
+	pc at _someHouse_ set _onsite_
+	log 1040 step 0
+
+
+_onsite_ task:
+	log 1041 step 1
+	_gem_ used do _useGem_
+
+_useGem_ task:
+	log 1042 step 2
+--	play sound magic_fizzle every 0 minutes 1 times
+	create foe _wraith_ every 0 minutes 1 times with 100% success
+
+_slain_ task:
+	killed 4 _wraith2_
+
+_timeLimit_ task:
+	end quest
+
+_questorClicked_ task:
+  clicked npc _questgiver_
+
+_clearclick_ task:
+  when _questorClicked_ and not _useGem_
+  clear _questorClicked_ _clearclick_
+
+_oops_ task:
+	when _questorClicked_ and _useGem_ and not _slain_
+--	play sound magic_fizzle every 0 minutes 1 times
+	create foe _wraith2_ every 0 minutes 1 times with 100% success
+	say 1050
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _slain_
+	give pc _gold_
+	end quest

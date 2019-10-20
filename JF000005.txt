@@ -1,0 +1,174 @@
+Quest: JF000005
+DisplayName: The Three Dungeons
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             What is it now? Oh, %pcf, it's you.
+<ce>             Listen, I'm conducting an extremely important
+<ce>             experiment. I need a guinea pig, I mean, an
+<ce>             able assistant. I've enhanted some crystals
+<ce>             with teleportation spells but it all needs a
+<ce>             bit of fine-tuning.
+<ce>             
+<ce>             Are you willing to help advance the cause
+<ce>             of knowledge? It might take a while.
+
+
+RefuseQuest:  [1001]
+<ce>             With that attitude you won't go far
+<ce>             in the Mages Guild. But you might
+<ce>             live longer, to be fair.
+
+
+AcceptQuest:  [1002]
+<ce>             Splendid! The idea was that my teleportation
+<ce>             crystals could transmit their bearer between
+<ce>             multiple different locations. Unfortunately
+<ce>             it didn't go perfectly smoothly.
+<ce>             
+<ce>             Instead the crystals teleported themselves to
+<ce>             %god-knows-where! I can send you after the
+<ce>             first one then you can use it to find the next
+<ce>             one and so on. Clear? Splendid. Remember, get
+<ce>             the three gems and come back here, OK?
+<ce>             
+<ce>             Well, I'm sure you're all prepared so I'll
+<ce>             just send you on your way immediately!
+
+
+QuestFail:  [1003]
+<ce>             Disappointing %pcf. The Guild has a
+<ce>             reputation to maintain and yours just
+<ce>             took a right beating. Get out of here.
+
+
+QuestComplete:  [1004]
+<ce>             %pcf, I haven't seen you for a while.
+<ce>             Have you been neglecting your duties? Oh, no,
+<ce>             I recall you were off finding my bothersome
+<ce>             teleport crystals. You certainly took your time,
+<ce>             I presume it all went smoothly. Yes? Perfect. 
+<ce>             
+<ce>             Let's see. Ah, yes. An alchemist neighbour
+<ce>             of mine has been showing off again so we've
+<ce>             been running out of storage. You can help by
+<ce>             taking these off our hands!
+
+
+RumorsDuringQuest:  [1005]
+Did you hear about that platoon of soldiers who went rogue and started pillaging the locals?
+<--->
+The army sent some men to clear up the bandit problem. Then they decided they'd rather be the bandits!
+
+
+RumorsPostfailure:  [1006]
+Seems the Fighters Guild couldn't handle those renegade soldiers. Maybe the army will send more troops? I hope they stay loyal!
+<--->
+The Fighters Guild are fine at dealing with normal bandits. But those army deserters are too much for them. Shame!
+
+
+RumorsPostsuccess:  [1007]
+I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
+
+
+QuestorPostsuccess:  [1008]
+Why if it isn't %pcf. I was just telling someone about how you dealt with those criminal deserters.
+
+
+QuestorPostfailure:  [1009]
+Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ has given me the worst and most annoying
+ mission in the history of the Mages Guild!
+ I must recover 3 magical gemstones from 3
+ different dungeons and bring them all back
+ to _questgiver_. Using each
+ gemstone will take me to the next.
+ I should remember to be careful with the
+ third gemstone!
+
+
+Message:  1041
+%qdt:
+ Somewhere in ___dungeon1_ is the first gem.
+
+
+Message:  1042
+%qdt:
+ I have arrived in __dungeon2_. The
+ second gem is here somewhere.
+
+
+Message:  1043
+%qdt:
+ I must search ___dungeon3_ and
+ find the final gem. I hate this quest.
+
+
+Message:  1044
+ I foolishly activated the third gem.
+ It has transported me to an unknown
+ dungeon. I should get out of here and
+ report back to _questgiver_ in
+ ___questgiver_.
+
+
+
+QBN:
+
+Item _gold_ gold range 4000 to 5000
+
+Item _gem1_ gem
+Item _gem2_ gem
+Item _gem3_ gem
+
+Person _questgiver_ group Questor male
+
+Place _dungeon1_ remote dungeon
+Place _dungeon2_ remote dungeon
+Place _dungeon3_ remote dungeon
+Place _randomDungeon_ remote dungeon
+
+Clock _timeLimit_ 15.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	_gem1_ used do _usedGem1_
+	_gem2_ used do _usedGem2_
+	_gem3_ used do _usedGem3_
+	reveal _dungeon1_
+	place item _gem1_ at _dungeon1_
+	log 1040 step 0
+	teleport pc to _dungeon1_
+	log 1041 step 1
+
+_usedGem1_ task:
+	reveal _dungeon2_
+	log 1042 step 2
+	place item _gem2_ at _dungeon2_
+	teleport pc to _dungeon2_
+
+_usedGem2_ task:
+	reveal _dungeon3_
+	log 1043 step 3
+	place item _gem3_ at _dungeon3_
+	teleport pc to _dungeon3_
+
+_usedGem3_ task:
+	reveal _randomDungeon_
+	log 1044 step 4
+	teleport pc to _randomDungeon_
+
+_timeLimit_ task:
+	end quest
+
+_rewardPlayer_ task:
+	toting _gem3_ and _questgiver_ clicked
+	give pc _gold_
+	end quest

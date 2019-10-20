@@ -1,0 +1,181 @@
+Quest: JF000001
+DisplayName: Bounty on the Mutiny
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             We've got an unusual bounty on the books
+<ce>             right now. A squad of soldiers abandoned
+<ce>             their post and turned to banditry.
+<ce>             
+<ce>             The gang have been causing all kinds of
+<ce>             trouble, but it's their boss that the
+<ce>             local high-ups are really after.
+<ce>             
+<ce>             Interested?
+
+
+RefuseQuest:  [1001]
+<ce>             Suit yourself %pcf. Must be nice to be
+<ce>             able to turn down work, eh?
+
+
+AcceptQuest:  [1002]
+<ce>             Good, here's the deal.
+<ce>             
+<ce>             First, take out the gang. They were last
+<ce>             seen close to ___graveyard_.
+<ce>             I don't know exactly where that is.
+<ce>             Somewhere here in %crn,
+<ce>             but you have a map, right?
+<ce>             
+<ce>             Their former officer, and current boss,
+<ce>             we don't know where %g1 is. We're hoping
+<ce>             you'll get a lead on %g2. That's why its
+<ce>             called bounty hunting, no?
+<ce>             
+<ce>             Good luck %pcf.
+
+
+QuestFail:  [1003]
+<ce>             Disappointing %pcf. The Guild has a
+<ce>             reputation to maintain and yours just
+<ce>             took a right beating. Get out of here.
+
+
+QuestComplete:  [1004]
+<ce>             Good work %pcf! These are the contracts
+<ce>             that keep this Guild in business. Take a
+<ce>             few days off, relax and come back when
+<ce>             you're ready for more.
+
+
+RumorsDuringQuest:  [1005]
+Did you hear about that platoon of soldiers who went rogue and started pillaging the locals?
+<--->
+The army sent some men to clear up the bandit problem. Then they decided they'd rather be the bandits!
+
+
+RumorsPostfailure:  [1006]
+Seems the Fighters Guild couldn't handle those renegade soldiers. Maybe the army will send more troops? I hope they stay loyal!
+<--->
+The Fighters Guild are fine at dealing with normal bandits. But those army deserters are too much for them. Shame!
+
+
+RumorsPostsuccess:  [1007]
+I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
+
+
+QuestorPostsuccess:  [1008]
+Why if it isn't %pcf. I was just telling someone about how you dealt with those criminal deserters.
+
+
+QuestorPostfailure:  [1009]
+Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
+
+
+Message: 1019
+<ce>             This is the place. Might have to wait
+<ce>             for them to come back home.
+
+
+Message:  1020
+<ce>             Was that all of them?
+<ce>             Now to get a lead on their boss...
+
+
+Message:  1021
+<ce>             You leave the former officer and
+<ce>             erstwhile gangboss in a pile of
+<ce>             %g3 own dishonorable blood.
+<ce>             
+<ce>             Now it's time to get paid!
+
+
+Message:  1040
+%qdt:
+ I have to clean out a gang of
+ bandits from ___graveyard_
+ in %crn and then hunt down
+ their leader, %g3 current location
+ is unknown. Hopefully there'll be
+ some sort of clue which I can find
+ without too much trouble.
+ When I'm done I'll head back to
+ _questgiver_ in
+ ___questgiver_ to get paid.
+
+
+Message:  1015
+ This place isn't secure enough. I've got
+ a lead on a much better hide-out, some
+ abandoned hole called ___mondung_.
+ If it looks as good as it sounds I'll send for
+ you and we can plan our next move.
+
+
+QBN:
+
+Item _gold_ gold range 800 to 1200
+
+Item _map_ letter used 1015
+
+Person _questgiver_ group Questor male
+
+Place _graveyard_ remote graveyard
+
+Place _mondung_ remote dungeon
+
+Clock _timeLimit_ 10.00:00
+
+Foe _bandit_ is Rogue
+
+Foe _banditboss_ is Knight
+
+Foe _en1_ is 7 Warrior
+
+--	Quest start-up:
+	start timer _timeLimit_
+	reveal _graveyard_
+	_map_ used do _readletter_ 
+	pc at _graveyard_ set _onsite_
+	log 1040 step 0
+
+_timeLimit_ task:
+	end quest
+
+_onsite_ task:
+	say 1019
+	create foe _bandit_ every 3 minutes 1 times with 100% success
+	create foe _en1_ every 3 minutes 1 times with 100% success
+	give item _map_ to _bandit_
+
+_readletter_ task:
+	reveal _mondung_
+	place foe _banditboss_ at _mondung_
+
+_slain_ task:
+	killed 7 _en1_
+
+_slain2_ task:
+	killed _bandit_
+
+_slain3_ task:
+	when _slain_ and _slain2_
+	say 1020
+
+_slainboss_ task:
+	killed _banditboss_
+	say 1021
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _slainboss_
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _slainboss_
+	give pc _gold_
+	end quest
