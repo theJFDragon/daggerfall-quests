@@ -1,0 +1,2 @@
+
+2019-10-24	added instructions, change log and correctly de-activated missing quest 9 and the terrible "3 dungeons" quest.

@@ -13,8 +13,8 @@ JF000001, FightersGuild, M, 2, 0, kill a bandit gang and then hunt down their ca
 JF000002, FightersGuild, M, 3, 0, find a thief in the fighter's guild and wack 'em
 JF000003, FightersGuild, M, 2, 0, runaround for delivering ransom to kidnapper dirty harry style
 JF000004, MagesGuild, M, 1, 0, kill a renegade mage who is cloning himself. Vigourously.
-JF000005, MagesGuild, M, 1, 0, tiresome hunt through 3 dungeons! you love it...
+-JF000005, MagesGuild, M, 1, 0, tiresome hunt through 3 dungeons! you love it...
 JF000006, MagesGuild, M, 1, 0, join up with the fighters guild to scam innocent townsfolk!
 JF000007, HolyOrder, N, 1, 0, purify a shrine
-JF000008, FightersGuild, M, 1, 0, asdasdasd
-JF000009, HolyOrder, M, 1, 0, asdasdasd
+JF000008, FightersGuild, M, 1, 0, beastmaster tutorial quest. needs polishing.
+-JF000009, HolyOrder, M, 1, 0, not ready yet

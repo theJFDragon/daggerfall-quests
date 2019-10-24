@@ -1,0 +1,38 @@
+
+=========================
+How to install new quests
+=========================
+
+You have downloaded some text files but what now?
+Hopefully you have several files named "JF0000x"
+And also "QuestList-JF.txt"
+And this instructions, otherwise how can you be
+reading this?
+
+Goto your Daggerfall Unity folder.
+Then goto the "DaggerfallUnity_Data" folder.
+Then goto the "SteamingAssets" folder.
+Then goto the "QuestPacks" folder.
+
+This is where you should already have installed
+Warm Ashes and Jay_H's Quest Pack 1.
+
+Make a new folder at this location called "JF".
+Put the text files in that folder.
+
+You are now ready to go! Hopefully I didn't make
+any quest bugs that cause you any problems...
+
+Note that inside the file "QuestList-JF.txt" it is
+defined which quests are active. Any line that
+begins with a hyphen "-" is inactive. You can
+decide which quests you want and which you don't.
+Some are not active by default.
+
+this thread in the daggerfall unity workshop
+forums is a good place to report any problems:
+https://forums.dfworkshop.net/viewtopic.php?f=14&t=2895
+
+
+Cheers,
+theJF
