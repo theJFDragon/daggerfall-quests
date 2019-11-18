@@ -108,7 +108,7 @@ Place _cult_ remote cult
 Foe _seducer_ is 2 Daedra_seducer
 Foe _nymph_ is 5 Nymph
 
-Clock _timeLimit_ 10.00:00
+Clock _timeLimit_ 30.00:00
 
 Foe _en1_ is 7 Warrior
 

@@ -4,35 +4,50 @@ DisplayName: Runaround
 QRC:
 
 QuestorOffer:  [1000]
-<ce>             I'm not gonna lie. This one is a real pain
-<ce>             in the posterior. It involves delivering a
-<ce>             ransom payment to some Thieves Guild scum,
-<ce>             but they're going to make you work for it.
+<ce>             Hail %lev! Your timing is, as
+<ce>             ever, fortuitous. We have urgent need of
+<ce>             a Knight whose steed is as fast as their
+<ce>             wits, if not faster.
 <ce>             
-<ce>             Are you sure you want to take this one?
+<ce>             The Thieves Guild, curse their empty
+<ce>             hearts, have taken a local noble hostage.
+<ce>             We know this particular gang and they are
+<ce>             no mere amateurs. Rest assured - if they
+<ce>             are crossed then the hostage will die.
+<ce>             
+<ce>             Your duty, if you accept, is to follow
+<ce>             their instructions and deliver the ransom.
+<ce>             Do you accept this duty?
 
 
 RefuseQuest:  [1001]
-<ce>             Suit yourself %pcf. Must be nice to be
-<ce>             able to turn down work, eh?
+<ce>             You disappoint us %lev.
+<ce>             If we do not undertake these quests then who will?
 
 
 AcceptQuest:  [1002]
-<ce>             Ha! You're crazier than I thought!
+<ce>             I know we could count on you %lev.
 <ce>             
-<ce>             You get to deliver the ransom but the kidnappers
-<ce>             are a little paranoid. They're going to bounce
-<ce>             you around town to make sure you're alone. If
-<ce>             they think you've got any backup they'll scratch
-<ce>             the deal, which will be unfortunate for the hostage.
+<ce>             This gang of kidnappers is well organised and
+<ce>             paranoid. They will permit you no leeway in their
+<ce>             plans. You will be sent around town, from place
+<ce>             to place, to make sure you're alone. If they think
+<ce>             you've got any compatriots they'll cancel the deal,
+<ce>             which will be unfortunate for the hostage.
 <ce>             
 <ce>             Your first destination is _house_ here
 <ce>             in town. After that you're on your own.
 <ce>             
-<ce>             Oh, and it's not needed to try anything clever.
-<ce>             Just give them the ransom.
+<ce>             Do not deviate from their instructions. Just give
+<ce>             them their ill-begotten ransom.
 <ce>             
 <ce>             Good luck %pcf.
+
+
+QuestFail:  [1003]
+<ce>             Disappointing %pcf. The Order has a reputation
+<ce>             to maintain and yours just took a right beating.
+<ce>             Get out of my sight.
 
 
 QuestComplete:  [1004]
@@ -40,15 +55,30 @@ QuestComplete:  [1004]
 <ce>             Here's your reward, you certainly earned it!
 
 
-QuestFail:  [1003]
-<ce>             Disappointing %pcf. The Guild has a reputation
-<ce>             to maintain and yours just took a right beating.
-<ce>             Get out of my sight.
+RumorsDuringQuest:  [1005]
+Do you have time to talk about the weather? Don't you have something to do?
+
+
+RumorsPostfailure:  [1006]
+I wonder what happened to the Baroness? Not seen her for a while.
+
+
+RumorsPostsuccess:  [1007]
+The Baroness seems happier these days. At least somebody around here has had some good news. 
+
+
+QuestorPostsuccess:  [1008]
+Greetings %pcf. I was just telling someone about how you helped me sort out that renegade and %g3 duplicates.
+
+
+QuestorPostfailure:  [1009]
+If I was you I would avoid high society for a long while. Still, I guess for you that's not much to ask.
 
 
 Message:  1040
 %qdt:
- I have to delivery a ransom to
+ _questgiver_ in ___questgiver_
+ has engaged me to deliver a ransom to
  some Thieves Guild operatives.
  They first want me to go to
  _house_.
@@ -56,31 +86,31 @@ Message:  1040
 
 Message:  1041
  _inn_.
- You got 30 minutes. Do not tarry.
+ You got 35 minutes. Do not tarry.
 
 
 Message:  1042
  _shop_.
- 25 minutes.
+ 30 minutes.
  I hope you've got a good horse.
 
 
 Message:  1043
  _pawnshop_.
- 20 minutes.
+ 25 minutes.
  Hurry hurry hurry!
 
 
 Message:  1044
- Thanks, it's been a pleasure doing business.
- The merchandise will be delivered directly
- and in perfect condition.
+<ce>             It's been a pleasure doing business.
+<ce>             The merchandise will be delivered directly
+<ce>             and in perfect condition.
 
 
 Message:  1045
- You've run out of time! The Thieves Guild will
- still deliver the hostage. Just in many, many,
- small pieces over a long period of time...
+<ce>             You've run out of time! The Thieves Guild will
+<ce>             still deliver the hostage. Just in many, many,
+<ce>             small pieces over a long period of time...
 
 
 Message:  1051
@@ -90,12 +120,12 @@ Message:  1051
 
 Message:  1052
 %qdt:
- The next place to go is  _shop_.
+ The next place is  _shop_.
 
 
 Message:  1053
 %qdt:
- The next place to go is  _pawnshop_.
+ The last place is  _pawnshop_.
 
 
 Message:  1054
@@ -104,10 +134,9 @@ Message:  1054
  and collect my payment.
 
 
-
 QBN:
 
-Item _gold_ gold range 800 to 1200
+Item _gold_ gold range 250 to 500
 
 Item _note1_ letter used 1041
 Item _note2_ letter used 1042
@@ -122,10 +151,10 @@ Place _inn_ local tavern
 Place _shop_ local generalstore
 Place _pawnshop_ local pawnshop
 
-Clock _timeLimit_ 0.03:00
-Clock _timer1_ 0.0:30
-Clock _timer2_ 0.0:25
-Clock _timer3_ 0.0:20
+Clock _timeLimit_ 1.00:00
+Clock _timer1_ 0.0:35
+Clock _timer2_ 0.0:30
+Clock _timer3_ 0.0:25
 
 Foe _bandit_ is Rogue
 
@@ -141,7 +170,6 @@ Foe _bandit_ is Rogue
 
 
 _timeLimit_ task:
-	say 1045
 	end quest
 
 _timer1 task:

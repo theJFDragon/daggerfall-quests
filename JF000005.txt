@@ -129,12 +129,12 @@ Item _gem3_ gem
 
 Person _questgiver_ group Questor male
 
-Place _dungeon1_ remote dungeon
-Place _dungeon2_ remote dungeon
-Place _dungeon3_ remote dungeon
-Place _randomDungeon_ remote dungeon
+Place _dungeon1_ remote dungeon7
+Place _dungeon2_ remote dungeon10
+Place _dungeon3_ remote dungeon0
+Place _randomDungeon_ remote dungeon5
 
-Clock _timeLimit_ 15.00:00
+Clock _timeLimit_ 99.00:00
 
 
 --	Quest start-up:

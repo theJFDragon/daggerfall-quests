@@ -126,13 +126,13 @@ Place _graveyard_ remote graveyard
 
 Place _mondung_ remote dungeon
 
-Clock _timeLimit_ 10.00:00
+Clock _timeLimit_ 30.00:00
 
 Foe _bandit_ is Rogue
 
 Foe _banditboss_ is Knight
 
-Foe _en1_ is 7 Warrior
+Foe _en1_ is 4 Warrior
 
 --	Quest start-up:
 	start timer _timeLimit_
@@ -155,7 +155,7 @@ _readletter_ task:
 	place foe _banditboss_ at _mondung_
 
 _slain_ task:
-	killed 7 _en1_
+	killed 4 _en1_
 
 _slain2_ task:
 	killed _bandit_

@@ -10,7 +10,12 @@ QuestorOffer:  [1000]
 <ce>             
 <ce>             I should warn you that this business is, how
 <ce>             to say, legally ambiguous? Morally opaque?
-<ce>             Ethically imprecise. Definitely NOT illegal!
+<ce>             Ethically vague. Definitely NOT criminal!
+<ce>             
+<ce>             There's no actual danger, of course. Unless
+<ce>             something goes wrong. Then it could be very
+<ce>             dangerous indeed.
+<ce>             But when does that ever happen?
 <ce>             
 <ce>             Shall I say more?
 
@@ -34,7 +39,7 @@ AcceptQuest:  [1002]
 <ce>             
 <ce>             Of course these encounters don't happen every day. Some
 <ce>             towns aren't even built on top of old burial grounds!
-<ce>             That's were we come in. For a fair and reasonable
+<ce>             That's where we come in. For a fair and reasonable
 <ce>             percentage we provide the actors and then the Fighters
 <ce>             Guild takes care of them. Everyone goes home happy!
 <ce>             
@@ -56,23 +61,23 @@ QuestComplete:  [1004]
 
 
 RumorsDuringQuest:  [1005]
-Did you hear about that platoon of soldiers who went rogue and started pillaging the locals?
+I'm hearing lots more talk of hauntings and supernatural goings-on these days. Curious, eh?
 <--->
-The army sent some men to clear up the bandit problem. Then they decided they'd rather be the bandits!
+I thought it was only Daggerfall city having problems with the undead. But it's getting a bit unlively around here, if you catch my drift.
 
 
 RumorsPostfailure:  [1006]
-Seems the Fighters Guild couldn't handle those renegade soldiers. Maybe the army will send more troops? I hope they stay loyal!
+I don't know the details but the local Mages and Fighters Guilds seem a little more unfriendly these days.
 <--->
-The Fighters Guild are fine at dealing with normal bandits. But those army deserters are too much for them. Shame!
+I hear whispers of illegal conspiracies but I can't say any more than that. People should keep their mouths shut.
 
 
 RumorsPostsuccess:  [1007]
-I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
+How am I doing? Me? I'm doing very well, thanks for asking! It's nice not be constantly asked for directions for once!
 
 
 QuestorPostsuccess:  [1008]
-Why if it isn't %pcf. I was just telling someone about how you dealt with those criminal deserters.
+Why, if it isn't %pcf, my partner-in-crime. As it were. So to speak. *Ahem*.
 
 
 QuestorPostfailure:  [1009]
@@ -88,12 +93,13 @@ Message:  1040
  Guild get paid to take care of them.
  Then we split the profits!
  I need to conjure some angry
- spirits in _someHouse_.
+ spirits in _someHouse_
+ using this enchanted gemstone.
 
 
 Message:  1041
- This is the place. Time to bring
- back the dead for fun and profit!
+<ce>             This is the place. Time to bring
+<ce>             back the dead for fun and profit!
 
 
 Message:  1042
@@ -104,23 +110,35 @@ Message:  1042
  possibly have happened...
 
 
+Message: 1043
+<ce>             The gem glows very brightly and then goes dull.
+<ce>             Your advanced Mage training and extensive
+<ce>             experience leads you to conclude that the
+<ce>             spell has been successfully cast.
+<ce>             
+<ce>             The sudden drop in temperature, a feeling of
+<ce>             intense dread and the sudden appearance of
+<ce>             horrifying spectral apparitions are also strong
+<ce>             hints that you should probably leave now...
+
+
 Message:  1050
- I'm not sure what you did but
- it wasn't entirely correct. It
- seems we have a few uninvited
- guests ourselves. Take care of
- this, would you, %pcf?
+<ce>             I'm not sure what you did but
+<ce>             it wasn't entirely correct. It
+<ce>             seems we have a few uninvited
+<ce>             guests ourselves. Take care of
+<ce>             this, would you, %pcf?
 
 
 QBN:
 
-Item _gold_ gold range 100 to 250
+Item _gold_ gold range 250 to 500
 Item _gem_ gem
 
 Person _questgiver_ group Questor male
 
 Foe _wraith_ is 3 Wraith
-Foe _wraith2_ is 4 Wraith
+Foe _wraith2_ is 1 Wraith
 
 Place _someHouse_ local house2
 Place _magesGuild_ local magery
@@ -136,30 +154,29 @@ Clock _timeLimit_ 1.00:00
 
 
 _onsite_ task:
-	log 1041 step 1
+	say 1041
 	_gem_ used do _useGem_
 
 _useGem_ task:
+	say 1043
 	log 1042 step 2
---	play sound magic_fizzle every 0 minutes 1 times
 	create foe _wraith_ every 0 minutes 1 times with 100% success
 
 _slain_ task:
-	killed 4 _wraith2_
+	killed 1 _wraith2_
 
 _timeLimit_ task:
 	end quest
 
 _questorClicked_ task:
-  clicked npc _questgiver_
+	clicked npc _questgiver_
 
 _clearclick_ task:
-  when _questorClicked_ and not _useGem_
-  clear _questorClicked_ _clearclick_
+	when _questorClicked_ and not _useGem_
+	clear _questorClicked_ _clearclick_
 
 _oops_ task:
 	when _questorClicked_ and _useGem_ and not _slain_
---	play sound magic_fizzle every 0 minutes 1 times
 	create foe _wraith2_ every 0 minutes 1 times with 100% success
 	say 1050
 

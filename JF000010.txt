@@ -1,0 +1,215 @@
+Quest: JF000010
+DisplayName: Incredible Bulk
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Stranger! You look like a wandering
+<ce>             adventurer in need of an adventure.
+<ce>             I can supply you with one, and a
+<ce>             generous sum of gold should you
+<ce>             succeed.
+<ce>             
+<ce>             My brother's home has been invaded
+<ce>             by a cursed giant! I pray that my
+<ce>             brother has found safety somewhere
+<ce>             in hiding.
+<ce>             
+<ce>             Can you deal with the monster and,
+<ce>             %god willing, find my brother?
+
+
+RefuseQuest:  [1001]
+<ce>             I pray you do not bear my brother's
+<ce>             spirit on your conscience.
+
+
+AcceptQuest:  [1002]
+<ce>             Thank %god. Allow me to
+<ce>             elucidate. Last night I was dining
+<ce>             with my brother at his domicile,
+<ce>             _house_, here in town.
+<ce>             
+<ce>             After a vigorous discussion about
+<ce>             regional politics my brother left
+<ce>             the room to attend to some private
+<ce>             business. It was then that the giant
+<ce>             broke into the room and attacked me!
+<ce>             
+<ce>             By a miracle I avoided its charge,
+<ce>             ran like the wind and made my
+<ce>             escape. Please, dispose of the beast
+<ce>             and find my brother!
+
+
+QuestFail:  [1003]
+<ce>             I have no words. Leave me presence.
+
+
+QuestComplete:  [1004]
+<ce>             Here's your money.
+
+
+RumorsDuringQuest:  [1005]
+Do you have time to talk about the weather? Don't you have something to do?
+
+
+RumorsPostfailure:  [1006]
+I wonder what happened to the Baroness? Not seen her for a while.
+
+
+RumorsPostsuccess:  [1007]
+The Baroness seems happier these days. At least somebody around here has had some good news. 
+
+
+QuestorPostsuccess:  [1008]
+Greetings %pcf. I was just telling someone about how you helped me sort out that renegade and %g3 duplicates.
+
+
+QuestorPostfailure:  [1009]
+If I was you I would avoid high society for a long while. Still, I guess for you that's not much to ask.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ wants me to go to _house_
+ to kill a giant and find their
+ brother, if he still lives.
+
+
+Message:  1041
+ _inn_.
+ You got 35 minutes. Do not tarry.
+
+
+Message:  1042
+ _shop_.
+ 30 minutes.
+ I hope you've got a good horse.
+
+
+Message:  1043
+ _pawnshop_.
+ 25 minutes.
+ Hurry hurry hurry!
+
+
+Message:  1044
+<ce>             You strike the giant but your instincts tell
+<ce>             you something is wrong.
+<ce>             
+<ce>             Hesitantly you hold your attack. Before your
+<ce>             very eyes the giant growls and writhes as it
+<ce>             falls to the floor, twisting and convulsing.
+<ce>             
+<ce>             In a few seconds the transformation is complete!
+
+
+Message:  1045
+<ce>             I'm grateful you didn't kill me, stranger. I have
+<ce>             been afflicted with a terrible curse.
+<ce>             
+<ce>             I used to be a Warlock in the Mages Guild. One
+<ce>             fateful night I was undertaking an extremely
+<ce>             hazardous experiment in ultra-high energy magical
+<ce>             forces. I don't know exactly what happened but
+<ce>             the magical energy got out of control and I was
+<ce>             caught in its sphere of influence.
+<ce>             
+<ce>             Since that day, whenever I am sufficiently angered,
+<ce>             the rage is physically manifested in my person and
+<ce>             I am transformed into a frenzied giant.
+<ce>             
+<ce>             You say that _questgiver_ sent you?
+<ce>             I pray you do not reveal my condition. Please, say
+<ce>             that the giant is gone and that I am safe.
+<ce>             
+<ce>             A thousand thanks, stranger. Fare well.
+
+
+Message:  1046
+<ce>             Thank you for getting rid of that foul giant.
+<ce>             I can only hope that my brother also fled and that
+<ce>             he will soon return.
+
+
+Message:  1047
+<ce>             Thank you stranger! I am so relieved to hear that
+<ce>             my dear brother is safe. I will be able to face his
+<ce>             ill-temper with a smile after this narrow escape.
+
+
+QBN:
+
+Item _gold1_ gold range 100 to 200
+Item _gold2_ gold range 250 to 500
+
+Person _questgiver_ group Questor male
+Person _brother_ face 36 faction The_Thieves_Guild male
+
+Place _house_ local house
+Place _dungeon_ remote dungeon
+
+Clock _timeLimit_ 1.00:00
+
+Foe _giant_ is Giant
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	log 1040 step 0
+	place foe _giant_ at _house_
+
+variable _skillTestOK_
+
+_timeLimit_ task:
+	end quest
+
+_testLanguage_ task:
+	when skill Giantish is at least 20
+	start task _skillTestOK_
+
+_testEtiquette_ task:
+	when skill Etiquette is at least 35
+	start task _skillTestOK_
+
+_testPersonality_ task:
+	when attribute Personality is at least 65
+	start task _skillTestOK_
+
+_hurtGiant_ task:
+    injured _giant_
+
+_killedGiant_ task:
+	killed _giant_
+
+_BruceBanner_ task:
+	when _hurtGiant_ and _skillTestOK_ and not _killedGiant_
+	say 1044
+	restrain foe _giant_
+	place foe _giant_ at _dungeon_
+	place npc _brother_ at _house_
+
+_brotherClicked_ task:
+	clicked npc _brother_
+	say 1045
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _killedGiant_ and not _brotherClicked_
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer1_ task:
+	when _questorClicked_ and _killedGiant_
+	say 1046
+	give pc _gold1_
+	end quest
+
+_rewardPlayer1_ task:
+	when _questorClicked_ and _brotherClicked_
+	say 1047
+	give pc _gold2_
+	end quest

@@ -1,0 +1,456 @@
+Quest: JF000011
+DisplayName: Speaking in Tongues
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Ajkndsfjk! Ksjhsdfjsd, ajkfdghj
+<ce>             dj djkdsfjn ksdk skmsdmf! Pisdj
+<ce>             jdjns ndfsjnk kj uwqyudf kdfsn!
+<ce>             
+<ce>             Uuihjfgdhj sajn sdnjug ngfj asd
+<ce>             ioj wre bjhk asnu jdfs jnk huas?
+<--->
+<ce>             Pksad nsa dijyuh abnsd ahjkbf
+<ce>             usdjnd fsj knank mlas dbn qwebm!
+<ce>             
+<ce>             Idf jamnx zqwen asdn qoimnsa?
+
+
+RefuseQuest:  [1001]
+<ce>             Rkbns dfhjbv asdjkhjdsf!!!
+
+ 
+AcceptQuest:  [1002]
+<ce>             Mbhj sdfhbjs fbs dolif!!
+
+
+QuestFail:  [1003]
+<ce>             Bsjn asj nkdf sjk nsd sugmknlgfd.
+
+
+QuestComplete:  [1004]
+<ce>             Here's your money.
+
+
+RumorsDuringQuest:  [1005]
+Do you have time to talk about the weather? Don't you have something to do?
+
+
+RumorsPostfailure:  [1006]
+I wonder what happened to the Baroness? Not seen her for a while.
+
+
+RumorsPostsuccess:  [1007]
+The Baroness seems happier these days. At least somebody around here has had some good news. 
+
+
+QuestorPostsuccess:  [1008]
+Greetings %pcf. I was just telling someone about how you helped me sort out that renegade and %g3 duplicates.
+
+
+QuestorPostfailure:  [1009]
+If I was you I would avoid high society for a long while. Still, I guess for you that's not much to ask.
+
+
+Message:  1040
+%qdt:
+ Whilst in ___questgiver_ I happened to meet
+ _questgiver_. Unfortunately
+ I couldn't understand a word they
+ were saying.
+ 
+ I'll ask around town and see if anyone has
+ any idea what's going on.
+
+Message:  1041
+%qdt:
+ Local gossip pointed me to _contactTavern_
+ but they were not able to provide any clues
+ as to the nature of the mysterious affliction.
+ Guess I'll keep asking around town.
+
+Message:  1042
+%qdt:
+ The local populace suggested speaking to 
+ _contactTemple_ but, on talking
+ with them, I was told it was not a matter
+ that the Temple could resolve.
+ Guess I'll keep asking around town.
+
+Message:  1043
+%qdt:
+ At the suggestion of gossipmongers I
+ consulted _contactMedical_, but
+ in their opinion this entire affair
+ is a staged joke. Not helpful.
+ Guess I'll keep asking around town.
+
+
+Message:  1044
+I heard they fell out with their old friend _contactTavern_. Those two spent a lot of time in _tavern_.
+<--->
+Somebody said _questgiver_ was seen with _contactTemple_, in _temple_. Maybe.
+<--->
+Maybe check with _contactMedical_, a travelling healer currently saying in _chemist_.
+
+
+Message:  1045
+%qdt:
+ _contactTavern_ told me that they
+ had hired a mage to put a curse on their former
+ friend. If I want to lift it I should speak to
+ _contactMage_ in the local Mages Guild.
+
+Message:  1046
+%qdt:
+ A member of the local Temple told me that the 
+ curse can only be lifted by slaying a gargoyle
+ that is "the vessel of the curse".
+ Whatever that means...
+ The creature can apparently be found lurking
+ in ___dungeon_.
+ Important note: Gargoyles cannot be hurt by
+ normal weapons.
+
+Message:  1047
+%qdt:
+ A rather self-important local alchemist
+ said that, in his opinion, the unusual
+ speech was caused by physical injury.
+ A restorative medicinal ingredient can
+ be obtained from _Doctor_ who
+ can be found at _DoctorShop_ in
+ __DoctorShop_.
+
+Message:  1048
+%qdt:
+ Typical Mages Guild nonsense! The
+ mage who cast this ludicrous spell
+ is not the same one that can reverse
+ its effects. To do that I have to go
+ to the Guildhall in __remoteMagesGuild_
+ and speak with _Mage_.
+ AND this will cost me 200 gold!
+
+Message:  1049
+%qdt:
+ Finally, after travelling all over the
+ region, I have the solution to this
+ cursed problem. _Mage_ gave
+ me a talisman that will cancel the spell.
+ I just need to give it to _questgiver_
+ and then I am done with this quest.
+ At least there was some good news...
+ _Mage_ forgot to ask for the 200 gold!
+
+Message:  1050
+%qdt:
+ _Doctor_ gave me the specimen of
+ _medicine_ which should cure
+ _questgiver_ of his condition.
+ I hope so, for I am sorely tired
+ of traversing the length and breadth
+ of the kingdom for these idlers.
+
+
+Message:  1070
+<ce>             Ah, poor _questgiver_. The case is a serious one.
+<ce>             For reasons that are not entirely clear they have inherited
+<ce>             a daedric curse, possibly due to a perceived offense by
+<ce>             an ancestor. In any event, whilst I was able to identify the
+<ce>             cause, I lack the necessary prowess to implement the cure.
+<ce>             
+<ce>             If you want to pursue this noble undertaking you must
+<ce>             goto ___dungeon_ and slay the curse's vessel, a gargoyle
+<ce>             whose name is entirely unpronouncable, except perhaps
+<ce>             by _questgiver_.
+
+
+Message:  1071
+<ce>             Yes, I've looked into the case of _questgiver_.
+<ce>             Interesting. But I'm afraid there's nothing I could do.
+<ce>             I suggest you keep asking around, if you're determined
+<ce>             to help. Good luck.
+
+
+Message:  1072
+<ce>             How tiresome. Yes, we were paid an entirely reasonable
+<ce>             sum to perform a perfectly legal arcane transaction.
+<ce>             The customer was explicitly informed that there are no
+<ce>             refunds.
+<ce>             
+<ce>             If you wish to have the linguistics spell reversed then
+<ce>             speak to my colleague, _Mage_, who will
+<ce>             perform this task for the sum of 200 gold coins. You can
+<ce>             find them in the Guildhall in __remoteMagesGuild_.
+
+
+Message:  1073
+<ce>             I have no idea who _questgiver_ is. I don't
+<ce>             intend changing that situation in the foreseeable future.
+<ce>             And with my powers I can foresee quite a bit. And I am
+<ce>             not seeing that.
+<ce>             
+<ce>             I do have a vision of you, though. Departing.
+<ce>             
+<ce>             Like...now.
+
+
+Message:  1074
+<ce>             Oh, the fascinating case of _questgiver_.
+<ce>             Suffered a sharp blow to the head and now they can only
+<ce>             speak gibberish. It's not exactly my area of expertise
+<ce>             but I did communicate with a fellow alchemist who
+<ce>             specialises in restorative effects.
+<ce>             
+<ce>             I ordered a particular herbal ingredient that should
+<ce>             palliate these symptoms. It would be an act of great
+<ce>             kindness if you could retrieve this?
+<ce>             
+<ce>             Head to __DoctorShop_ and consult with _Doctor_
+<ce>             in _DoctorShop_. Then just deliver the
+<ce>             _medicine_ to _questgiver_.
+
+
+Message:  1075
+<ce>             Ah yes. _questgiver_. I've already consulted on that
+<ce>             case. A waste of my time. In my opinion the entire
+<ce>             thing is an act. To what end I cannot say but I am
+<ce>             certain this is simple play-acting.
+<ce>             
+<ce>             Of course, if you are so inclined, you could seek a
+<ce>             second opinion. You might find somebody else in this
+<ce>             place as educated as me. But I doubt it.
+
+
+Message:  1076
+<ce>             You've come for the _medicine_ that _contactMedical_
+<ce>             ordered? No problem, I think the package is here
+<ce>             somewhere...
+<ce>             
+<ce>             Yes, here you go. Enjoy.
+
+
+Message:  1077
+<ce>             You want to undo a linguistics spell? Trivial, my
+<ce>             child, absolutely trivial. One moment.
+<ce>             
+<ce>             Yes, here's the trinket. Give the subject this and
+<ce>             the incantation will be reversed.
+
+
+Message:  1061
+<ce>             Thank you so much %pcf! You have saved my sanity.
+<ce>             I hope this meagre sum serves as a token of my
+<ce>             gratitude. %god bless you %ra!
+
+
+Message:  1062
+<ce>             Thank you so much %pcf! You have saved my sanity.
+<ce>             I promise you that _contactTavern_ will
+<ce>             pay for this!
+<ce>             
+<ce>             Anyway, I know you have been to some considerable
+<ce>             lengths to assist me. Please accept this small gift.
+
+
+Message:  1063
+<ce>             The cursed beast is dead. With the final blow
+<ce>             you feel a burst of magical energy and hear an
+<ce>             echo of incomprehensible words screaming into
+<ce>             the infinite void, fading to silence.
+<ce>             
+<ce>             All of which leads you to conclude that the
+<ce>             target monster is dead and you can leave.
+
+
+Message:  1064
+<ce>             Thank you so much %pcf! You have saved my sanity.
+<ce>             
+<ce>             You say that a daedric curse was put upon me in
+<ce>             revenge for an insult given by one of my
+<ce>             ancestors? And that you had to hunt down and
+<ce>             slay a savage gargoyle in order to break the
+<ce>             curse?
+<ce>             
+<ce>             I am no expert in these matters but that seems
+<ce>             a strangely elaborate, but also oddly arbitrary,
+<ce>             curse. I guess the whims of the daedra are
+<ce>             inexplicable to us mere mortals, eh?
+<ce>             
+<ce>             My father used to muck out the stables and my
+<ce>             mother was the daughter of a blacksmith. I can't
+<ce>             imagine how they offended a daedra. Still, at
+<ce>             least this nightmare is ended. Thank you %ra.
+
+
+Message:  1065
+<ce>             Haha! Yes, it's a brilliant trick, isn't it?
+<ce>             The old fool was always interrupting me so I
+<ce>             thought this would be an appropriate lesson.
+<ce>             
+<ce>             I suppose it is a bit petty to keep the spell
+<ce>             active after three weeks. I don't know how to
+<ce>             break the spell myself but I can tell you who
+<ce>             I paid to arrange it.
+<ce>             
+<ce>             Talk to _contactMage_ in the Mages Guild.
+<ce>             
+<ce>             Hahahahaha! This is my best one yet!
+
+
+Message:  1066
+<ce>             Something up with _questgiver_? No idea.
+<ce>             We're not on speaking terms any more. And from
+<ce>             what you say that is unlikely to change now. Ha!
+
+
+
+QBN:
+
+Item _gold1_ gold range 100 to 200
+Item _gold2_ gold range 250 to 500
+Item _gold3_ gold range 750 to 999
+
+Person _questgiver_ group Questor male anyInfo 1044
+Person _contactTavern_ faction The_Merchants
+Person _contactMage_ faction The_Odylic_Mages
+Person _contactTemple_ faction Generic_Temple
+Person _contactMedical_ faction The_Academics male
+Person _Doctor_ faction Temple_Missionaries
+Person _Mage_ faction The_Mages_Guild
+
+Place _tavern_ local tavern
+Place _magesGuild_ local magery
+Place _remoteMagesGuild_ remote magery
+Place _temple_ local temple
+Place _chemist_ local apothecary
+Place _dungeon_ remote dungeon8
+Place _DoctorShop_ remote apothecary
+
+Item _medicine_ large_plant
+Item _talisman_ talisman
+
+Clock _timeLimit_ 30.00:00
+
+Foe _monster_ is Gargoyle
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	log 1040 step 0
+	pick one of _spell_ _demonic_ _injury_
+	place npc _contactTavern_ at _tavern_
+	place npc _contactMage_ at _magesGuild_
+	place npc _contactTemple_ at _temple_
+	place npc _contactMedical_ at _chemist_
+
+
+variable _skillTestOK_
+variable _spell_
+variable _demonic_
+variable _injury_
+
+_timeLimit_ task:
+	end quest
+
+
+_testLanguage_ task:
+	when skill Orcish is at least 75
+	start task _skillTestOK_
+
+_tavernClicked_ task:
+	clicked npc _contactTavern_
+
+_tavernYes_ task:
+	when _tavernClicked_ and _spell_
+	log 1045 step 4
+	say 1065
+
+_tavernNo_ task:
+	when _tavernClicked_ and not _spell_
+	log 1041 step 1
+	say 1066
+
+_templeClicked_ task:
+	clicked npc _contactTemple_
+
+_templeYes_ task:
+	when _templeClicked_ and _demonic_
+	reveal _dungeon_
+	place foe _monster_ at _dungeon_
+	log 1046 step 5
+	say 1070
+
+_templeNo_ task:
+	when _templeClicked_ and not _demonic_
+	log 1042 step 2
+	say 1071
+
+_magesClicked_ task:
+	clicked npc _contactMage_
+
+_magesYes_ task:
+	when _magesClicked_ and _spell_
+	say 1072
+	log 1048 step 7
+	place npc _Mage_ at _remoteMagesGuild_
+
+_magesNo_ task:
+	when _magesClicked_ and not _spell_
+	say 1073
+
+_medicalClicked_ task:
+	clicked npc _contactMedical_
+
+_medicalYes_ task:
+	when _medicalClicked_ and _injury_
+	log 1047 step 6
+	say 1074
+	place npc _Doctor_ at _DoctorShop_
+
+_medicalNo_ task:
+	when _medicalClicked_ and not _injury_
+	log 1043 step 3
+	say 1075
+
+_getMedicine_ task:
+	clicked npc _Doctor_
+	log 1050 step 9
+	say 1076
+	get item _medicine_ 
+
+_getTalisman_ task:
+	clicked npc _Mage_
+	log 1049 step 8
+	say 1077
+	get item _talisman_
+
+_killedMonster_ task:
+	killed 1 _monster_ saying 1063
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _killedMonster_ and not _getTalisman_ and not _getMedicine_
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer1_ task:
+	when _getMedicine_ and _questorClicked_
+	say 1061
+	give pc _gold1_
+	end quest
+
+_rewardPlayer2_ task:
+	when _getTalisman_ and _questorClicked_
+	say 1062
+	give pc _gold2_
+	end quest
+
+_rewardPlayer3_ task:
+	when _killedMonster_ and _questorClicked_
+	say 1064
+	give pc _gold3_
+	end quest

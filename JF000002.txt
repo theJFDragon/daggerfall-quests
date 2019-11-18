@@ -8,8 +8,8 @@ QuestorOffer:  [1000]
 <ce>             I can trust. Can you help me out with
 <ce>             something unofficial? There's not much
 <ce>             money in it, but I'll make sure the
-<ce>             people upstairs know who they need to
-<ce>             keep happy?
+<ce>             people upstairs know who to keep on
+<ce>             the right side of.
 
 
 RefuseQuest:  [1001]
@@ -33,8 +33,8 @@ AcceptQuest:  [1002]
 <ce>             %g1 spends most %g3 time in the local tavern.
 <ce>             
 <ce>             _suspect3_ is a newcomer. I don't know much
-<ce>             about %g2 but %g1 usually hangs around the
-<ce>             Guildhall at night.
+<ce>             about %g2 but %g1 usually hangs around
+<ce>             the Guildhall at night.
 <ce>             
 <ce>             Have a nose around and see what you can find.
 <ce>             And keep it low key, eh?
@@ -43,6 +43,10 @@ AcceptQuest:  [1002]
 QuestComplete:  [1004]
 <ce>             Thanks %pcf, if this rot hadn't been cut out
 <ce>             it could have infected the whole Guild.
+<ce>             
+<ce>             Although this was off-the-books there is a
+<ce>             special fund for miscellaneous expenses.
+<ce>             I know it's not much...
 
 
 QuestFail:  [1003]
@@ -58,13 +62,13 @@ The Sheriff used to regularly call on the Fighters Guild for their services. But
 
 
 RumorsPostfailure:  [1006]
-Nobody is telling me why but some people are steering well clear of the Fighters Guild these days.
+Nobody is telling me why, but some people are steering well clear of the Fighters Guild these days.
 <--->
-I hear bad rumours about the Fighters Guild. Wouldn't want to say more than that.
+I hear bad things about the Fighters Guild. Wouldn't want to say more than that.
 
 
 RumorsPostsuccess:  [1007]
-I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
+The Fighters Guild reputation in the town has never been higher. I feel safer already.
 
 
 QuestorPostsuccess:  [1008]
@@ -84,27 +88,35 @@ Message: 1019
 <ce>             but you'll be waiting to deal with %g2 when %g1
 <ce>             arrives. Understand?
 <ce>             
-<ce>             Wait in _house_. %g1'll arrive
+<ce>             Wait in _house_, %g1'll arrive
 <ce>             after midnight.
 
 
 Message: 1020
 <ce>             Looks like the only thing %g1'll be taking now
-<ce>             is a space. In the local cemetery.
+<ce>             is a space...in the local cemetery.
 <ce>             
-<ce>             Might need to work on that one...
+<ce>             *lowers visor*
+
+
+Message: 1021
+<ce>             This matches the description of the client's
+<ce>             weapon that was stolen from the Guild!
+<ce>             
+<ce>             Looks like we have a prime suspect. Time to
+<ce>             head back to the Guild and return the weapon.
 
 
 Message:  1026
 _suspect1_? I know I've heard the name. Can't remember why.
 <--->
-I'm sure %g1 lives around here. Or %g1 used to. Been a while.
+I'm sure they live around here. Or they used to. Been a while.
 <--->
-Sorry, couldn't tell you anything about _suspect1_
+Sorry, couldn't tell you anything about _suspect1_.
 
 
 Message:  1027
-_suspect2_ is renting a room at _inn_. It's odd because %g1 has a house here in town.
+_suspect2_ is renting a room at _inn_. It's odd because they've got a house here in town.
 <--->
 I've seen _suspect2_ hanging around _inn_. I don't know why, it's not a nice place.
 <--->
@@ -112,11 +124,11 @@ _suspect2_, eh? I'd check out _inn_. But you didn't hear that from me, right?
 
 
 Message:  1028
-Oh yeah, I know _suspect3_. Only been in town a few weeks. Trying to make a name for %g2self.
+Oh yeah, I know _suspect3_. Only been in town a few weeks. Seems an alright sort.
 <--->
 _suspect3_? Nope. Never heard of a _suspect3_.
 <--->
-_suspect3_? I don't like %g2. Bad knees. Really bad.
+_suspect3_? I don't like 'em. Bad knees. Really bad.
 
 
 
@@ -148,6 +160,7 @@ Message:  1041
 QBN:
 
 Person _questgiver_ group Questor male
+Person _fg_ faction The_Fighters_Guild
 
 Person _suspect1_ face 97 faction The_Thieves_Guild anyInfo 1026
 Person _suspect2_ face 97 faction The_Thieves_Guild anyInfo 1027
@@ -158,7 +171,7 @@ Foe _enemy_ is Warrior
 Place _inn_ local tavern
 Place _house_ local house1
 
-Item _gold_ gold range 800 to 1200
+Item _gold_ gold range 25 to 75
 Item _weapon_ weapon
 
 Clock _timeLimit_ 2.00:00
@@ -184,6 +197,10 @@ _spawn_ task:
 	when _inside_ and not _day_
 	place foe _enemy_ at _house_
 
+_getItem_ task:
+	clicked item _weapon_
+	say 1021
+
 _GiveEvidence_ task:
 	toting _weapon_ and _questgiver_ clicked
 	start task _MeetAndKillThief_
@@ -199,6 +216,7 @@ _slain_ task:
 _rewardPlayer_ task:
 	when _questorClicked_ and _slain_
 	give pc _gold_
+	change repute with _fg_ by 10
 	end quest
 
 _questorClicked_ task:

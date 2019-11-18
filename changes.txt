@@ -1,2 +1,62 @@
 
+-------------------------------------------------------------------------------
 2019-10-24	added instructions, change log and correctly de-activated missing quest 9 and the terrible "3 dungeons" quest.
+-------------------------------------------------------------------------------
+2019-11-18	incorporating Jay_H's feedback:
+
+		JF000001 [Bounty on the Mutiny]
+			rank 5 required
+			number of enemies reduced
+			quest timer increased to 30 days
+
+		JF000002 [Sticky Fingers]
+			changed messages 1026-1028
+			rank 2 required
+			more player feedback
+			added quest-specific rumours
+			reward reduced as per quest prompt
+			reputation boost added
+
+		JF000003 [Runaround]
+			changed to knightly order, not fighters guild
+			timelimit timer set to 1 day and ends quest silently
+			3 quest timers very slightly longer
+			added quest-specific rumours
+			reward slightly reduced
+
+		JF000004 [Attack the Clones]
+			less intense enemy spawn rate
+			quest prompt hints at combat
+			dungeon type changed
+			rank 3 required
+			quest timer increased to 30 days
+
+		JF000005 [The Three Dungeons]
+			<this quest is still inactive by default>
+			dungeon types changed
+			quest timer increased to 99 days
+
+		JF000006 [Rent-a-Ghost]
+			typos fixed
+			added quest-specific rumours
+			increased reward
+			rank 3 required
+			only 1 bonus wraith now
+			more player feedback
+			changed log to have more info
+
+		JF000007 [The Morning After]
+			quest timer increased to 30 days
+
+		JF000008 [Beat the Beastmaster]
+			added quest-specific rumours
+			dungeon type changed
+			made map bonus clearer
+			more player feedback
+
+		JF000010 [Incredible Bulk]
+			new quest added!
+
+		JF000011 [Speaking In Tongues]
+			new quest added!
+-------------------------------------------------------------------------------

@@ -9,13 +9,16 @@ QuestorOffer:  [1000]
 <ce>             could see your way clear to helping me, I mean,
 <ce>             the Guild, with a minor problemette?
 <ce>             
+<ce>             I should warn you that it may involve a
+<ce>             certain degree of....extreme violence.
+<ce>             
 <ce>             What do you say?
 
 
 RefuseQuest:  [1001]
 <ce>             You disappoint me %pcf. How can I solve these
 <ce>             problems myself when my duties forbid me from
-<ce>             moving from this exact location? How?!?!
+<ce>             moving at all from this exact location? How?!?!
 
 
 AcceptQuest:  [1002]
@@ -29,7 +32,7 @@ AcceptQuest:  [1002]
 <ce>             
 <ce>             Anyway, this reprobate got hold of a magic gem and fiddled
 <ce>             around with it and the upshot is that %g1 can conjure up
-<ce>             duplicates of %g2self, almost at will, probably got a
+<ce>             duplicates of %g2self, almost at will. Probably got a
 <ce>             small army of %g2self by now.
 <ce>             
 <ce>             I'm told %g1's set %g2self up in ___mondung_.
@@ -46,17 +49,19 @@ QuestFail:  [1003]
 
 
 QuestComplete:  [1004]
-<ce>             Excellent! Thanks for helping me, I mean, us, with this.
-<ce>             Now perhaps the Guildmaster will stop moaning about what
-<ce>             my old apprentices get up to, as if that's any of MY
-<ce>             business, am I right?!
+<ce>             Excellent! Thanks for helping me, I mean, the
+<ce>             Guild, with this trivial disturbance. Perhaps
+<ce>             now the Guildmaster will stop moaning about
+<ce>             what my old apprentices get up to, as if that's
+<ce>             any of MY business, am I right?!
 <ce>             
-<ce>             Here, I found these coins in an old box. Why don't you
-<ce>             take them off my hands? Too heavy for these pockets...
+<ce>             Here, I found these coins in an old box. Why
+<ce>             don't you take them off my hands? Too heavy
+<ce>             for these pockets...
 
 
 RumorsDuringQuest:  [1005]
-Do you know that mage who's been showing up all over the kingdom? And at the same time?!?!
+Have you heard about that mage who's been showing up all over the kingdom? And at the same time?!?!
 
 
 RumorsPostfailure:  [1006]
@@ -64,7 +69,7 @@ Did you hear about that sorcerer who just took over a whole chunk of the kingdom
 
 
 RumorsPostsuccess:  [1007]
-The Mages Guild causes a lot of problems. At least they clean up some of them, eh?
+The Mages Guild sometimes causes a lot of problems. At least they clean up some of them, eh?
 
 
 QuestorPostsuccess:  [1008]
@@ -106,9 +111,9 @@ Item _gem_ gem
 
 Person _questgiver_ group Questor male
 
-Place _mondung_ remote dungeon
+Place _mondung_ remote dungeon4
 
-Clock _timeLimit_ 10.00:00
+Clock _timeLimit_ 30.00:00
 
 Foe _RealEnemy_ is Mage
 Foe _CloneEnemy_ is 2 Mage
@@ -127,7 +132,7 @@ _inside_ task:
 
 _spawn_ task:
 	when _inside_ and not _slain_
-	create foe _CloneEnemy_ every 3 minutes 100 times with 50% success
+	create foe _CloneEnemy_ every 120 minutes 100 times with 50% success
 
 _slain_ task:
 	killed _RealEnemy_
