@@ -1,6 +1,22 @@
 
 -------------------------------------------------------------------------------
-2019-10-24	added instructions, change log and correctly de-activated missing quest 9 and the terrible "3 dungeons" quest.
+2020-01-25	2 new quests and 1 inactivated
+
+		JF000013 [Doctor You]
+			new quest added!
+
+		JF000014 [Dungeon Master]
+			new quest added!
+
+		JF000012 [Pinball Wizard]
+			seems this was never finished. inactivating for now.
+
+-------------------------------------------------------------------------------
+2019-12-13	Some general polishing of rumours, typo-fixing, etc
+
+		JF000012 [Pinball Wizard]
+			new quest added!
+
 -------------------------------------------------------------------------------
 2019-11-18	incorporating Jay_H's feedback:
 
@@ -59,4 +75,6 @@
 
 		JF000011 [Speaking In Tongues]
 			new quest added!
+
 -------------------------------------------------------------------------------
+2019-10-24	added instructions, change log and correctly de-activated missing quest 9 and the terrible "3 dungeons" quest.

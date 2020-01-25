@@ -16,7 +16,10 @@ JF000004, MagesGuild, M, 3, 0, [Attack the Clones] kill a renegade mage who is c
 -JF000005, MagesGuild, M, 1, 0, [The Three Dungeons] tiresome hunt through 3 dungeons! you love it...
 JF000006, MagesGuild, M, 3, 0, [Rent-a-Ghost] join up with the fighters guild to scam innocent townsfolk!
 JF000007, HolyOrder, N, 1, 0, [The Morning After] purify a shrine
-JF000008, FightersGuild, M, 1, 0, [Beat the Beastmaster] beastmaster tutorial quest. needs polishing.
--JF000009, HolyOrder, M, 1, 0, not ready yet
+JF000008, FightersGuild, M, 1, 0, [Beat the Beastmaster] another generic dungeon hunt
+JF000009, HolyOrder, M, 1, 0, [Holy Water] 
 JF000010, Commoners, N, 0, 0, [Incredible Bulk] you won't like him when he's angry
 JF000011, Commoners, N, 0, 0, [Speaking in Tongues] this is epic. so many paragraphs...
+-JF000012, MagesGuild, M, 1, 0, [Pinball Wizard] bounce around between 2 guilds (still in progress)
+JF000013, Commoners, N, 0, 0, [Doctor You] enhanced version of "cure my relative" quest
+JF000014, Commoners, N, 0, 0, [Dungeon Master] get the big book of dungeons

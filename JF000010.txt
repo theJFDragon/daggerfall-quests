@@ -43,7 +43,7 @@ AcceptQuest:  [1002]
 
 
 QuestFail:  [1003]
-<ce>             I have no words. Leave me presence.
+<ce>             I have no words. Leave my presence.
 
 
 QuestComplete:  [1004]
@@ -59,15 +59,15 @@ I wonder what happened to the Baroness? Not seen her for a while.
 
 
 RumorsPostsuccess:  [1007]
-The Baroness seems happier these days. At least somebody around here has had some good news. 
+Those two brothers, whose names I forget, seem to have put their differences behind them. At last. 
 
 
 QuestorPostsuccess:  [1008]
-Greetings %pcf. I was just telling someone about how you helped me sort out that renegade and %g3 duplicates.
+My dear %pcf, thank you again for the great service you have done me.
 
 
 QuestorPostfailure:  [1009]
-If I was you I would avoid high society for a long while. Still, I guess for you that's not much to ask.
+We have nothing to discuss.
 
 
 Message:  1040
@@ -76,23 +76,6 @@ Message:  1040
  wants me to go to _house_
  to kill a giant and find their
  brother, if he still lives.
-
-
-Message:  1041
- _inn_.
- You got 35 minutes. Do not tarry.
-
-
-Message:  1042
- _shop_.
- 30 minutes.
- I hope you've got a good horse.
-
-
-Message:  1043
- _pawnshop_.
- 25 minutes.
- Hurry hurry hurry!
 
 
 Message:  1044

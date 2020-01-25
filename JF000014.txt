@@ -1,0 +1,183 @@
+Quest: JF000014
+DisplayName: Dungeon Master
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Hey %ra, you have the air of an adventurer
+<ce>             about you. I have a proposition that it would profit
+<ce>             you to consider.
+<ce>             
+<ce>             I am a retired explorer. As you can see I've fallen
+<ce>             on hard times. Perhaps you would be interested in
+<ce>             possessing my unique collection of maps? In exchange
+<ce>             for a small favour, of course.
+<ce>             
+<ce>             What do you say?
+
+
+RefuseQuest:  [1001]
+<ce>             Suit yourself. Those dungeons, and the treasures
+<ce>             they contain, will remain a secret.
+
+
+AcceptQuest:  [1002]
+<ce>             Excellent! During my many travels I once discovered
+<ce>             some gold hidden away in ___questDungeon_.
+<ce>             Unfortunately I was gravely injured by the evil
+<ce>             denizens of that place and I had to flee for my life
+<ce>             empty-handed.
+<ce>             
+<ce>             If you recover the gold for me then I will give you
+<ce>             my travel journal listing all the places that I
+<ce>             discovered.
+<ce>             
+<ce>             Oh, one more thing. My old rival and arch-nemesis
+<ce>             _rival_ has been sniffing about after that
+<ce>             gold for years. Keep an eye out, just in case.
+
+
+QuestFail:  [1003]
+<ce>             You disappoint me. I pray I find a worthy
+<ce>             successor to my legacy soon, else the knowledge
+<ce>             of those dark places, and their fabulous
+<ce>             riches, will go to the grave with me.
+
+
+QuestComplete:  [1004]
+<ce>             Bravo! Bravo! Thank %god you have succeeded
+<ce>             where I failed all those years ago.
+
+
+RumorsDuringQuest:  [1005]
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+<--->
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+
+RumorsPostfailure:  [1006]
+I heard you are an enormous failure. Nice to meet you.
+<--->
+I heard you are an enormous failure. Nice to meet you.
+
+RumorsPostsuccess:  [1007]
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+<--->
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+
+QuestorPostsuccess:  [1008]
+Hail friend! Tell me of the treasurers that my dungeons have yielded up.
+
+QuestorPostfailure:  [1009]
+We have no further business. Leave me.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ has promised to give me %g3 collection of
+ maps if I recover a gold bar from
+ ___questDungeon_.
+
+
+Message:  1041
+%qdt:
+
+
+Message:  1060
+<ce>             Great %god, you have saved an old
+<ce>             pioneer from spending %g3 final days in
+<ce>             penury and squalor! This gold will be
+<ce>             ample pension for the rest of my days.
+<ce>             
+<ce>             And, as promised, here is your reward.
+<ce>             I made these maps by my own hand after
+<ce>             every expedition. Perchance you may already
+<ce>             have stumbled across one or two of these
+<ce>             places but most are long-forgotten, their
+<ce>             names only preserved in these parchments.
+<ce>             
+<ce>             Good hunting %pcf!
+
+Message: 1061
+<ce>             That must be the gold! Now it's time to
+<ce>             head back to ___questgiver_.
+
+Message:  1062
+<ce>             "No! I've waited years for this moment. The gold
+<ce>             is mine....damn you to Oblivion!"
+<ce>             
+<ce>             _questgiver_'s arch-rival was pretty
+<ce>             sprightly for an old-timer. No match for you,
+<ce>             of course.
+
+Message:  1063
+<ce>             Ha! So that old back-stabber finally met
+<ce>             their justly deserved fate. Good riddance!
+
+Message:  1064
+_questgiver_ seems happier now. I'm not sure why, with %g3 debts!
+
+
+
+QBN:
+
+Item _goldBar_ gold_bar
+
+Person _questgiver_ group Questor male anyInfo 1064
+
+Foe _rival_ is Rogue
+
+Place _questDungeon_ remote dungeon4
+
+Place _dungeon1_ remote dungeon1
+Place _dungeon2_ remote dungeon16
+Place _dungeon3_ remote dungeon3
+Place _dungeon4_ remote dungeon12
+Place _dungeon5_ remote dungeon5
+Place _dungeon6_ remote dungeon6
+Place _dungeon7_ remote dungeon7
+Place _dungeon8_ remote dungeon8
+Place _dungeon9_ remote dungeon9
+Place _dungeon10_ remote dungeon14
+
+Clock _timeLimit_ 45.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	log 1040 step 0
+	reveal _questDungeon_
+	place item _goldBar_ at _questDungeon_ 
+	place foe _rival_ at _questDungeon_
+
+
+_collectGoldBar_ task:
+	clicked item _goldBar_
+	say 1061
+
+_killedRival_ task:
+	killed _rival_
+	say 1062
+
+_rivalryEnded_ task:
+	when _killedRival_ and _rewardPlayer_
+	say 1063
+	end quest
+
+_rivalryNotEnded_ task:
+	when not _killedRival_ and _rewardPlayer_
+	end quest
+
+_rewardPlayer_ task:
+	toting _goldBar_ and _questgiver_ clicked 
+	reveal _dungeon1_ readmap
+	reveal _dungeon2_ readmap
+	reveal _dungeon3_ readmap
+	reveal _dungeon4_ readmap
+	reveal _dungeon5_ readmap
+	reveal _dungeon6_ readmap
+	reveal _dungeon7_ readmap
+	reveal _dungeon8_ readmap
+	reveal _dungeon9_ readmap
+	reveal _dungeon10_ readmap
+	say 1060

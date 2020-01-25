@@ -34,23 +34,23 @@ QuestComplete:  [1004]
 
 
 RumorsDuringQuest:  [1005]
-Do you have time to talk about the weather? Don't you have something to do?
+Nobody tells me nothing.
 
 
 RumorsPostfailure:  [1006]
-I wonder what happened to the Baroness? Not seen her for a while.
+A storm is coming. So they say.
 
 
 RumorsPostsuccess:  [1007]
-The Baroness seems happier these days. At least somebody around here has had some good news. 
+Now is the winter of our discontent made glorious summer by this son of an orc.
 
 
 QuestorPostsuccess:  [1008]
-Greetings %pcf. I was just telling someone about how you helped me sort out that renegade and %g3 duplicates.
+A thousand thanks %pcf. I owe you. Metaphorically. Financially we're even, remember?
 
 
 QuestorPostfailure:  [1009]
-If I was you I would avoid high society for a long while. Still, I guess for you that's not much to ask.
+Jasnfsd sangfkmsknl fdfgjnksdmnds!!!
 
 
 Message:  1040

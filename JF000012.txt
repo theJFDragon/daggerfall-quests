@@ -1,0 +1,196 @@
+Quest: JF000012
+DisplayName: Pinball Wizard
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Look here %lev, there's a problem which requires
+<ce>             your immediate attention. We have a rivalry with
+<ce>             the Guildhall in __rivalGuild_.
+<ce>             
+<ce>             Some have called this rivalry petty, childish,
+<ce>             immature and "frankly unacceptable". But they do
+<ce>             not know the true and horrible history behind this
+<ce>             vendetta. The story, by the way, need not concern you.
+<ce>             
+<ce>             A valuable artefact has gone missing and the
+<ce>             obvious culprits are those untrustworthy renegades
+<ce>             in __rivalGuild_.
+<ce>             
+<ce>             Are you willing to pop over there and swipe it back?
+
+
+RefuseQuest:  [1001]
+<ce>             With that attitude your future in the
+<ce>             Mages Guild seems pretty static.
+
+
+AcceptQuest:  [1002]
+<ce>             Excellent. I have total confidence that, wherever
+<ce>             those perfidious turncoats have hidden the trinket,
+<ce>             you will recover it without delay.
+<ce>             
+<ce>             Chop, chop!
+
+
+QuestFail:  [1003]
+<ce>             Disappointing %pcf. The Guild has a
+<ce>             reputation to maintain and yours just
+<ce>             took a right beating. Get out of here.
+
+
+QuestComplete:  [1004]
+<ce>             Victory is ours!
+<ce>             
+
+
+RumorsDuringQuest:  [1005]
+xxxxxxxxxxxx
+<--->
+xxxxxxxxxxxx
+
+
+RumorsPostfailure:  [1006]
+xxxxxxxxxxxx
+<--->
+xxxxxxxxxxxx
+
+
+RumorsPostsuccess:  [1007]
+xxxxxxxxxxxx
+
+
+QuestorPostsuccess:  [1008]
+xxxxxxxxxxxx
+
+
+QuestorPostfailure:  [1009]
+xxxxxxxxxxxx
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ is sending me to a rival Guild in
+ __rivalGuild_. Apparently they
+ have stolen an unspecified artefact
+ which I must retrieve.
+
+
+Message:  1041
+ The talisman appears to be totally inert.
+ Presumably this is the artefact that
+ _questgiver_ wanted. Why can't
+ these people be more specific?
+
+
+Message:  1042
+
+
+
+
+Message: 1043
+<ce>             Hold it right there %ra! What are you
+<ce>             doing with that _talisman1_?
+<ce>             
+<ce>             No, don't even bother to lie to my face.
+<ce>             It's obvious that you're one of those
+<ce>             buffoons from the Guild over in
+<ce>             ___questgiver_.
+<ce>             
+<ce>             I heard they lost their own _talisman2_.
+<ce>             But to try to cover their incompetence by
+<ce>             stealing our _talisman1_? Shocking.
+<ce>             The Archmagister will hear of this.
+<ce>             
+<ce>             Now leave, before I unleash a horde of
+<ce>             Daedroth on you.
+<ce>             
+<ce>             And give me that _talisman1_!
+
+
+Message:  1044
+<ce>             Hmmm. This is an interesting _talisman1_.
+<ce>             Unfortunately this is not the artefact
+<ce>             that those renegades have purloined.
+<ce>             However, I'm sure I can find a use for it.
+<ce>             
+<ce>             Go back and search again. And this time
+<ce>             keep your eyes peeled for a truly unique
+<ce>             and invaluable artefact. Tally-ho!
+
+
+Message:  1045
+<ce>             You found another talisman? I wonder why
+<ce>             they keep leaving talismans lying around?
+<ce>             What are they up to? Anyway, it doesn't
+<ce>             matter because this is not the missing
+<ce>             artefact.
+<ce>             
+<ce>             Look, I'll be honest. I tried to divine
+<ce>             the location of the missing artefact
+<ce>             using a very rare spell. Unfortunately I
+<ce>             made a slight miscalculation and instead
+<ce>             I have been cursed with a strange and
+<ce>             very irritating affliction.
+<ce>             
+<ce>             The curse prevents me from being able to
+<ce>             explain to you the nature of the artefact.
+<ce>             Instead of revealing the location the spell
+<ce>             has hidden the concept of describing it from
+<ce>             my own mind.
+<ce>             
+<ce>             I know it's frightfully esoteric but that's
+<ce>             the truth of it. So...please help me out of
+<ce>             this bind by finding the artefact.
+<ce>             
+<ce>             I know they have it there somewhere!
+
+
+
+QBN:
+
+Item _gold_ gold range 250 to 500
+Item _talisman1_ talisman used 1041
+Item _talisman2_ talisman used 1042
+
+Person _questgiver_ group Questor male
+Person _rivalMage_ faction The_Mages_Guild
+
+Place _someHouse_ local house2
+Place _rivalGuild_ remote magery
+
+Clock _timeLimit_ 30.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	place item _talisman1_ at _rivalGuild_
+	log 1040 step 0
+
+
+_timeLimit_ task:
+	end quest
+
+_confiscateFakeTalisman_ task:
+	toting _talisman1_ and _rivalMage_ clicked
+	say 1043
+
+_returnFakeTalisman1_ task:
+	toting _talisman1_ and _questgiver_ clicked
+	place item _talisman2_ at _rivalGuild_
+	say 1044
+
+_returnFakeTalisman2_ task:
+	toting _talisman2_ and _questgiver_ clicked
+	place npc _rivalMage_ at _rivalGuild_
+	say 1045
+
+
+
+
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _slain_
+	give pc _gold_
+	end quest

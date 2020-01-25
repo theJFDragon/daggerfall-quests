@@ -1,0 +1,133 @@
+Quest: JF000009
+DisplayName: Holy Water
+QRC:
+
+QuestorOffer:  [1000]
+<ce>Maybe you can take care of this little problem?
+<ce>There's a strange wizard in ___dungeon_
+<ce>who seems to have special powers over the local
+<ce>wildlife. As you can probably imagine he's not
+<ce>using this ability to help anyone.
+<ce>
+<ce>Can you head over there and take care of things?
+<ce>And by "take care of things" I mean can you kill
+<ce>him and his army of beasts?
+
+
+RefuseQuest:  [1001]
+<ce>How disappointing.
+
+
+AcceptQuest:  [1002]
+<ce>Thankyou. On your way then!
+
+
+QuestFail:  [1003]
+<ce>You are a disgrace to the Guild!
+
+
+QuestComplete:  [1004]
+<ce>Congratulations! Enjoy your well-earned gold.
+
+
+RumorsDuringQuest:  [1005]
+I know of many amazing and unbelievable things. Or do I? I forget. Who are you?
+
+
+RumorsPostfailure:  [1006]
+I heard something about you. I forget the details but something about "neolithic incompetence"?
+
+
+RumorsPostsuccess:  [1007]
+You killed what now? Why are you telling me? Get lost!
+
+
+QuestorPostsuccess:  [1008]
+<ce>		Well done on getting rid of the evil Beastmaster!
+
+
+QuestorPostfailure:  [1009]
+<ce>		I am still not happy with your failure to handle the evil Beastmaster.
+
+
+Message:  1020
+<ce>		The Beastmaster is dead! Now they're just
+<ce>		food for the worms. Good riddance.
+
+
+Message:  1021
+<ce>		A spider and a bat. It looks like
+<ce>		reports of the Beastmaster's
+<ce>		prowess have been somewhat
+<ce>		exaggerated.
+
+
+Message:  1030
+%qdt:
+ The Fighters Guild over in
+ ___questgiver_ have hired
+ me to kill a bad guy in
+ ___dungeon_.
+ When it's done I'll report
+ back to _questgiver_.
+
+
+Message:  1080
+<ce>		Good work on dealing with the Beastmaster's army
+<ce>		of beasts. Here's a little something extra, a
+<ce>		long-lost map of a secret dungeon!
+
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor male
+
+Place _dungeon_ remote dungeon4
+Place _newdungeon_ remote dungeon11
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+
+Foe _beastmaster_ is Sorceror
+Foe _spider_ is Spider
+Foe _bat_ is Giant_bat
+
+--	Quest start-up:
+	start timer _timer_ 
+	reveal _dungeon_
+	place foe _beastmaster_ at _dungeon_
+	place foe _spider_ at _dungeon_
+	place foe _bat_ at _dungeon_
+	log 1030 step 0 
+
+_beastmasterKilled_ task:
+	killed _beastmaster_
+	say 1020
+
+_spiderKilled_ task:
+	killed _spider_
+	
+_batKilled_ task:
+	killed _bat_
+
+_beastsKilled_ task:
+	when _spiderKilled_ and _batKilled_
+	say 1021
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _beastmasterKilled_ 
+	give pc _reward_ 
+	end quest 
+
+_qgclicked_ task:
+	clicked npc _questgiver_ 
+
+_clearclick_ task:
+	when _qgclicked_ and not _beastmasterKilled_ 
+	say 1003
+	clear _qgclicked_ _clearclick_ 
+
+_bonusReward_ task:
+	when _beastsKilled_ and _pcgetsgold_ 
+	say 1080
+	reveal _newdungeon_ readmap

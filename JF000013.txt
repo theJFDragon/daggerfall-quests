@@ -1,0 +1,468 @@
+Quest: JF000013
+DisplayName: Doctor You
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Oh! You seem like a helpful %ra. Perhaps you
+<ce>             can help me? Forgive my presumption but I have
+<ce>             just received some terrible news about my
+<ce>             sister. She is desperately ill and the cause
+<ce>             eludes the local experts.
+<ce>             
+<ce>             I have received a letter from a Temple healer
+<ce>             this very morning and the situation looks very
+<ce>             bad. I would answer the healer myself but my
+<ce>             own health is not the best and the letter
+<ce>             speaks of considerable dangers.
+<ce>             
+<ce>             What do you say? Can I put my sister's life
+<ce>             in your capable hands? We would be forever in
+<ce>             your debt.
+
+
+RefuseQuest:  [1001]
+<ce>             I pray that the gods send us a true hero.
+<ce>             And soon.
+
+
+AcceptQuest:  [1002]
+<ce>             A thousand thanks to you, dear %pcf!
+<ce>             Here is the letter I spoke of. Please act
+<ce>             on it immediately, every second could be
+<ce>             vital!
+
+
+QuestFail:  [1003]
+<ce>             I have no words for you %ra.
+
+
+QuestComplete:  [1004]
+<ce>             Praise %god! My sister owes you her life
+<ce>             and so do I. Our family will never forget
+<ce>             you %pcf. Take these, please, it is the
+<ce>             least that I can do.
+
+
+RumorsDuringQuest:  [1005]
+Watch out for horrible diseases. If you see one, let me know.
+<--->
+There's dirt everywhere! Dirt, dirt, dirt, dirt, dirt!
+
+RumorsPostfailure:  [1006]
+Hey, you're that collosal incompetent that I was told about. How are you?
+<--->
+Bucket Bob from down the way said you couldn't find his bucket if he was sitting on it.
+
+RumorsPostsuccess:  [1007]
+The voices in my head are very happy to meet you. I am not.
+<--->
+Tell me lies, tell me sweet little lies.
+
+QuestorPostsuccess:  [1008]
+Our saviour returns! How're ya diddling?
+
+QuestorPostfailure:  [1009]
+What is it now?
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ has begged me to do whatever I can to help
+ %g3 sister, _sister_, who lives in
+ ___sister_.
+ I have a letter from a healer who has been
+ trying to find a cure. Probably should read it.
+
+Message:  1041
+%qdt:
+ The letter was from a healer,
+ _healer_,
+ who can be found at the Temple in
+ ___temple_.
+ Maybe I should go and see what they have to say?
+
+Message:  1042
+%qdt:
+ I've been directed to ___dungeon_ 
+ to retrieve a unique specimen of the ingredient,
+ _ingredient1_. It will be used to
+ create a potion which may save the life of
+ _sister_.
+ I should take the sample directly to the
+ potion maker, _potionMaker_, who can
+ be found in the Mages Guild in ___magesGuild_.
+
+Message:  1043
+%qdt:
+ _sister_ has been cured of her condition.
+ Well done me!
+ I should probably head back to
+ ___questgiver_ and let
+ _questgiver_ know the good news.
+
+Message:  1044
+%qdt:
+ The healer _healer_ seems very
+ confident that the task of curing
+ _sister_ is well within the scope
+ of my powers of Restoration.
+ I should proceed directly to
+ ___sister_.
+
+Message:  1045
+%qdt:
+ I met with _sister_. Indeed
+ she is very gravely ill. She asked that
+ I consult with the healer _healer_.
+
+Message:  1046
+%qdt:
+ The poor soul that was sent to
+ ___dungeon2_ to recover the
+ sample of _ingredient2_
+ has failed to return.
+ It seems that it is up to me
+ to succeed where everyone else
+ has failed.
+
+Message:  1047
+%qdt:
+ This headache is getting annoying.
+ I'm sure it's nothing serious...
+
+
+Message:  1060
+<ce>             I am sorry to report that your sister's condition
+<ce>             is worsening. I recommend that, if you can, you
+<ce>             visit in person. I'm afraid I don't know how much
+<ce>             time your sister has...
+<ce>             
+<ce>             If this wasn't bad enough I must also warn you that
+<ce>             ___sister_ is currently plagued with a
+<ce>             gang of bandits that the local Watch seem unable
+<ce>             to deal with. If you do make the trip I suggest
+<ce>             you take extra precautions.
+<ce>             
+<ce>             Despite all this bad news there is perhaps some
+<ce>             reason for hope, although I must not raise your
+<ce>             spirits prematurally. I have just travelled to
+<ce>             ___temple_ to consult the most
+<ce>             learned of my associates and I pray to have
+<ce>             better news to give you soon.
+<ce>             
+<ce>             Respectfully yours,
+<ce>             _healer_,
+<ce>             Healer of %god
+
+Message: 1061
+<ce>             Forgive me %ra but I am afflicted with a
+<ce>             disease that has confounded all the healers and
+<ce>             experts in the district. For your own safety
+<ce>             please keep away.
+<ce>             
+<ce>             I have engaged the services of _healer_.
+<ce>             If you have any ideas maybe you can talk to %g2.
+<ce>             I must rest now, I feel very weak. But be
+<ce>             assured that I am grateful for your help.
+
+Message:  1062
+<ce>             _sister_'s condition is very grave.
+<ce>             There is, however, a thin sliver of hope. One of
+<ce>             my learned compatriots is perfecting a potion
+<ce>             that they hope will work. The problem is that
+<ce>             the ingredients are not only rare, but each
+<ce>             sample must come from a specific location.
+<ce>             Something to do with unique mineral properties.
+<ce>             
+<ce>             The ingredients are _ingredient1_ and
+<ce>             _ingredient2_. Our diviners have identified
+<ce>             a suitable sample of _ingredient1_ somewhere
+<ce>             in the depths of ___dungeon_.
+<ce>             
+<ce>             The spellcasters are still trying to conjure up
+<ce>             the location of the second ingredient. Take the
+<ce>             sample directly to _potionMaker_, who is
+<ce>             concoting the potion for us. You will find
+<ce>             %g2 in the Mages Guild of ___magesGuild_. Good luck!
+
+Message:  1063
+<ce>             Great %god! Your reputation proceeds you
+<ce>             %pcf! What fortune to have a
+<ce>             Master of Restoration at
+<ce>             hand in this situation.
+<ce>             
+<ce>             _sister_'s disease has resisted
+<ce>             every attempt at a cure. But surely you
+<ce>             will succeed where we lesser mortals have
+<ce>             tried and failed.
+<ce>             
+<ce>             I beseech you, make haste for ___sister_.
+<ce>             but take care, for bandit gangs are openly
+<ce>             roaming the countryside and have even
+<ce>             been seen openly in the streets after dark.
+
+Message:  1064
+<ce>             Thanks to your mastery of the magical school of
+<ce>             Restoration you cast a Cure Disease spell of
+<ce>             unparalleled arcane potential. The ethereal
+<ce>             psychic frequencies are unmatched.
+<ce>             
+<ce>             _sister_ snaps out of her malaise
+<ce>             and looks around in amazement. She is
+<ce>             completely cured!
+<ce>             
+<ce>             _sister_ thanks you profusely but you
+<ce>             sternly recommend that she gets some much
+<ce>             needed rest.
+<ce>             
+<ce>             It is a good deed that you have done this day.
+
+Message:  1065
+<ce>             You explain to _sister_ that you have
+<ce>             come to try to cure her condition. With a very
+<ce>             weak smile she assents, it is clear that the
+<ce>             sickness is taking a heavy toll.
+<ce>             
+<ce>             After trying some diagnostic incantations it
+<ce>             becomes clear to you that her condition is in
+<ce>             fact two separate but related diseases, one
+<ce>             of which is magic-based and the other being
+<ce>             mundane. No wonder the local authorities
+<ce>             were bemused.
+<ce>             
+<ce>             Once the arcane vector is countered you
+<ce>             realise that the second disease will be
+<ce>             easily resolved with a standard Cure Disease
+<ce>             spell. You set about your business...
+
+Message:  1066
+<ce>             You hear a noise outside. Suddenly the door
+<ce>             bursts open!
+<ce>             
+<ce>             "This is the place. We've got one minute.
+<ce>             Take as much as you can. No witnesses."
+<ce>             
+<ce>             The bandits have moved up to home invasions!
+<ce>             Whatever. Time to take out the trash...
+
+Message:  1067
+<ce>             Ah, %pcf, we've been expecting you.
+<ce>             We're in luck, the other ingredient was just
+<ce>             delivered to me by an alchemist of my
+<ce>             aquaintance. With the sample that you have
+<ce>             found I can complete the preparation of this
+<ce>             potent potion.
+<ce>             
+<ce>             Yes, it's ready! Deliver it to the patient
+<ce>             as soon as possible. A pleasure to work
+<ce>             with you, %pcf.
+
+Message:  1068
+<ce>             You give _sister_ the potion and help
+<ce>             her drink the brightly coloured, foul-
+<ce>             smelling brew.
+<ce>             
+<ce>             The effect is immediate and she is
+<ce>             visibly restored to full health before
+<ce>             your very eyes!
+<ce>             
+<ce>             _sister_ thanks you profusely but you
+<ce>             sternly recommend that she gets some much
+<ce>             needed rest.
+<ce>             
+<ce>             It is a good deed that you have done this day.
+
+Message:  1069
+<ce>             Ah, %pcf, we've been expecting you.
+<ce>             I'm afraid I have bad news. A sample of
+<ce>             _ingredient2_ has been detected in
+<ce>             ___dungeon2_ and a volunteer
+<ce>             sent to retrieve it.
+<ce>             
+<ce>             But they should have returned by now...
+<ce>             
+<ce>             I fear they have met an unfortunate
+<ce>             end in the depths of that accursed
+<ce>             pit. Time is running out. You are now
+<ce>             our only hope of recovering the
+<ce>             sample we desperately need.
+<ce>             
+<ce>             Are willing and able to delve into
+<ce>             ___dungeon2_ and find the
+<ce>             _ingredient2_?
+
+Message:  1070
+<ce>             Our hero returns! And with the _ingredient2_
+<ce>             no less! Word of your deeds will echo
+<ce>             across this land for years to come!
+<ce>             
+<ce>             But enough flattery, no matter how well
+<ce>             deserved. I must prepare the potion.
+<ce>             Everything is waiting. It will take
+<ce>             but a few moments...
+<ce>             
+<ce>             Yes, it's ready! Deliver it to the patient
+<ce>             as soon as possible. A pleasure to work
+<ce>             with you, %ra.
+
+Message:  1071
+<ce>             This is unquestionably the sample that
+<ce>             you are looking for. Well done!
+
+Message:  1072
+<ce>             The bandits lie in bloody pools on the floor.
+<ce>             And rightly so! With this unwelcome
+<ce>             distraction resolved it is time to
+<ce>             continue your mission of mercy.
+
+
+QBN:
+
+Item _gold_ gold range 500 to 1000
+Item _letter_ letter used 1060
+Item _ingredient1_ large_plant
+Item _ingredient2_ large_plant
+Item _potion_ misc
+
+Person _questgiver_ group Questor male
+Person _healer_ faction Generic_Temple
+Person _sister_ face 2 group Resident2
+Person _potionMaker_ faction The_Mages_Guild
+
+Place _magesGuild_ remote magery
+Place _temple_ remote temple
+Place _dungeon_ remote dungeon6
+Place _dungeon2_ remote dungeon16
+
+Foe _bandits_ is 2 Rogue
+
+Clock _timeLimit_ 90.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	place npc _healer_ at _temple_
+	create npc _sister_
+	place npc _potionMaker_ at _magesGuild_
+	place item _ingredient1_ at _dungeon_ 
+	place item _ingredient2_ at _dungeon2_ 
+	get item _letter_
+	_letter_ used do _readletter_ 
+	pick one of _contagionYes_ _contagionNo_
+	log 1040 step 0
+
+
+variable _lucky_
+variable _unlucky_
+variable _contagionYes_
+variable _contagionNo_
+
+_deliverIngredient1_ task:
+	toting _ingredient1_ and _potionMaker_ clicked
+	start task _nextStep_
+
+_nextStep_ task:
+
+_potionAcquired_ task:
+
+_getPotion_ task:
+	when _nextStep_ and _lucky_
+	get item _potion_
+	say 1067
+	start task _potionAcquired_
+
+_badLuckMofo_ task:
+	when _nextStep_ and _unlucky_
+	reveal _dungeon2_
+	log 1046 step 6
+	say 1069
+
+_deliverIngredient2_ task:
+	toting _ingredient2_ and _potionMaker_ clicked
+	get item _potion_
+	say 1070
+	start task _potionAcquired_
+
+_collectIngredient1_ task:
+	clicked item _ingredient1_
+	say 1071
+
+_collectIngredient2_ task:
+	clicked item _ingredient2_ 
+	say 1071
+
+_timeLimit_ task:
+	end quest
+
+_readletter_ task:
+	log 1041 step 1
+
+_sisterClicked_ task:
+	clicked npc _sister_
+
+_deliverPotion_ task:
+	when _sisterClicked_ and _potionAcquired_ and not _skillRestorationMaster_
+	say 1068
+	log 1043 step 7
+
+_goodEnoughDoctor_ task:
+	when _sisterClicked_ and _skillRestorationMaster_
+	say 1065
+	say 1064
+	log 1043 step 8
+
+_notGoodEnoughDoctor_ task:
+	when _sisterClicked_ and not _skillRestorationMaster_ and not _potionAcquired_
+	say 1061
+	log 1045 step 4
+	clear _sisterClicked_
+
+_catchDisease_ task:
+	when _notGoodEnoughDoctor_ and _contagionYes_
+	log 1047 step 5
+	make pc ill with Typhoid_Fever
+
+_skillMedicalHughLaurie_ task:
+	when skill Medical is at least 65
+
+_talkHealer_ task:
+	clicked npc _healer_
+
+_talkHealer1_ task:
+	when _talkHealer_ and not _skillRestorationMaster_
+	reveal _dungeon_
+	log 1042 step 2
+	say 1062
+	pick one of _lucky_ _lucky_ _lucky_ _unlucky_
+
+_talkHealer2_ task:
+	when _talkHealer_ and _skillRestorationMaster_
+	log 1044 step 3
+	say 1063
+
+_skillRestorationMaster_ task:
+	when skill Restoration is at least 85
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _goodEnoughDoctor_ and not _deliverPotion_
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _goodEnoughDoctor_
+	give pc _gold_
+	change repute with _questgiver_ by +35
+	legal repute +5
+	end quest
+
+_rewardPlayer2_ task:
+	when _questorClicked_ and _deliverPotion_
+	give pc _gold_
+	change repute with _questgiver_ by +35
+	change repute with _potionMaker_ by +15
+	legal repute +5
+	end quest

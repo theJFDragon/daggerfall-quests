@@ -12,7 +12,9 @@ QuestorOffer:  [1000]
 <ce>             bit of fine-tuning.
 <ce>             
 <ce>             Are you willing to help advance the cause
-<ce>             of knowledge? It might take a while.
+<ce>             of knowledge? It might take a while. A really
+<ce>             long while, but I don't imagine you have
+<ce>             anything better to do.
 
 
 RefuseQuest:  [1001]
@@ -40,7 +42,7 @@ AcceptQuest:  [1002]
 QuestFail:  [1003]
 <ce>             Disappointing %pcf. The Guild has a
 <ce>             reputation to maintain and yours just
-<ce>             took a right beating. Get out of here.
+<ce>             took a right beating. Leave me.
 
 
 QuestComplete:  [1004]
@@ -113,7 +115,7 @@ Message:  1043
 Message:  1044
  I foolishly activated the third gem.
  It has transported me to an unknown
- dungeon. I should get out of here and
+ location. I should get out of here and
  report back to _questgiver_ in
  ___questgiver_.
 
