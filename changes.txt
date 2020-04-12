@@ -1,5 +1,20 @@
 
 -------------------------------------------------------------------------------
+2020-04-12	I forgot about this. Probably it doesn't matter. But anyways...
+
+		JF000015 [Do Not Forsake Me Oh My Darling]
+			new quest added!
+
+		JF000016 [And Then There Was One]
+			new quest added! (this one isn't entirely finished yet)
+
+		JF000005 [The Three Dungeons]
+			this one got activated at some point. may as well stay
+
+		JF000009 [Holy Water]
+			this one got activated at some point. it's just a copy of 8?!
+
+-------------------------------------------------------------------------------
 2020-01-25	2 new quests and 1 inactivated
 
 		JF000013 [Doctor You]
