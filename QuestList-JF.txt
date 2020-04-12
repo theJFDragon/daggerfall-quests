@@ -13,7 +13,7 @@ JF000001, FightersGuild, M, 5, 0, [Bounty on the Mutiny] kill a bandit gang and 
 JF000002, FightersGuild, M, 2, 0, [Sticky Fingers] find a thief in the fighter's guild and wack 'em
 JF000003, KnightlyOrder, M, 2, 0, [Runaround] runaround for delivering ransom to kidnapper dirty harry style
 JF000004, MagesGuild, M, 3, 0, [Attack the Clones] kill a renegade mage who is cloning himself. Vigourously.
--JF000005, MagesGuild, M, 1, 0, [The Three Dungeons] tiresome hunt through 3 dungeons! you love it...
+JF000005, MagesGuild, M, 1, 0, [The Three Dungeons] tiresome hunt through 3 dungeons! you love it...
 JF000006, MagesGuild, M, 3, 0, [Rent-a-Ghost] join up with the fighters guild to scam innocent townsfolk!
 JF000007, HolyOrder, N, 1, 0, [The Morning After] purify a shrine
 JF000008, FightersGuild, M, 1, 0, [Beat the Beastmaster] another generic dungeon hunt
@@ -23,3 +23,6 @@ JF000011, Commoners, N, 0, 0, [Speaking in Tongues] this is epic. so many paragr
 -JF000012, MagesGuild, M, 1, 0, [Pinball Wizard] bounce around between 2 guilds (still in progress)
 JF000013, Commoners, N, 0, 0, [Doctor You] enhanced version of "cure my relative" quest
 JF000014, Commoners, N, 0, 0, [Dungeon Master] get the big book of dungeons
+JF000015, Commoners, N, 0, 0, [Do Not Forsake Me Oh My Darling] cherche la femme
+JF000016, KnightlyOrder, M, 4, 0, [And Then There Was One] vigilante/tontine clean-out (still in progress)
+-JF000017, KnightlyOrder, M, 5, 0, [Star Chamber] vigilante quests (still in progress)

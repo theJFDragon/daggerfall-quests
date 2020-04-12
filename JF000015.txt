@@ -1,0 +1,425 @@
+Quest: JF000015
+DisplayName: Do Not Forsake Me Oh My Darling
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Please! I am desperate! Won't you help me?
+<ce>             My love has disappeared. I have searched
+<ce>             everywhere I can think of but there is no
+<ce>             trace of her! I can only imagine that
+<ce>             something terrible has happened. I'm at
+<ce>             my wits end. Please, will you help me?
+
+RefuseQuest:  [1001]
+<ce>             Why?! Why won't anyone help me?
+
+AcceptQuest:  [1002]
+<ce>             Oh, thank you! You are a saint!
+<ce>             
+<ce>             _theLover_ has been missing for two days now.
+<ce>             She lives in _theLoversHouse_ but
+<ce>             normally I find her in _tavern_.
+<ce>             She works in the kitchen there most days.
+<ce>             
+<ce>             The only other place I can think she could
+<ce>             possible be is with her best friend,
+<ce>             _theLoversConfidant_, but she assures me that
+<ce>             _theLover_ hasn't contacted her for several days.
+<ce>             
+<ce>             Please, god speed and good luck!
+
+QuestFail:  [1003]
+<ce>             
+<ce>             
+<ce>             
+<ce>             
+
+QuestComplete:  [1004]
+<ce>             
+<ce>             
+
+RumorsDuringQuest:  [1005]
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+<--->
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+
+RumorsPostfailure:  [1006]
+I heard you are an enormous failure. Nice to meet you.
+<--->
+I heard you are an enormous failure. Nice to meet you.
+
+RumorsPostsuccess:  [1007]
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+<--->
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+
+QuestorPostsuccess:  [1008]
+Hail friend! Tell me of the treasurers that my dungeons have yielded up.
+
+QuestorPostfailure:  [1009]
+We have no further business. Leave me.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ has pleaded with me to find his lover,
+ _theLover_, who has apparently
+ disappeared without a trace. My only
+ clues are:
+   that _theLover_ lives at
+   _theLoversHouse_,
+   that she works in _tavern_,
+   and that her friend, _theLoversConfidant_,
+   may be found in _theConfidantsHouse_.
+
+ It seems odd that _questgiver_
+ continually refers to the love of his
+ life by her full name...
+
+Message:  1041
+%qdt:
+ I found the missing paramour. The truth of
+ the matter is not entirely clear, but at
+ least both parties are alive. I was asked
+ to return a ring to _questgiver_
+ as a final act.
+
+Message:  1042
+%qdt:
+ I found the missing paramour. It seems that
+ her heart now belongs to another.
+ At least both parties are alive. I was asked
+ to return a ring to _questgiver_
+ as a final act.
+
+Message:  1043
+%qdt:
+ I found the missing paramour. It seems that
+ _questgiver_ was not entirely as
+ he seemed. His "love" wants nothing more to 
+ do with him. I was asked to return a ring
+ to _questgiver_ as a final act.
+
+Message:  1044
+%qdt:
+ Whilst investigating the supposed disappearance
+ of _theLover_ I was attacked by an
+ unknown assailant. Fortunately their combat
+ skills were no match for me. Perhaps I should
+ liberate their belongings as a form of compensation?
+
+Message:  1045
+%qdt:
+ I found the missing _theLover_. This
+ dastardly plot is now finally unravelled.
+ Now it just remains to escort her to safety.
+
+
+Message:  1060
+<ce>             Please deliver my belongings to my new
+<ce>             address in ___theLoversNewHouse_.
+<ce>             
+<ce>             I request that you take special care
+<ce>             when transporting Whiskers, my stuffed
+<ce>             Khajiit toy. I've had him since I was a
+<ce>             baby and he is of immense sentimental
+<ce>             value to me.
+<ce>             
+<ce>             So, to be clear, if anything happens to
+<ce>             Whiskers I will arrange for your internal
+<ce>             organs to be extracted, minced and then
+<ce>             re-inserted. And not necessarily via the
+<ce>             same "opening" through which they were
+<ce>             removed.
+<ce>             
+<ce>             My sincere regards,
+<ce>             _theLover_
+
+Message:  1061
+<ce>             _questgiver_ is still looking for me?
+<ce>             That man is as persistent as he is
+<ce>             obsessive. And half as persistent as he
+<ce>             is possessive.
+<ce>             
+<ce>             Look, he might seem harmless enough,
+<ce>             a bit sappy, a bit of a mother's-boy,
+<ce>             but he's unbalanced and unpleasant.
+<ce>             Trust me, I know.
+<ce>             
+<ce>             Here, just to make everything clear, and
+<ce>             permanent, give him back this ring. He
+<ce>             said it was his grandmother's. Which I doubt.
+
+Message:  1062
+<ce>             _questgiver_? But I told him we were
+<ce>             finished weeks ago! I gave him chance after
+<ce>             chance after chance to mend his ways, but no.
+<ce>             Always my wages disappearing into his stupid
+<ce>             get-rich-quick schemes.
+<ce>             
+<ce>             So you can go back and tell him whatever you
+<ce>             like. I'm living here now, with my real
+<ce>             soul-mate, _theLoversConfidant_. I don't care
+<ce>             who knows.
+<ce>             
+<ce>             Here, just to make everything clear, and
+<ce>             permanent, give him back this ring. He said it
+<ce>             was his grandmother's. Which I doubt.
+
+
+Message:  1063
+<ce>             I know _questgiver_ is looking for me.
+<ce>             That's why I'm laying low here. He might seem
+<ce>             harmless, if a bit dependent, but I promise you
+<ce>             he's jealous, possessive and obsessive. I
+<ce>             can't put up with it any more. I'm leaving.
+<ce>             
+<ce>             I'm only hiding here until the next stagecoach
+<ce>             leaves town, then I'm done with him for good.
+<ce>             And don't bother to tell him where I am. The
+<ce>             innkeeper knows what he's like and if tries
+<ce>             anything he'll be lucky to get away with just
+<ce>             broken bones.
+<ce>             
+<ce>             Here, just to make everything clear, and
+<ce>             permanent, give him back this ring. He said it
+<ce>             was his grandmother's. Which I doubt.
+
+
+Message:  1064
+<ce>             What's this? My dear, departed mother's own
+<ce>             wedding ring? Oh, my darling, how could you
+<ce>             do this to me? Hmmm? What?
+<ce>             
+<ce>             My grand-mother's ring, she said? I...no.
+<ce>             She must have...misheard me. Yes.
+<ce>             
+<ce>             Anyway. So ungrateful. Still, plenty more
+<ce>             fish in the sea, and all that, eh?
+
+Message:  1065
+<ce>             What's this letter? Let me see...
+<ce>             
+<ce>             Hmmm. Very interesting. I think it's time to
+<ce>             arrange a little journey. And tie up some
+<ce>             loose ends.
+<ce>             
+<ce>             Thanks for your help, friend.
+
+Message:  1066
+<ce>             Dear diary,
+<ce>             
+<ce>             The first part of my genius plan to win the
+<ce>             heart (and hopefully a few other parts) of
+<ce>             _theLover_ has succeeded. She is
+<ce>             safely tucked away in the depths of
+<ce>             ___dungeon_.
+<ce>             
+<ce>             All that remains is to lure that simpering fool
+<ce>             _questgiver_ to his doom. Sooner
+<ce>             or later he's bound to come here looking
+<ce>             for her and when does I'll take care of
+<ce>             him. Permanently.
+<ce>             
+<ce>             (By killing him.)
+<ce>             
+<ce>             And then I will heroically return to
+<ce>             ___dungeon_ and play the
+<ce>             part of the gallant rescuer. This will
+<ce>             surely win over _theLover_'s
+<ce>             affections.
+<ce>             
+<ce>             The final part, of course, will be to
+<ce>             destroy this diary. Just as soon as I've
+<ce>             finished revelling in my own brilliance!
+<ce>             
+<ce>             Signed,
+<ce>             Me (Genius)
+
+Message:  1067
+<ce>             Thank %god! Please, get me out of this
+<ce>             accursed Oblivion-hole!
+
+Message:  1068
+<ce>             The two star-crossed lovers embrace. They
+<ce>             spend some time professing their undying
+<ce>             gratitude to you for your heroic bravery.
+<ce>             
+<ce>             You decide it is time to take your leave
+<ce>             before it gets embarrasing.
+
+Message:  1069
+<ce>             Finally! Home, at last! I can't thank you
+<ce>             enough for saving me from this horrible
+<ce>             ordeal.
+<ce>             
+<ce>             My nerves are in pieces, I must get some
+<ce>             rest. But if you ever find yourself in these
+<ce>             parts again (snicker) please drop in and
+<ce>             I can reward you properly...
+
+Message:  1070
+<ce>             He lives somewhere in ___questgiver_. I think.
+<--->
+<ce>             I'm surprised that crybaby doesn't blow away in the wind.
+
+Message:  1071
+<ce>             She's a fine lady. I've heard many people say so.
+<--->
+<ce>             A very generous woman. Very generous indeed.
+
+Message:  1080
+<ce>             I haven't heard from _theLover_ for a 
+<ce>             few days. I don't know where they are and I'm
+<ce>             starting to get worried. She hasn't disappeared
+<ce>             like this before.
+<ce>             
+<ce>             I've tried calling at her home a few times but
+<ce>             she's not there. I don't know what to think.
+<ce>             Perhaps I should talk to the Town Watch?
+<ce>             
+<ce>             Please don't give up! Please find her!
+
+Message:  1081
+<ce>             _theLover_ lives here now, with me.
+<ce>             She's around here somewhere, I'm sure
+<ce>             you can find her.
+
+Message:  1082
+<ce>             _theLover_? I'm not saying anything,
+<ce>             except that she's finished with that creep for
+<ce>             good. If I were you I'd just forget all about it.
+
+Message:  1083
+<ce>             _theLover_? I'm not saying anything,
+<ce>             except that she's finished with that creep for
+<ce>             good. She's left town and she's not coming back.
+<ce>             So don't waste your time chasing after her.
+
+
+QBN:
+
+Person _questgiver_ group Questor male anyInfo 1070
+Person _theLover_ group Local_4.0 female anyInfo 1071
+Person _theLoversConfidant_ group Group_7.1 female
+
+Item _letter_ letter used 1060
+Item _evilPlan_ letter used 1066
+Item _ring_ ring
+
+Foe _rival_ is Rogue
+
+Place _tavern_ local tavern
+Place _theLoversHouse_ local house1
+Place _theLoversNewHouse_ remote house2
+Place _theConfidantsHouse_ local house2
+Place _dungeon_ remote dungeon12
+
+Clock _timeLimit_ 45.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	log 1040 step 0
+	pc at _theLoversHouse_ set _insideLoversHouse_
+	pick one of _FateRanAway_ _FateAbducted_ _FateStalker_ _FateAffair_
+	place npc _theLoversConfidant_ at _theConfidantsHouse_
+	pc at _theLoversHouse_ set _insideLoversHouse_
+
+_FateRanAway_ task:
+	place item _letter_ at _theLoversHouse_
+	place npc _theLover_ at _theLoversNewHouse_
+
+_FateAbducted_ task:
+	place foe _rival_ at _theLoversHouse_
+	place npc _theLover_ at _dungeon_
+	give item _evilPlan_ to _rival_
+
+_FateStalker_ task:
+	place npc _theLover_ at _tavern_
+
+_FateAffair_ task:
+	place npc _theLover_ at _theConfidantsHouse_
+
+_insideLoversHouse_ task:
+
+_loverClicked_ task:
+	clicked npc _theLover_
+
+_friendClicked_ task:
+	clicked npc _theLoversConfidant_
+
+_TalkToLoverRanAway_ task:
+	when _FateRanAway_ and _loverClicked_
+	get item _ring_
+	say 1061
+	log 1041 step 1
+
+_TalkToLoverAffair_ task:
+	when _FateAffair_ and _loverClicked_
+	get item _ring_
+	say 1062
+	log 1042 step 2
+
+_TalkToLoverStalker_ task:
+	when _FateStalker_ and _loverClicked_
+	get item _ring_
+	say 1063
+	log 1043 step 3
+
+_TalkToLoveAbducted_ task:
+	when _FateAbducted_ and _loverClicked_
+	say 1067
+	hide npc _theLover_
+	add _theLover_ face
+	log 1045 step 5
+
+_TalkToFriendAbducted_ task:
+	when _FateAbducted_ and _friendClicked_
+	say 1080
+
+_TalkToFriendAffair_ task:
+	when _FateAffair_ and _friendClicked_
+	say 1081
+
+_TalkToFriendRanAway_ task:
+	when _FateRanAway_ and _friendClicked_
+	say 1082
+
+_TalkToFriendStalker_ task:
+	when _FateStalker_ and _friendClicked_
+	say 1083
+
+_slain_ task:
+	killed _rival_
+	reveal _dungeon_
+	log 1044 step 4
+
+_rewardPlayer1_ task:
+	toting _ring_ and _questgiver_ clicked 
+	say 1064
+	end quest
+
+_rewardPlayer2_ task:
+	toting _letter_ and _questgiver_ clicked 
+	say 1065
+	end quest
+
+_rewardPlayer3a_ task:
+	toting _evilPlan_ and _questgiver_ clicked 
+
+_rewardPlayer3b_ task:
+	when _rewardPlayer3a_ and _TalkToLoveAbducted_
+	change repute with _questgiver_ by +20
+	legal repute +5
+	say 1068
+	end quest
+
+_rewardPlayer4_ task:
+	when _TalkToLoveAbducted_ and _TalkToLoveAbducted_ and _insideLoversHouse_
+	drop _friend_ face
+	legal repute +5
+	say 1069
+	end quest

@@ -1,0 +1,392 @@
+Quest: JF000016
+DisplayName: And Then There Was One
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Greetings %pcf. Just the person I wanted.
+<ce>             One of our oldest and most illustrious members,
+<ce>             _chiefJustice_, has asked for you to call upon
+<ce>             %g2 at %g3 home in ___chiefJustice_.
+<ce>             
+<ce>             _chiefJustice_ used to be the Chief
+<ce>             Justice of the Peace in this district. Been
+<ce>             retired for a few years now but still a person
+<ce>             of great influence and respect.
+<ce>             
+<ce>             I expect %g will want your help in some
+<ce>             task that is politically sensitive. These things
+<ce>             crop up occasionally. It may be a little unofficial
+<ce>             but I assure you that _chiefJustice_'s
+<ce>             reputation is above reproach and you may
+<ce>             have full confidence in their request.
+<ce>             
+<ce>             What do you say?
+
+RefuseQuest:  [1001]
+<ce>             It is your decision, of course. But I suggest
+<ce>             you avoid making influential enemies within
+<ce>             this Order. Just a friendly warning.
+
+AcceptQuest:  [1002]
+<ce>             Good show! Pop on over to
+<ce>             ___chiefJustice_
+<ce>             and look for _chiefJustice_ in
+<ce>             __chiefJustice_.
+<ce>             Good luck %lev!
+
+QuestFail:  [1003]
+<ce>             It is a dark day for our Order.
+<ce>             And for you in particular.
+
+QuestComplete:  [1004]
+<ce>             I don't want to know what happened, but I'm sure
+<ce>             that, in the end, it will have been for the best.
+
+RumorsDuringQuest:  [1005]
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+<--->
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+
+RumorsPostfailure:  [1006]
+I heard you are an enormous failure. Nice to meet you.
+<--->
+I heard you are an enormous failure. Nice to meet you.
+
+RumorsPostsuccess:  [1007]
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+<--->
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+
+QuestorPostsuccess:  [1008]
+Hail fair dispenser of justice!
+
+QuestorPostfailure:  [1009]
+We have no further business. Leave me.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ sent me to ___chiefJustice_ to
+ speak with the esteemed former
+ Chief Justice of the Peace,
+ _chiefJustice_. They can
+ be found in __chiefJustice_.
+
+Message:  1041
+%qdt:
+ _chiefJustice_  has uncovered a
+ criminal conspiracy amongst the
+ local aristocracy. I have a big
+ dossier which contains all the
+ information.
+ Oh, just to be clear, I have to
+ kill them all...
+
+
+Message:  1060
+<ce>             Yes, you seem like the sort of soul who can take
+<ce>             care of themself. And a few other things to boot.
+<ce>             
+<ce>             As you may know I was the Chief Justice in these
+<ce>             parts for more than twenty years. And a damned
+<ce>             fine one, if I may say so myself. As you can guess,
+<ce>             any Chief Justice worth their salt will make a
+<ce>             few enemies and I've got more than my fair share.
+<ce>             
+<ce>             The most dangerous criminals aren't those pickpockets
+<ce>             and footpads in the so-called Thieves' Guild. It's all
+<ce>             they can do to break into the local alchemists. No.
+<ce>             The real criminals are those who hide behind
+<ce>             grandiose titles and fancy crests.
+<ce>             
+<ce>             The local aristocracy don't take it kindly when the
+<ce>             magistrates try to apply the letter of the law to them
+<ce>             as well as to the local peasantry. I did what I could
+<ce>             but, in the end, they took me down. A few words in
+<ce>             the right ears at Court, and plenty of dirty gold,
+<ce>             and I was "honourably retired from service".
+<ce>             
+<ce>             It took me a while but I found out who was behind it.
+<ce>             A cabal of some of the most influential nobles in the
+<ce>             realm. And the dirtiest. Smuggling, bribery, theft,
+<ce>             extortion, embezzelement and murder. That's a
+<ce>             normal day for these people. It would be easier to
+<ce>             list the crimes they haven't committed.
+<ce>             
+<ce>             I've talked enough. You get the picture. If you
+<ce>             really believe in those slogans that all who belong
+<ce>             to our Order swear to uphold you'll want to see real
+<ce>             justice done. There are five men. I know four of them.
+<ce>             This document has all the information.
+<ce>             
+<ce>             Until we are ready for the final step I must go into
+<ce>             hiding. When they are threatened they will surely
+<ce>             come for me. Don't worry, I will send for you.
+<ce>             
+<ce>             Find them and show them that they may have
+<ce>             beaten the law but they didn't escape justice.
+
+Message: 1061
+<ce>             This dossier contains an extensive collection of names,
+<ce>             dates and addresses. It is a damning summary of the
+<ce>             illegal activities that _chiefJustice_ has uncovered.
+<ce>             
+<ce>             _target1_, county squire. Controls most smuggling
+<ce>             activities in the province. Also guilty of bribery,
+<ce>             intimidation and murder.
+<ce>             Lives in __target1_ in
+<ce>             ___target1_.
+<ce>             
+<ce>             _target2_, priest of %god. The donations of the
+<ce>             faithful are diverted to causes that are far from
+<ce>             divine and in no way charitable. Lends the cloak of
+<ce>             respectability to their wicked co-conspirators.
+<ce>             Find them in ___priestHome_.
+<ce>             
+<ce>             _target3_, baronet and colonel of yeomanry. Who
+<ce>             would suspect, and more, dare, to accuse this
+<ce>             upstanding pillar of the community? A decorated
+<ce>             officer and Peer of the Realm who uses %g3 troops
+<ce>             to extort and threaten without restraint.
+<ce>             Rumours suggest they are currently on manoeuvres
+<ce>             in ___stronghold_.
+<ce>             
+<ce>             _target4_, Chief Justice! The most audacious chicanery
+<ce>             is to have _chiefJustice_ replaced with one of
+<ce>             their own. Even if a case could be brought to trial
+<ce>             _target4_ will ensure a speedy aquittal.
+<ce>             When not in Court you can find them in the Palace
+<ce>             in ___palace_.
+<ce>             
+<ce>             The fifth member of the cartel remains unknown.
+<ce>             _chiefJustice_ hopes that the elimination of these
+<ce>             four will force their unknown leader to step out of
+<ce>             the shadows.
+
+Message:  1062
+<ce>             I have nothing more to tell you. The dossier I gave
+<ce>             you has everything you need. Once you've done your
+<ce>             part I hope that the ringleader behind this
+<ce>             conspiracy can be drawn into the open. And dealt with...
+
+Message:  1063
+<ce>             _chiefJustice_ sent you? Bah!
+<ce>             
+<ce>             That old fool! Rest assured that after
+<ce>             we've killed you, %g'll be next.
+<ce>             
+<ce>             Guards!
+
+Message:  1064
+<ce>             Let me be absolutely clear.
+<ce>             
+<ce>             %pcn is not to be under-estimated.
+<ce>             I expect that the denizens of ___dungeon_
+<ce>             will be no match, although you may get lucky.
+<ce>             Just take no risks. Make sure that they do
+<ce>             not leave ___dungeon_.
+<ce>             Not even in a box.
+<ce>             
+<ce>             And destroy this note.
+<ce>             
+<ce>             Make no mistake, if you fail to destroy
+<ce>             this note I will personally eviserate you.
+<ce>             Then I will have necromancers resurrect
+<ce>             your corpse so I can eviserate you again.
+
+Message:  1065
+<ce>             What?! Why, this is the most foul accusation!
+<ce>             I find you in contempt of court, you
+<ce>             detestable insect. And now that you are
+<ce>             pronounced guilty it seems only approprate to
+<ce>             sentence you directly. To DEATH! Guards!
+
+Message:  1066
+<ce>             What foul heresy is this?! The stain of such
+<ce>             outrageous lies can only be washed away with
+<ce>             blood!
+<ce>             
+<ce>             Specifically, yours!
+<ce>             
+<ce>             Guards! Kill this vermin!
+
+Message:  1067
+<ce>             An unremarkable peasant in a dirty cloak bumps
+<ce>             into you and mumbles some apologies. Before you
+<ce>             can chastise them you realise they have passed
+<ce>             a note into your hand. The peasant slips away.
+
+Message:  1068
+<ce>             That takes care of number four. All of the known
+<ce>             targets have been eliminated. Word of this will
+<ce>             spread far and wide and probably very quickly.
+<ce>             _chiefJustice_ will doubtless use his
+<ce>             resources to contact you soon.
+
+Message:  1075
+<ce>             You have done well. With his lieutenants
+<ce>             out of the picture the shadowy leader of this
+<ce>             cabal has been forced to make a move of his
+<ce>             own. Either seeking refuge, or perhaps
+<ce>             collecting re-enforcements, our enemy has
+<ce>             fled from the Court and rode like Mehrunes
+<ce>             Dagon himself to ___dungeon_.
+<ce>             
+<ce>             My informants have vanished and all my favours
+<ce>             called in. This could be our only chance to
+<ce>             cut the final head from this hydra. We must
+<ce>             strike whilst we still have an eye on the target.
+<ce>             
+<ce>             Make no mistake, head directly to ___dungeon_.
+<ce>             Find this arch-traitor and put this conspiracy
+<ce>             to bed once and for all.
+<ce>             
+<ce>             _chiefJustice_
+
+Message:  1090
+<ce>             The serpentine squire has been suitably squashed.
+
+Message:  1091
+<ce>             The perfidious priest has been defrocked for good.
+
+Message:  1092
+<ce>             This odious officer has been given the coup-de-grace.
+
+Message:  1093
+<ce>             The crooked judge has banged his last gavel.
+
+Message:  1099
+<ce>             I didn't give you permission to speak!
+<ce>             But you do have permission to die!
+<ce>             Have at you!
+
+
+QBN:
+
+Person _questgiver_ group Questor male
+Person _chiefJustice_ faction Random_Noble male
+
+Person _target1_ faction The_Merchants male
+Person _target2_ group Resident1 male
+Person _target3_ faction Generic_Knightly_Order male
+Person _target4_ group Local_3.1 male
+
+Foe _Knight1_ is Knight
+Foe _Knight2_ is 3 Knight
+Foe _Knight3_ is 3 Knight
+Foe _Knight4_ is 3 Knight
+Foe _Knight5_ is 4 Knight
+
+Foe _Squire_ is Knight
+Foe _Priest_ is Knight
+Foe _General_ is Knight
+Foe _Judge_ is Knight
+Foe _Warriors_ is 2 Warrior
+
+Item _dossier_ letter used 1061
+Item _letter_ letter used 1064
+Item _letter2_ letter used 1075
+
+Place _dungeon_ remote dungeon4
+Place _stronghold_ remote dungeon2
+Place _palace_ remote palace
+Place _priestHome_ remote house2
+
+Clock _timeLimit_ 90.00:00
+Clock _letter2delivery_ 00.03:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	log 1040 step 0
+
+
+_target1_ task:
+	clicked npc _target1_
+	say 1063
+	hide npc _target1_
+	create foe _Squire_ every 0 minutes 1 times with 100% success
+	create foe _Warriors_ every 0 minutes 1 times with 100% success
+	give item _letter_ to _Knight1_
+
+_target2_ task:
+	clicked npc _target2_
+	say 1066
+	hide npc _target2_
+	create foe _Priest_ every 0 minutes 1 times with 100% success
+	create foe _Knight2_ every 0 minutes 1 times with 100% success
+
+_target3_ task:
+	clicked npc _target3_
+	say 1099
+	hide npc _target3_
+	create foe _General_ every 0 minutes 1 times with 100% success
+	create foe _Knight3_ every 0 minutes 1 times with 100% success
+
+_target4_ task:
+	clicked npc _target4_
+	say 1065
+	hide npc _target4_
+	create foe _Judge_ every 0 minutes 1 times with 100% success
+	create foe _Knight4_ every 0 minutes 1 times with 100% success
+
+
+_killedTarget1_ task:
+	killed _Squire_
+	say 1090
+
+_killedTarget2_ task:
+	killed _Priest_
+	say 1091
+
+_killedTarget3_ task:
+	killed _General_
+	say 1092
+
+_killedTarget4_ task:
+	killed _Judge_
+	say 1093
+
+
+_chiefJusticeClicked_ task:
+	clicked npc _chiefJustice_
+
+_briefing_ task:
+	when _chiefJusticeClicked_
+	start task _getDossier_
+	reveal _dungeon_
+	reveal _stronghold_
+	place npc _target2_ at _priestHome_
+	place npc _target3_ at _stronghold_
+	place npc _target4_ at _palace_
+
+_getDossier_ task:
+	say 1060
+	get item _dossier_ 
+	log 1041 step 1
+	hide npc _chiefJustice_
+
+_fourDown_ task:
+	when _killedTarget1_ and _killedTarget2_ and _killedTarget3_ and _killedTarget4_
+	start timer _letter2delivery_
+	place foe _Knight1_ at _dungeon_
+	place foe _Knight5_ at _dungeon_
+	say 1068
+
+_letter2delivery_ task:
+	get item _letter2_
+	say 1067
+
+_clearJusticeclick1_ task:
+	when _chiefJusticeClicked_ and not _fourDown_
+	clear _chiefJusticeClicked_ _clearJusticeclick1_
+
+_lastManStanding_ task:
+	when _chiefJusticeClicked_ and _fourDown_
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+
