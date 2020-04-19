@@ -1,0 +1,184 @@
+Quest: JF000018
+DisplayName: Market Forces
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Ah, %ra, I was just thinking about somebody like you.
+<ce>             Specifically, somebody motivated by gold, entirely
+<ce>             lacking in moral scruple and not afraid of a little
+<ce>             blood. Or a lot. Or actually quite fond of it.
+<ce>             
+<ce>             For reasons that need not concern you I need to
+<ce>             take possession of a plot of land. Suffice it to say
+<ce>             that the entire provincial economy will benefit and
+<ce>             who could oppose that?
+<ce>             
+<ce>             Well, some fool does oppose it. The selfish
+<ce>             malfesant who happens to own the farmstead at
+<ce>             ___farmstead_. Instead of selling
+<ce>             the property for a perfectly reasonable amount
+<ce>             they have refused even to consider negociating!
+<ce>             
+<ce>             I've requested an Order in Council from the King
+<ce>             to issue a Compulsory Purchase Notice but these
+<ce>             things take so much time.
+<ce>             
+<ce>             So, are you going to help me cut through some
+<ce>             red tape?
+
+RefuseQuest:  [1001]
+<ce>             I recall a time when people like you knew their
+<ce>             place and followed orders. We didn't even have to
+<ce>             pay. If you refused we just killed you.
+<ce>             
+<ce>             Oh, how I miss those days...
+
+AcceptQuest:  [1002]
+<ce>             Good. This is very simple. But I'll speak slowly
+<ce>             so you can write it down in your journal.
+<ce>             
+<ce>             Travel to ___farmstead_.
+<ce>             
+<ce>             If they've managed to rustle up a mob consider them
+<ce>             as bandits. Kill everyone in possession of a weapon.
+<ce>             
+<ce>             Then speak to the owner. My new offer for the property
+<ce>             is 10 gold coins. Somewhat less than the former price
+<ce>             but my generosity didn't take kindly to rejection.
+
+QuestFail:  [1003]
+<ce>             Neolithic incompetence is such an unattractive trait.
+<ce>             Depart. And do not return.
+
+QuestComplete:  [1004]
+<ce>             Excellent. Ten gold coins for an entire farm might
+<ce>             seem parsimonious but the value of the economics
+<ce>             lesson we just provided is beyond measure.
+<ce>             
+<ce>             Speaking of which, here is your payment.
+<ce>             
+<ce>             Oh, and one more thing. When somebody tells you
+<ce>             about the new ebony mine I'm developing, be sure
+<ce>             to act surprised.
+
+
+RumorsDuringQuest:  [1005]
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+<--->
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+
+RumorsPostfailure:  [1006]
+I heard you are an enormous failure. Nice to meet you.
+<--->
+I heard you are an enormous failure. Nice to meet you.
+
+RumorsPostsuccess:  [1007]
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+<--->
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+
+QuestorPostsuccess:  [1008]
+Hail fair dispenser of justice!
+
+QuestorPostfailure:  [1009]
+We have no further business. Leave me.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ sent me to ___farmstead_
+ to extort the property from the owners.
+
+ Anyone bearing arms is to be treated as
+ a bandit and summarily executed.
+
+ It is not clear that _questgiver_
+ has the authority to issue these orders
+ but he pays well.
+
+Message:  1041
+%qdt:
+ The owner of ___farmstead_
+ is now the former owner of 
+ ___farmstead_.
+ Time to head back and get paid.
+
+Message:  1050
+<ce>             We were expecting _questgiver_ would
+<ce>             try something like this. No matter what that
+<ce>             corrupt, greedy vulture wants we're not
+<ce>             selling and we're not leaving.
+<ce>             
+<ce>             You've got five seconds. You can either walk
+<ce>             out of here now or end up buried under the
+<ce>             cabbages with the other unwanted salesmen.
+<ce>             
+<ce>             Your choice, %ra.
+
+Message:  1051
+<ce>             Your duties are incomplete. It is not necessary,
+<ce>             nor, indeed, appropriate, for us to converse until
+<ce>             your assigned tasks are completed.
+
+Message:  1052
+<ce>             Looks like the former owner of ___farmstead_ 
+<ce>             accidentally, brutally cut off his own head whilst shaving.
+
+Message:  1053
+<ce>             Peace has finally returned to the troubled environs of
+<ce>             ___farmstead_, albeit by virtue of
+<ce>             you having killed everyone under arms.
+
+
+QBN:
+
+Person _questgiver_ group Questor male
+
+Item _gold_ gold range 800 to 1200
+
+Foe _Warriors1_ is 4 Warrior
+
+Place _farmstead_ remote farmhome
+
+Clock _timeLimit_ 45.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	pc at _farmstead_ set _onsite_
+	log 1040 step 0
+
+
+_timeLimit_ task:
+	end quest
+
+_onsite_ task:
+	start task _onsiteFight_
+
+_onsiteFight_ task:
+	say 1050
+	create foe _Warriors1_ every 0 minutes 1 times with 100% success
+
+_killed1Enemy_ task:
+	killed 2 _Warriors1_
+	say 1052
+
+_killedEnemies_ task:
+	killed 4 _Warriors1_
+	log 1041 step 1
+	say 1053
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _killedEnemies_
+	say 1051
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _killedEnemies_
+	give pc _gold_
+	end quest

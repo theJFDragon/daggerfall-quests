@@ -12,9 +12,9 @@ QuestorOffer:  [1000]
 <ce>             bit of fine-tuning.
 <ce>             
 <ce>             Are you willing to help advance the cause
-<ce>             of knowledge? It might take a while. A really
-<ce>             long while, but I don't imagine you have
-<ce>             anything better to do.
+<ce>             of knowledge? It might take a while. A really,
+<ce>             really long while, but I can't imagine you have
+<ce>             anything better to do?
 
 
 RefuseQuest:  [1001]
@@ -94,23 +94,19 @@ Message:  1040
  I should remember to be careful with the
  third gemstone!
 
-
 Message:  1041
 %qdt:
  Somewhere in ___dungeon1_ is the first gem.
-
 
 Message:  1042
 %qdt:
  I have arrived in __dungeon2_. The
  second gem is here somewhere.
 
-
 Message:  1043
 %qdt:
  I must search ___dungeon3_ and
  find the final gem. I hate this quest.
-
 
 Message:  1044
  I foolishly activated the third gem.
@@ -119,6 +115,22 @@ Message:  1044
  report back to _questgiver_ in
  ___questgiver_.
 
+Message:  1050
+<ce>             There can be no doubt that this is the first
+<ce>             of the magical teleportation crystals that
+<ce>             you have been sent to retrieve.
+<ce>             
+<ce>             Apparently there is some way to "use" the
+<ce>             crystal to trigger its magical effect, which
+<ce>             will send you to the general location of the
+<ce>             next crystal. I'm sure you'll figure it out.
+
+Message:  1051
+<ce>             Yes, this is unquestionably the second of the
+<ce>             trio of troublesome teleporting trinkets.
+
+Message:  1052
+<ce>             You now have the full set of crystals.
 
 
 QBN:
@@ -149,6 +161,18 @@ Clock _timeLimit_ 99.00:00
 	log 1040 step 0
 	teleport pc to _dungeon1_
 	log 1041 step 1
+
+_pickupGem1_ task:
+	clicked item _gem1_
+	say 1050
+
+_pickupGem2_ task:
+	clicked item _gem2_
+	say 1051
+
+_pickupGem3_ task:
+	clicked item _gem3_
+	say 1052
 
 _usedGem1_ task:
 	reveal _dungeon2_

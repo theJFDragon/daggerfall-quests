@@ -129,7 +129,7 @@ Item _gold1_ gold range 100 to 200
 Item _gold2_ gold range 250 to 500
 
 Person _questgiver_ group Questor male
-Person _brother_ face 36 faction The_Thieves_Guild male
+Person _brother_ group Local_3.1 male
 
 Place _house_ local house
 Place _dungeon_ remote dungeon
@@ -168,11 +168,11 @@ _killedGiant_ task:
 	killed _giant_
 
 _BruceBanner_ task:
-	when _hurtGiant_ and _skillTestOK_ and not _killedGiant_
-	say 1044
+	when _hurtGiant_ and not _killedGiant_ and _skillTestOK_
+	place npc _brother_ at _house_
 	restrain foe _giant_
 	place foe _giant_ at _dungeon_
-	place npc _brother_ at _house_
+	say 1044
 
 _brotherClicked_ task:
 	clicked npc _brother_

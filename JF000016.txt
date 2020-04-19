@@ -4,7 +4,7 @@ DisplayName: And Then There Was One
 QRC:
 
 QuestorOffer:  [1000]
-<ce>             Greetings %pcf. Just the person I wanted.
+<ce>             Greetings %pcf, just the person I wanted.
 <ce>             One of our oldest and most illustrious members,
 <ce>             _chiefJustice_, has asked for you to call upon
 <ce>             %g2 at %g3 home in ___chiefJustice_.
@@ -31,8 +31,8 @@ RefuseQuest:  [1001]
 AcceptQuest:  [1002]
 <ce>             Good show! Pop on over to
 <ce>             ___chiefJustice_
-<ce>             and look for _chiefJustice_ in
-<ce>             __chiefJustice_.
+<ce>             and look for _chiefJustice_
+<ce>             in __chiefJustice_.
 <ce>             Good luck %lev!
 
 QuestFail:  [1003]
@@ -92,14 +92,13 @@ Message:  1060
 <ce>             As you may know I was the Chief Justice in these
 <ce>             parts for more than twenty years. And a damned
 <ce>             fine one, if I may say so myself. As you can guess,
-<ce>             any Chief Justice worth their salt will make a
-<ce>             few enemies and I've got more than my fair share.
+<ce>             any Justice worth their salt will make a few
+<ce>             enemies and I've got more than my fair share.
 <ce>             
 <ce>             The most dangerous criminals aren't those pickpockets
-<ce>             and footpads in the so-called Thieves' Guild. It's all
-<ce>             they can do to break into the local alchemists. No.
-<ce>             The real criminals are those who hide behind
-<ce>             grandiose titles and fancy crests.
+<ce>             and footpads in the so-called Thieves' Guild. Make
+<ce>             no mistake, the real criminals are those who hide
+<ce>             behind grandiose titles and fancy crests.
 <ce>             
 <ce>             The local aristocracy don't take it kindly when the
 <ce>             magistrates try to apply the letter of the law to them
@@ -117,7 +116,7 @@ Message:  1060
 <ce>             
 <ce>             I've talked enough. You get the picture. If you
 <ce>             really believe in those slogans that all who belong
-<ce>             to our Order swear to uphold you'll want to see real
+<ce>             to our Order swear to uphold, you'll want to see real
 <ce>             justice done. There are five men. I know four of them.
 <ce>             This document has all the information.
 <ce>             
@@ -133,9 +132,9 @@ Message: 1061
 <ce>             dates and addresses. It is a damning summary of the
 <ce>             illegal activities that _chiefJustice_ has uncovered.
 <ce>             
-<ce>             _target1_, county squire. Controls most smuggling
-<ce>             activities in the province. Also guilty of bribery,
-<ce>             intimidation and murder.
+<ce>             _target1_, county squire. Controls most
+<ce>             smuggling activities in the province. Also guilty
+<ce>             of bribery, intimidation and murder.
 <ce>             Lives in __target1_ in
 <ce>             ___target1_.
 <ce>             
@@ -174,12 +173,14 @@ Message:  1062
 Message:  1063
 <ce>             _chiefJustice_ sent you? Bah!
 <ce>             
-<ce>             That old fool! Rest assured that after
-<ce>             we've killed you, %g'll be next.
+<ce>             That old fool! Rest assured that after we've
+<ce>             killed you, %g'll be next.
 <ce>             
 <ce>             Guards!
 
 Message:  1064
+<ce>             Benedictus,
+<ce>             
 <ce>             Let me be absolutely clear.
 <ce>             
 <ce>             %pcn is not to be under-estimated.
@@ -187,6 +188,7 @@ Message:  1064
 <ce>             will be no match, although you may get lucky.
 <ce>             Just take no risks. Make sure that they do
 <ce>             not leave ___dungeon_.
+<ce>             
 <ce>             Not even in a box.
 <ce>             
 <ce>             And destroy this note.
@@ -201,7 +203,9 @@ Message:  1065
 <ce>             I find you in contempt of court, you
 <ce>             detestable insect. And now that you are
 <ce>             pronounced guilty it seems only approprate to
-<ce>             sentence you directly. To DEATH! Guards!
+<ce>             sentence you directly. To DEATH!
+<ce>             
+<ce>             Guards!
 
 Message:  1066
 <ce>             What foul heresy is this?! The stain of such
@@ -226,13 +230,17 @@ Message:  1068
 <ce>             resources to contact you soon.
 
 Message:  1075
-<ce>             You have done well. With his lieutenants
-<ce>             out of the picture the shadowy leader of this
-<ce>             cabal has been forced to make a move of his
-<ce>             own. Either seeking refuge, or perhaps
-<ce>             collecting re-enforcements, our enemy has
-<ce>             fled from the Court and rode like Mehrunes
-<ce>             Dagon himself to ___dungeon_.
+<ce>             You have done well. With his lieutenants out
+<ce>             of the picture the shadowy leader of this cabal
+<ce>             has been forced to make a move of his own.
+<ce>             I doubt you know his name but it is one I know
+<ce>             from my years at Court. The Chief Steward,
+<ce>             Marlin Benedictus.
+<ce>             
+<ce>             Either seeking refuge, or perhaps collecting
+<ce>             re-enforcements, our enemy has fled from the
+<ce>             Court and rode as if Mehrunes Dagon himself
+<ce>             was after him, to ___dungeon_.
 <ce>             
 <ce>             My informants have vanished and all my favours
 <ce>             called in. This could be our only chance to
@@ -257,6 +265,56 @@ Message:  1092
 Message:  1093
 <ce>             The crooked judge has banged his last gavel.
 
+Message:  1094
+<ce>             This note looks curious. Written on some very
+<ce>             high quality parchment. The penmanship is impeccable.
+<ce>             And strangely familiar...
+
+Message:  1095
+<ce>             _chiefJustice_ looks surprised to see you.
+<ce>             In fact he looks distinctly pale. His eyes
+<ce>             follow your hand as you produce the letter
+<ce>             you found on the dead "ringleader".
+<ce>             
+<ce>             The parchment is the same high quality 
+<ce>             material as the dossier you were given at the
+<ce>             start of this charade. The handwriting looks
+<ce>             identical to your untrained eye, but even the
+<ce>             style matches the letter that you received
+<ce>             from the peasant messenger.
+<ce>             
+<ce>             His face turns defiant, almost snarling...
+
+Message:  1096
+<ce>             Well done my puppet! You've puzzled out this
+<ce>             conspiracy. Or at least most of it. Let me
+<ce>             explain the last few details.
+<ce>             
+<ce>             My former associates and I made a vast sum of
+<ce>             money from our nefarious activities. The plan was
+<ce>             always to stop after three years, split the fortune
+<ce>             equally in five shares, and go our separate ways.
+<ce>             
+<ce>             Of course, why should I give up four-fifths of
+<ce>             a fortune that is entirely mine by right?
+<ce>             But thanks to your simple-minded and unquestioning
+<ce>             obedience that is no longer a problem.
+<ce>             
+<ce>             The other witnesses are dead. That just leaves you.
+<ce>             Time that you joined them, in Oblivion!
+
+Message:  1097
+<ce>             The true ringleader of this conspiracy lies dead!
+<ce>             Their foul plot has been broken and the largest
+<ce>             criminal conspiracy in the kingdom has been
+<ce>             shut down for good.
+<ce>             
+<ce>             Or at least for a while...
+<ce>             
+<ce>             ...until the next power-crazed, money-hungry,
+<ce>             back-stabbing degenerate crawls out of the
+<ce>             darkness. But you'll be waiting for them.
+
 Message:  1099
 <ce>             I didn't give you permission to speak!
 <ce>             But you do have permission to die!
@@ -277,13 +335,17 @@ Foe _Knight1_ is Knight
 Foe _Knight2_ is 3 Knight
 Foe _Knight3_ is 3 Knight
 Foe _Knight4_ is 3 Knight
-Foe _Knight5_ is 4 Knight
+Foe _Knight5_ is Knight
+Foe _Knight6_ is Knight
+Foe _Knight7_ is Knight
+Foe _Knight8_ is Knight
 
 Foe _Squire_ is Knight
 Foe _Priest_ is Knight
 Foe _General_ is Knight
 Foe _Judge_ is Knight
 Foe _Warriors_ is 2 Warrior
+Foe _BigBoss_ is Knight
 
 Item _dossier_ letter used 1061
 Item _letter_ letter used 1064
@@ -296,6 +358,7 @@ Place _priestHome_ remote house2
 
 Clock _timeLimit_ 90.00:00
 Clock _letter2delivery_ 00.03:00
+Clock _timeAccusation_ 5.00:00
 
 
 --	Quest start-up:
@@ -349,6 +412,9 @@ _killedTarget4_ task:
 	killed _Judge_
 	say 1093
 
+_slainPatsy_ task:
+	killed _Knight1_
+	start timer _timeAccusation_
 
 _chiefJusticeClicked_ task:
 	clicked npc _chiefJustice_
@@ -373,20 +439,40 @@ _fourDown_ task:
 	start timer _letter2delivery_
 	place foe _Knight1_ at _dungeon_
 	place foe _Knight5_ at _dungeon_
+	place foe _Knight6_ at _dungeon_
+	place foe _Knight7_ at _dungeon_
+	place foe _Knight8_ at _dungeon_
 	say 1068
 
 _letter2delivery_ task:
 	get item _letter2_
 	say 1067
 
+_pickupLetter_ task:
+	clicked item _letter_
+	restore _chiefJustice_
+	say 1094
+
 _clearJusticeclick1_ task:
-	when _chiefJusticeClicked_ and not _fourDown_
+	when _chiefJusticeClicked_ and not _pickupLetter_
 	clear _chiefJusticeClicked_ _clearJusticeclick1_
 
 _lastManStanding_ task:
-	when _chiefJusticeClicked_ and _fourDown_
+	when _chiefJusticeClicked_ and _pickupLetter_
+	say 1095
+	say 1096
+	hide npc _chiefJustice_
+	create foe _BigBoss_ every 0 minutes 1 times with 100% success
+	create foe _Knight3_ every 0 minutes 1 times with 100% success
+	create foe _Knight4_ every 0 minutes 1 times with 100% success
+
+_timeAccusation_ task:
+	end quest
+
+_killedBoss_ task:
+	killed _BigBoss_
+	say 1097
+	end quest
 
 _questorClicked_ task:
 	clicked npc _questgiver_
-
-

@@ -1,5 +1,23 @@
 
 -------------------------------------------------------------------------------
+2020-04-19	new quests abound
+
+		JF000019 [Jar Jar High Jinks]
+			new quest added!
+
+		JF000018 [Market Forces]
+			new quest added! (first quest for the nobles)
+
+		JF000017 [Star Chamber]
+			new quest added!
+
+		JF000016 [And Then There Was One]
+			quest finally completed!
+
+		JF000009 [Certified Exorcised]
+			new quest added! (old "holy water" quest is lost to time now...)
+
+-------------------------------------------------------------------------------
 2020-04-12	I forgot about this. Probably it doesn't matter. But anyways...
 
 		JF000015 [Do Not Forsake Me Oh My Darling]
@@ -12,7 +30,7 @@
 			this one got activated at some point. may as well stay
 
 		JF000009 [Holy Water]
-			this one got activated at some point. it's just a copy of 8?!
+			this should be de-activated. it was never finished. then got lost
 
 -------------------------------------------------------------------------------
 2020-01-25	2 new quests and 1 inactivated

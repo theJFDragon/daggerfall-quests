@@ -1,133 +1,255 @@
 Quest: JF000009
-DisplayName: Holy Water
+DisplayName: Certified Exorcised
 QRC:
 
 QuestorOffer:  [1000]
-<ce>Maybe you can take care of this little problem?
-<ce>There's a strange wizard in ___dungeon_
-<ce>who seems to have special powers over the local
-<ce>wildlife. As you can probably imagine he's not
-<ce>using this ability to help anyone.
-<ce>
-<ce>Can you head over there and take care of things?
-<ce>And by "take care of things" I mean can you kill
-<ce>him and his army of beasts?
-
+<ce>		Yes, %lev, we do have something for you at the moment.
+<ce>		Sometimes it is necessary to augment the donations
+<ce>		of the faithful with some additional revenue streams.
+<ce>		And today is one of those times.
+<ce>		
+<ce>		I heard a rumour of some bumpkin who's been accussed
+<ce>		of consorting with witches or being possessed by
+<ce>		daedra or some such thing.
+<ce>		
+<ce>		These rumours crop up quite regularly and are almost
+<ce>		always false. But it does give us an opportunity.
+<ce>		I want to you to head over to ___person_ and
+<ce>		get this yokel to buy an official Temple Certificate
+<ce>		of Qualified Exorcism.
+<ce>		
+<ce>		That will help mollify any angry neighbours whilst
+<ce>		also putting some much-needed coin into our coffers.
+<ce>		Everyone's a winner!
+<ce>		
+<ce>		You will do this?
 
 RefuseQuest:  [1001]
-<ce>How disappointing.
-
+<ce>		I expected better of you. How disappointing.
 
 AcceptQuest:  [1002]
-<ce>Thankyou. On your way then!
-
+<ce>		Good good! Oh, here's a blank copy of the
+<ce>		Exorcism Certificate. You can fill in the
+<ce>		details on your journey.
+<ce>		
+<ce>		The mark, I mean, poor afflicted soul,
+<ce>		lives in ___person_ and I
+<ce>		believe they go by the name of _person_.
+<ce>		I'm sure the local peasantry will point
+<ce>		you in the right direction.
 
 QuestFail:  [1003]
-<ce>You are a disgrace to the Guild!
-
+<ce>		This was a simple task. That you have failed.
+<ce>		It will not reflect well on the Temple but I
+<ce>		assure you that it will reflect worse on you.
 
 QuestComplete:  [1004]
-<ce>Congratulations! Enjoy your well-earned gold.
+<ce>		Well done %lev. Take this to cover some sundry expenses.
 
 
 RumorsDuringQuest:  [1005]
 I know of many amazing and unbelievable things. Or do I? I forget. Who are you?
 
-
 RumorsPostfailure:  [1006]
 I heard something about you. I forget the details but something about "neolithic incompetence"?
 
-
 RumorsPostsuccess:  [1007]
-You killed what now? Why are you telling me? Get lost!
-
+Actually, I have no interest in this. Please stop talking to me.
 
 QuestorPostsuccess:  [1008]
-<ce>		Well done on getting rid of the evil Beastmaster!
-
+<ce>		Good work!
 
 QuestorPostfailure:  [1009]
-<ce>		I am still not happy with your failure to handle the evil Beastmaster.
+<ce>		Not now %pcf
 
 
 Message:  1020
-<ce>		The Beastmaster is dead! Now they're just
-<ce>		food for the worms. Good riddance.
-
+<ce>		
+<ce>		
 
 Message:  1021
-<ce>		A spider and a bat. It looks like
-<ce>		reports of the Beastmaster's
-<ce>		prowess have been somewhat
-<ce>		exaggerated.
+<ce>		You begin to suspect that somebody has been
+<ce>		selling these "certificates" to every
+<ce>		Temple across the Illiac Bay...
+<ce>		
+<ce>		
+<ce>		This certifies that ___________________
+<ce>		has been officially and successfully
+<ce>		exorcised by a qualified Priest of the
+<ce>		Temple of ___________.
+<ce>		
+<ce>		Date: _________
+<ce>		Signed: ____________
+<ce>		
+<ce>		This certificate is guaranteed to be certified
+<ce>		and is certified guarenteed.
+
+Message:  1022
+<ce>		%oth! This is exactly what I need!
+<ce>		Of course, the rumours are totally false, spread
+<ce>		no doubt by a malcontent with too much time on
+<ce>		their hands. Now I can show my face in the local
+<ce>		tavern again.
+<ce>		
+<ce>		Here, let me give you a consideration for your
+<ce>		Temple's good works.
+<ce>		
+<ce>		Safe travels, %ra.
+
+Message:  1023
+<ce>		Do you take me for a fool, %ra?
+<ce>		
+<ce>		Nobody takes these idle rumours seriously.
+<ce>		No doubt it was the product of a child's
+<ce>		playful imagination.
+<ce>		
+<ce>		If I was to produce one of these "documents"
+<ce>		in respectable company then there's a story
+<ce>		that would take me a long time to live down.
+<ce>		
+<ce>		Now get out of here before I set the dogs on you!
+
+Message:  1024
+<ce>		They refused! How tiresome! Let me think....
+<ce>		
+<ce>		Right, I have an idea. Head on over to the Mages
+<ce>		Guild in ___MagesGuild_. We've had
+<ce>		some dealings with them in the past.
+<ce>		
+<ce>		Speak to _Mage_ and get a magic
+<ce>		gemstone of conjuration. Then head back to
+<ce>		___person_ and show them that they
+<ce>		could really, really benefit from purchasing
+<ce>		one of our certificates.
+
+Message:  1025
+<ce>		What's that? Ah, I see that _questgiver_
+<ce>		is up to their old tricks again. Well, I'm not
+<ce>		one to judge. Not after that accident with
+<ce>		the fire atronachs.
+<ce>		
+<ce>		Here, this gemstone should be what you need.
+
+Message:  1026
+<ce>		The gem glows brightly. The conjuration effect
+<ce>		is working!
+<ce>		
+<ce>		It is only at this moment that you wonder
+<ce>		exactly what spell this gem is invoking...
+
+Message:  1027
+<ce>		"Enough! Enough! Stop this insanity!
+<ce>		Look, here's a bag of gold coins. Take
+<ce>		it. Now get out and never return!"
 
 
 Message:  1030
 %qdt:
- The Fighters Guild over in
- ___questgiver_ have hired
- me to kill a bad guy in
- ___dungeon_.
- When it's done I'll report
- back to _questgiver_.
+ The Temple in ___questgiver_
+ have sent me to ___person_
+ to meet some mug called _person_.
+ I am to persuade them to buy this dumb
+ "certificate of exorcism".
+ Once they've handed over the gold
+ I can report back to _questgiver_.
 
+Message:  1031
+%qdt:
+ Amazingly _person_ wasn't as stupid
+ as they looked. They refused to pay for the
+ phony certificate. I should head back
+ and tell _questgiver_.
 
-Message:  1080
-<ce>		Good work on dealing with the Beastmaster's army
-<ce>		of beasts. Here's a little something extra, a
-<ce>		long-lost map of a secret dungeon!
+Message:  1032
+%qdt:
+ _questgiver_ is a wily old fox.
+ I am to head over to ___MagesGuild_
+ and speak to _Mage_
+ in the Mages Guild there.
+
+ They should provide me with a magic
+ gemstone that should persuade
+ _person_ to change his mind
+ about buying our certificate.
 
 
 QBN:
-Item _reward_ gold
+Item _gold_ gold range 25 to 50
+Item _certificate_ letter used 1021
+Item _gem_ gem
+
+Foe _skeleton_ is Skeletal_warrior
 
 Person _questgiver_ group Questor male
+Person _person_ group Resident1 male
+Person _Mage_ faction The_Mages_Guild
 
-Place _dungeon_ remote dungeon4
-Place _newdungeon_ remote dungeon11
+Place _MagesGuild_ remote magery
 
-Clock _timer_ 00:00 0 flag 17 range 0 2
+Clock _timeLimit_ 30.00:00
 
-Foe _beastmaster_ is Sorceror
-Foe _spider_ is Spider
-Foe _bat_ is Giant_bat
 
 --	Quest start-up:
-	start timer _timer_ 
-	reveal _dungeon_
-	place foe _beastmaster_ at _dungeon_
-	place foe _spider_ at _dungeon_
-	place foe _bat_ at _dungeon_
+	start timer _timeLimit_ 
+	get item _certificate_ 
 	log 1030 step 0 
 
-_beastmasterKilled_ task:
-	killed _beastmaster_
-	say 1020
 
-_spiderKilled_ task:
-	killed _spider_
-	
-_batKilled_ task:
-	killed _bat_
+_personalityTest_ task:
+	when attribute Personality is at least 65
 
-_beastsKilled_ task:
-	when _spiderKilled_ and _batKilled_
-	say 1021
+_skillStreetwise_ task:
+	when skill Streetwise is at least 50
 
-_pcgetsgold_ task:
-	when _qgclicked_ and _beastmasterKilled_ 
-	give pc _reward_ 
-	end quest 
+_silverTongue_ task:
+	when _personalityTest_ or _skillStreetwise_
+
+_talkToPerson_ task:
+	clicked npc _person_ 
+
+_successfullSale_ task:
+	when _talkToPerson_ and _silverTongue_
+	say 1022
+
+_noSale_ task:
+	when _talkToPerson_ and not _silverTongue_
+	say 1023
+	log 1031 step 1
+
+_extortion_ task:
+	toting _gem_ and _person_ clicked
+	say 1026
+	create foe _skeleton_ every 0 minutes 2 times with 100% success
+
+_exorcism_ task:
+	killed 2 _skeleton_
+	say 1027
 
 _qgclicked_ task:
 	clicked npc _questgiver_ 
 
-_clearclick_ task:
-	when _qgclicked_ and not _beastmasterKilled_ 
-	say 1003
-	clear _qgclicked_ _clearclick_ 
+_planB_ task:
+	when _qgclicked_ and _noSale_ and not _exorcism_
+	place npc _Mage_ at _MagesGuild_
+	say 1024
+	log 1032 step 2
+	clear _qgclicked_ _clearclick_
 
-_bonusReward_ task:
-	when _beastsKilled_ and _pcgetsgold_ 
-	say 1080
-	reveal _newdungeon_ readmap
+_talkToMage_ task:
+	clicked npc _Mage_ 
+	get item _gem_ 
+	say 1025
+
+_Victory1_ task:
+	when _qgclicked_ and _successfullSale_ and not _exorcism_
+	give pc _gold_ 
+	end quest 
+
+_Victory2_ task:
+	when _qgclicked_ and _exorcism_ and not _successfullSale_
+	give pc _gold_ 
+	end quest 
+
+_clearclick_ task:
+	when _qgclicked_
+	clear _qgclicked_ _clearclick_ 

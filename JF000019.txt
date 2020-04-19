@@ -1,0 +1,129 @@
+Quest: JF000019
+DisplayName: Jar Jar High-jinks
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Excuse me, %ra? Can you spare a moment?
+<ce>             Perhaps you could help someone less fortunate than
+<ce>             yourself?
+<ce>             
+<ce>             You can? Oh, thank you! You see...I have this jar
+<ce>             of fruit preserve that was hand-crafted by my
+<ce>             dear old mother herself, bless her soul. It's an
+<ce>             old family recipe, you see. Quite the delicacy.
+<ce>             
+<ce>             Anyway, I'm having trouble getting the lid off.
+<ce>             I'm sure a strong, young %pct like you
+<ce>             will have no problems opening an old jar.
+<ce>             
+<ce>             Can you try?
+
+RefuseQuest:  [1001]
+<ce>             Oh. Well, I guess I'll ask somebody else then.
+
+AcceptQuest:  [1002]
+<ce>             Thankyou, %ra! Here it is, I'm sure you'll
+<ce>             have that lid unscrewed in no time!
+
+QuestFail:  [1003]
+<ce>             Oh! I don't know what to say! Probably
+<ce>             you're very tired from a long day's
+<ce>             adventuring?
+<ce>             
+<ce>             Don't worry, I won't tell anyone.
+
+QuestComplete:  [1004]
+<ce>             Perfect! Thankyou so much! Ah, just smell
+<ce>             that delightful aroma. I can't wait to
+<ce>             spread that on some sweetroll and get it
+<ce>             down my throat!
+<ce>             
+<ce>             I bet you thought that opening that jar
+<ce>             would summon a genie or a daedra or
+<ce>             some such thing, eh?! Nope, it's just
+<ce>             a perfectly ordinary jar of the finest
+<ce>             fruit preserve Tamriel has ever seen.
+<ce>             
+<ce>             Thanks again, and safe journey brave hero!
+
+
+RumorsDuringQuest:  [1005]
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+<--->
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+
+RumorsPostfailure:  [1006]
+I heard you are an enormous failure. Nice to meet you.
+<--->
+I heard you are an enormous failure. Nice to meet you.
+
+RumorsPostsuccess:  [1007]
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+<--->
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+
+QuestorPostsuccess:  [1008]
+Hail friend! Tell me of the treasurers that my dungeons have yielded up.
+
+QuestorPostfailure:  [1009]
+We have no further business. Leave me.
+
+
+Message:  1040
+%qdt:
+ A random peasant has asked me very politely
+ to open a jar of fruit preserve. Apparently
+ the top has been screwed on very tightly and
+ they lack the physical prowess to open it
+ by themselves.
+
+
+Message:  1060
+<ce>             It was pretty tight, probably due to the
+<ce>             old jam going hard. But it was no match
+<ce>             for you!
+<ce>             
+<ce>             The jar opens with a satisfying *pop*!
+
+Message:  1061
+<ce>             After several seconds of embarrassing,
+<ce>             nay, undignified panting and straining
+<ce>             you are forced to admit defeat.
+
+
+QBN:
+
+Person _questgiver_ group Questor male anyInfo 1070
+
+Item _jar_ decanter
+
+Clock _timeLimit_ 0.06:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	get item _jar_
+	_jar_ used do _AttemptToOpenJar_
+	log 1040 step 0
+
+_timeLimit_ task:
+	end quest
+
+_OpenJarSuccess_ task:
+	when _AttemptToOpenJar_ and _strengthTest_
+	say 1060
+	say 1004
+	change repute with _questgiver_ by +5
+	end quest
+
+_OpenJarFailure_ task:
+	when _AttemptToOpenJar_ and not _strengthTest_
+	say 1061
+	say 1003
+	end quest
+
+_AttemptToOpenJar_ task:
+
+_strengthTest_ task:
+	when attribute Strength is at least 250
