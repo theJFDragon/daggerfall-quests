@@ -46,7 +46,7 @@ Now is the winter of our discontent made glorious summer by this son of an orc.
 
 
 QuestorPostsuccess:  [1008]
-A thousand thanks %pcf. I owe you. Metaphorically. Financially we're even, remember?
+A thousand thanks %pcf. I owe you. Metaphorically. In financial terms we're completely even, remember?
 
 
 QuestorPostfailure:  [1009]
@@ -155,104 +155,104 @@ Message:  1050
 
 
 Message:  1070
-<ce>             Ah, poor _questgiver_. The case is a serious one.
+<ce>             "Ah, poor _questgiver_. The case is a serious one.
 <ce>             For reasons that are not entirely clear they have inherited
 <ce>             a daedric curse, possibly due to a perceived offense by
 <ce>             an ancestor. In any event, whilst I was able to identify the
 <ce>             cause, I lack the necessary prowess to implement the cure.
 <ce>             
-<ce>             If you want to pursue this noble undertaking you must
-<ce>             goto ___dungeon_ and slay the curse's vessel, a gargoyle
+<ce>             "If you want to pursue this noble undertaking you must
+<ce>             go to ___dungeon_ and slay the curse's vessel, a gargoyle
 <ce>             whose name is entirely unpronouncable, except perhaps
-<ce>             by _questgiver_.
+<ce>             by _questgiver_."
 
 
 Message:  1071
-<ce>             Yes, I've looked into the case of _questgiver_.
+<ce>             "Yes, I've looked into the case of _questgiver_.
 <ce>             Interesting. But I'm afraid there's nothing I could do.
 <ce>             I suggest you keep asking around, if you're determined
-<ce>             to help. Good luck.
+<ce>             to help. Good luck."
 
 
 Message:  1072
-<ce>             How tiresome. Yes, we were paid an entirely reasonable
+<ce>             "How tiresome. Yes, we were paid an entirely reasonable
 <ce>             sum to perform a perfectly legal arcane transaction.
 <ce>             The customer was explicitly informed that there are no
 <ce>             refunds.
 <ce>             
-<ce>             If you wish to have the linguistics spell reversed then
+<ce>             "If you wish to have the linguistics spell reversed then
 <ce>             speak to my colleague, _Mage_, who will
 <ce>             perform this task for the sum of 200 gold coins. You can
-<ce>             find them in the Guildhall in __remoteMagesGuild_.
+<ce>             find them in the Guildhall in __remoteMagesGuild_."
 
 
 Message:  1073
-<ce>             I have no idea who _questgiver_ is. I don't
+<ce>             "I have no idea who _questgiver_ is. I don't
 <ce>             intend changing that situation in the foreseeable future.
 <ce>             And with my powers I can foresee quite a bit. And I am
 <ce>             not seeing that.
 <ce>             
-<ce>             I do have a vision of you, though. Departing.
+<ce>             "I do have a vision of you, though. Departing.
 <ce>             
-<ce>             Like...now.
+<ce>             "Like...now."
 
 
 Message:  1074
-<ce>             Oh, the fascinating case of _questgiver_.
+<ce>             "Oh, the fascinating case of _questgiver_.
 <ce>             Suffered a sharp blow to the head and now they can only
 <ce>             speak gibberish. It's not exactly my area of expertise
 <ce>             but I did communicate with a fellow alchemist who
 <ce>             specialises in restorative effects.
 <ce>             
-<ce>             I ordered a particular herbal ingredient that should
+<ce>             "I ordered a particular herbal ingredient that should
 <ce>             palliate these symptoms. It would be an act of great
 <ce>             kindness if you could retrieve this?
 <ce>             
-<ce>             Head to __DoctorShop_ and consult with _Doctor_
+<ce>             "Head to __DoctorShop_ and consult with _Doctor_
 <ce>             in _DoctorShop_. Then just deliver the
-<ce>             _medicine_ to _questgiver_.
+<ce>             _medicine_ to _questgiver_."
 
 
 Message:  1075
-<ce>             Ah yes. _questgiver_. I've already consulted on that
+<ce>             "Ah yes. _questgiver_. I've already consulted on that
 <ce>             case. A waste of my time. In my opinion the entire
 <ce>             thing is an act. To what end I cannot say but I am
 <ce>             certain this is simple play-acting.
 <ce>             
-<ce>             Of course, if you are so inclined, you could seek a
+<ce>             "Of course, if you are so inclined, you could seek a
 <ce>             second opinion. You might find somebody else in this
-<ce>             place as educated as me. But I doubt it.
+<ce>             place as educated as me. But I doubt it."
 
 
 Message:  1076
-<ce>             You've come for the _medicine_ that _contactMedical_
+<ce>             "You've come for the _medicine_ that _contactMedical_
 <ce>             ordered? No problem, I think the package is here
 <ce>             somewhere...
 <ce>             
-<ce>             Yes, here you go. Enjoy.
+<ce>             "Yes, here you go. Enjoy."
 
 
 Message:  1077
-<ce>             You want to undo a linguistics spell? Trivial, my
+<ce>             "You want to undo a linguistics spell? Trivial, my
 <ce>             child, absolutely trivial. One moment.
 <ce>             
-<ce>             Yes, here's the trinket. Give the subject this and
-<ce>             the incantation will be reversed.
+<ce>             "Yes, here's the trinket. Give the subject this and
+<ce>             the incantation will be reversed."
 
 
 Message:  1061
-<ce>             Thank you so much %pcf! You have saved my sanity.
+<ce>             "Thank you so much %pcf! You have saved my sanity.
 <ce>             I hope this meagre sum serves as a token of my
-<ce>             gratitude. %god bless you %ra!
+<ce>             gratitude. %god bless you %ra!"
 
 
 Message:  1062
-<ce>             Thank you so much %pcf! You have saved my sanity.
+<ce>             "Thank you so much %pcf! You have saved my sanity.
 <ce>             I promise you that _contactTavern_ will
 <ce>             pay for this!
 <ce>             
-<ce>             Anyway, I know you have been to some considerable
-<ce>             lengths to assist me. Please accept this small gift.
+<ce>             "Anyway, I know you have been to some considerable
+<ce>             lengths to assist me. Please accept this small gift."
 
 
 Message:  1063
@@ -266,44 +266,44 @@ Message:  1063
 
 
 Message:  1064
-<ce>             Thank you so much %pcf! You have saved my sanity.
+<ce>             "Thank you so much %pcf! You have saved my sanity.
 <ce>             
-<ce>             You say that a daedric curse was put upon me in
+<ce>             "You say that a daedric curse was put upon me in
 <ce>             revenge for an insult given by one of my
 <ce>             ancestors? And that you had to hunt down and
 <ce>             slay a savage gargoyle in order to break the
 <ce>             curse?
 <ce>             
-<ce>             I am no expert in these matters but that seems
+<ce>             "I am no expert in these matters but that seems
 <ce>             a strangely elaborate, but also oddly arbitrary,
 <ce>             curse. I guess the whims of the daedra are
 <ce>             inexplicable to us mere mortals, eh?
 <ce>             
-<ce>             My father used to muck out the stables and my
+<ce>             "My father used to muck out the stables and my
 <ce>             mother was the daughter of a blacksmith. I can't
 <ce>             imagine how they offended a daedra. Still, at
-<ce>             least this nightmare is ended. Thank you %ra.
+<ce>             least this nightmare is ended. Thank you %ra."
 
 
 Message:  1065
-<ce>             Haha! Yes, it's a brilliant trick, isn't it?
+<ce>             "Haha! Yes, it's a brilliant trick, isn't it?
 <ce>             The old fool was always interrupting me so I
 <ce>             thought this would be an appropriate lesson.
 <ce>             
-<ce>             I suppose it is a bit petty to keep the spell
+<ce>             "I suppose it is a bit petty to keep the spell
 <ce>             active after three weeks. I don't know how to
 <ce>             break the spell myself but I can tell you who
 <ce>             I paid to arrange it.
 <ce>             
-<ce>             Talk to _contactMage_ in the Mages Guild.
+<ce>             "Talk to _contactMage_ in the Mages Guild.
 <ce>             
-<ce>             Hahahahaha! This is my best one yet!
+<ce>             "Hahahahaha! This is my best one yet!"
 
 
 Message:  1066
-<ce>             Something up with _questgiver_? No idea.
+<ce>             "Something up with _questgiver_? No idea.
 <ce>             We're not on speaking terms any more. And from
-<ce>             what you say that is unlikely to change now. Ha!
+<ce>             what you say that is unlikely to change now. Ha!"
 
 
 

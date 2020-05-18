@@ -1,196 +1,715 @@
 Quest: JF000012
-DisplayName: Pinball Wizard
+DisplayName: Troubleshooter
 
 QRC:
 
 QuestorOffer:  [1000]
-<ce>             Look here %lev, there's a problem which requires
-<ce>             your immediate attention. We have a rivalry with
-<ce>             the Guildhall in __rivalGuild_.
+<ce>             You, %ra, you look like the type who doesn't
+<ce>             mind getting their hands dirty. And I mean really dirty.
 <ce>             
-<ce>             Some have called this rivalry petty, childish,
-<ce>             immature and "frankly unacceptable". But they do
-<ce>             not know the true and horrible history behind this
-<ce>             vendetta. The story, by the way, need not concern you.
+<ce>             I will elucidate. I own countless properties, estates
+<ce>             and businesses across the province. It is a heavy burden
+<ce>             but I shoulder it with the dignity and humility appropriate
+<ce>             to my station.
 <ce>             
-<ce>             A valuable artefact has gone missing and the
-<ce>             obvious culprits are those untrustworthy renegades
-<ce>             in __rivalGuild_.
+<ce>             Some of these enterprises are not as profitable as they
+<ce>             once were. Doubtless the cause is the inherent idleness
+<ce>             and criminality of the peasantry I am forced to employ.
 <ce>             
-<ce>             Are you willing to pop over there and swipe it back?
-
+<ce>             I need somebody to visit these places, inspect them
+<ce>             and resolve their inadequacies. I don't care what steps
+<ce>             are taken as long as it is quick, cheap and effective.
+<ce>             I usually find that threats of violence, combined with
+<ce>             actual violence, usually do the trick.
+<ce>             
+<ce>             Do you accept this great and necessary undertaking?
 
 RefuseQuest:  [1001]
-<ce>             With that attitude your future in the
-<ce>             Mages Guild seems pretty static.
-
+<ce>             I recall with great fondness a time when people like
+<ce>             you knew their place and followed orders. We didn't
+<ce>             even have to pay. If you refused we just arrested
+<ce>             your families.
+<ce>             
+<ce>             Oh, happy days...
 
 AcceptQuest:  [1002]
-<ce>             Excellent. I have total confidence that, wherever
-<ce>             those perfidious turncoats have hidden the trinket,
-<ce>             you will recover it without delay.
+<ce>             Good. I've had this report prepared. It contains
+<ce>             everything you need to know.
 <ce>             
-<ce>             Chop, chop!
-
+<ce>             You do know how to read, %ra?
+<ce>             
+<ce>             Never mind, I'll have one of my adjutants go with
+<ce>             you to make sure you don't get lost.
+<ce>             
+<ce>             Oh, and by the way, I need this resolved in 60 days.
+<ce>             That should be ample time. On your way, then.
 
 QuestFail:  [1003]
-<ce>             Disappointing %pcf. The Guild has a
-<ce>             reputation to maintain and yours just
-<ce>             took a right beating. Get out of here.
-
+<ce>             Neolithic incompetence is such an unattractive trait.
+<ce>             Depart. And do not return.
 
 QuestComplete:  [1004]
-<ce>             Victory is ours!
-<ce>             
+<ce>             Well done %ra, you have proven significantly more
+<ce>             competent than I expected.
+
 
 
 RumorsDuringQuest:  [1005]
-xxxxxxxxxxxx
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
 <--->
-xxxxxxxxxxxx
-
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
 
 RumorsPostfailure:  [1006]
-xxxxxxxxxxxx
+I heard you are an enormous failure. Nice to meet you.
 <--->
-xxxxxxxxxxxx
-
+I heard you are an enormous failure. Nice to meet you.
 
 RumorsPostsuccess:  [1007]
-xxxxxxxxxxxx
-
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+<--->
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
 
 QuestorPostsuccess:  [1008]
-xxxxxxxxxxxx
-
+If you find anyone who knows how to mine ebony send them my way, eh?
 
 QuestorPostfailure:  [1009]
-xxxxxxxxxxxx
+We have no further business. Leave. Now.
+
+
+Message:  1020
+_daughter_? Oh yeah, you can find her at __daughter_.
 
 
 Message:  1040
 %qdt:
  _questgiver_ in ___questgiver_
- is sending me to a rival Guild in
- __rivalGuild_. Apparently they
- have stolen an unspecified artefact
- which I must retrieve.
-
+ wants me to find out why his various
+ businesses are losing money. To keep
+ an eye on me I am accompanied by an
+ assistant, _assistant_.
+ They'd better not cause any problems.
+ Also _questgiver_ gave
+ me a document. I should probably read
+ the document.
 
 Message:  1041
- The talisman appears to be totally inert.
- Presumably this is the artefact that
- _questgiver_ wanted. Why can't
- these people be more specific?
-
+%qdt:
+ The problems in the tavern have been
+ resolved satisfactorily.
 
 Message:  1042
+%qdt:
+ The problems at the farmstead have been
+ resolved satisfactorily.
 
-
-
-
-Message: 1043
-<ce>             Hold it right there %ra! What are you
-<ce>             doing with that _talisman1_?
-<ce>             
-<ce>             No, don't even bother to lie to my face.
-<ce>             It's obvious that you're one of those
-<ce>             buffoons from the Guild over in
-<ce>             ___questgiver_.
-<ce>             
-<ce>             I heard they lost their own _talisman2_.
-<ce>             But to try to cover their incompetence by
-<ce>             stealing our _talisman1_? Shocking.
-<ce>             The Archmagister will hear of this.
-<ce>             
-<ce>             Now leave, before I unleash a horde of
-<ce>             Daedroth on you.
-<ce>             
-<ce>             And give me that _talisman1_!
-
+Message:  1043
+%qdt:
+ The problems at the general store have been
+ resolved satisfactorily.
 
 Message:  1044
-<ce>             Hmmm. This is an interesting _talisman1_.
-<ce>             Unfortunately this is not the artefact
-<ce>             that those renegades have purloined.
-<ce>             However, I'm sure I can find a use for it.
-<ce>             
-<ce>             Go back and search again. And this time
-<ce>             keep your eyes peeled for a truly unique
-<ce>             and invaluable artefact. Tally-ho!
-
+%qdt:
+ The problems with the alchemist have been
+ resolved satisfactorily.
 
 Message:  1045
-<ce>             You found another talisman? I wonder why
-<ce>             they keep leaving talismans lying around?
-<ce>             What are they up to? Anyway, it doesn't
-<ce>             matter because this is not the missing
-<ce>             artefact.
+%qdt:
+ I failed to complete all of
+ _questgiver_'s tasks within the
+ alloted time.
+
+Message:  1046
+%qdt:
+ Somebody wouldn't do exactly what we wanted
+ so it looks like we're going to abduct their
+ daughter. Name of _daughter_,
+ apparently lives in ___daughter_.
+
+Message:  1047
+%qdt:
+ _assistant_ wants us to speak with
+ _warlock_, who can be found in the
+ Mages Guild in _magesGuild_.
+
+Message:  1048
+%qdt:
+ _questgiver_ has an alchemist
+ processing illegal narcotics, but
+ without a sample from their stash
+ they're in no fit state for anything.
+ 
+ Unfortunately that means I have to
+ scour every corner of some place called
+ ___dungeon_.
+
+Message:  1050
+<ce>             The report lists four businesses that _questgiver_
+<ce>             wants you to investigate and sort out.
 <ce>             
-<ce>             Look, I'll be honest. I tried to divine
-<ce>             the location of the missing artefact
-<ce>             using a very rare spell. Unfortunately I
-<ce>             made a slight miscalculation and instead
-<ce>             I have been cursed with a strange and
-<ce>             very irritating affliction.
+<ce>             First, a tavern called _tavern_,
+<ce>             located in __tavern_.
+<ce>             The manager's name is _manager_.
 <ce>             
-<ce>             The curse prevents me from being able to
-<ce>             explain to you the nature of the artefact.
-<ce>             Instead of revealing the location the spell
-<ce>             has hidden the concept of describing it from
-<ce>             my own mind.
+<ce>             Second, an agricultural concern called
+<ce>             __farm_.
 <ce>             
-<ce>             I know it's frightfully esoteric but that's
-<ce>             the truth of it. So...please help me out of
-<ce>             this bind by finding the artefact.
+<ce>             Next is a shop in __shop_,
+<ce>             called _shop_.
 <ce>             
-<ce>             I know they have it there somewhere!
+<ce>             And finally an alchemists named
+<ce>             _chemist_,
+<ce>             registered in __chemist_.
+
+Message:  1051
+<ce>             "I don't know who you are and I don't care. I'm the boss of this
+<ce>             establishment and our absent landlord had better get used to it.
+<ce>             
+<ce>             "Now, I think it's time for you to leave. To make sure that you
+<ce>             don't find your way back inside our security will take care of you."
+
+Message:  1052
+<ce>             The manager denies, most unconvincingly, ever skimming profits
+<ce>             from the tavern's coffers. Without a word you pick up the iron
+<ce>             poker from the fireplace and carefully bend it around their neck.
+<ce>             It's a tight fit but not too tight.
+<ce>             
+<ce>             When you ask if the tavern's profits will be sent to the correct
+<ce>             destination the manager nods eagerly.
+<ce>             
+<ce>             Your work here is done.
+
+Message:  1053
+<ce>             The manager tries, badly, to deny ever stealing from the tavern
+<ce>             coffers.
+<ce>             
+<ce>             Thanks to a combination of your winning personality and 
+<ce>             superlative street-smarts you persuade the errant manager
+<ce>             that their physical and mental health will be best
+<ce>             ensured by their not skimming profits from the tavern.
+<ce>             
+<ce>             You are confident that everything will be run correctly
+<ce>             from now on.
+
+Message:  1054
+<ce>             _manager_ drops to their knees and pleads.
+<ce>             
+<ce>             "Okay, okay! Stop! Look, we'll go back to running this place
+<ce>             like we did before, okay?! Just stop killing people!
+<ce>             Tell _questgiver_ there'll be no problems, alright?!"
+<ce>             
+<ce>             _assistant_ emerges from your shadow and
+<ce>             berates the manager some more. It is made clear exactly
+<ce>             how the tavern will operate from now on.
+
+Message:  1055
+<ce>             As you enter the tavern _assistant_ 
+<ce>             pipes up.
+<ce>             
+<ce>             "Don't worry about the barkeep. We should talk with
+<ce>             the manager, _manager_."
+
+Message:  1056
+<ce>             _assistant_ immediately cowers behind you
+<ce>             and squeals, "This is mutiny! Kill them all!"
+<ce>             
+<ce>             From a nearby room you hear the clang of
+<ce>             swords being readied...
+
+Message:  1057
+<ce>             _assistant_ stops day-dreaming and looks around.
+<ce>             
+<ce>             "__farm_ produces the usual products.
+<ce>             Some wheat, a little fruit and an assortment of
+<ce>             regional vegetables.
+<ce>             
+<ce>             "But their main crop is _drug_. Not entirely
+<ce>             legal but very profitable. Far too profitable
+<ce>             for the meagre returns they've been sending in
+<ce>             for the past few months.
+<ce>             
+<ce>             "Wait here, I'll go and see what's what."
+<ce>             
+<ce>             With that _assistant_ wanders off, which
+<ce>             strikes you as uncharacteristically brave.
+
+Message:  1058
+<ce>             After a few minutes you hear raised voices.
+<ce>             _assistant_ emerges and they
+<ce>             do not look happy.
+
+Message:  1059
+<ce>             "Sadly, I wasn't able to persuade them that
+<ce>             they are not an independent operation."
+<ce>             
+<ce>             _assistant_ steps behind you as a gang of
+<ce>             armed thugs emerges from the farmhouse.
+<ce>             They start moving in your direction.
+<ce>             
+<ce>             "You can handle things from here, right?"
+
+Message:  1060
+<ce>             "They were not amnable to my reasonable
+<ce>             suggestions. Give me a moment."
+<ce>             
+<ce>             _assistant_ thinks for a while...
+<ce>             
+<ce>             "Aha! Their ringleader is a very superstitious
+<ce>             type. They have a particular fear to all things
+<ce>             undead and supernatural.
+<ce>             
+<ce>             "I know a warlock at the Mages Guild in 
+<ce>             __magesGuild_. Let's pay
+<ce>             them a visit."
+
+Message:  1061
+<ce>             Once the last of the thugs is dead _assistant_
+<ce>             starts checking the bodies. He gives out a cry
+<ce>             of triumph.
+<ce>             
+<ce>             "Yes! This is the ringleader. With him out of the
+<ce>             way the rest of the workers will fall back in line.
+<ce>             I think our work here is done."
+
+Message:  1062
+<ce>             The warlock recognises _assistant_ immediately. 
+<ce>             Fortunately everyone seems on good terms.
+<ce>             
+<ce>             "_assistant_, it's been a long time," the
+<ce>             warlock begins. "Doubtless you have need of my
+<ce>             assistance in some nefarious, under-handed
+<ce>             scheme. How can I help?"
+<ce>             
+<ce>             _assistant_ explains his desire to purchase
+<ce>             an enchanted gem which can summon placid zombies.
+<ce>             
+<ce>             "I have the very thing. One moment." The warlock
+<ce>             rumages around and then presents you with a
+<ce>             sparkling gemstone. _assistant_ slips it
+<ce>             into his pocket and hands over a curse of coins.
+<ce>             
+<ce>             "Now let's get back to __farm_ and
+<ce>             have some fun."
+
+Message:  1063
+<ce>             The enchanted gem glows brightly and then rapidly
+<ce>             fades until it resembles a dull stone. You hear
+<ce>             the familiar murmur that is the signature of the
+<ce>             animated dead. 
+<ce>             
+<ce>             And as promised the newly-summoned zombies are
+<ce>             thankfully docile. _assistant_ looks
+<ce>             even smugger than usual and trots off to find
+<ce>             the ringleader.
+
+Message:  1064
+<ce>             After a few minutes _assistant_ re-appears.
+<ce>             
+<ce>             "Everything is arranged. I persuaded them that
+<ce>             the zombies will be as harmless as statues, as
+<ce>             long as this operation runs the way we want it
+<ce>             to run. Our work here is done."
+<ce>             
+<ce>             Time to move on...
+
+Message:  1065
+<ce>             "Well done %ra, I am actually impressed.
+<ce>             Of course _assistant_'s report
+<ce>             tried to steal most of the credit, but naturally,
+<ce>             I don't believe everything that snivelling
+<ce>             lickspittle says.
+<ce>             
+<ce>             "Here's your payment. I hope we can do equally
+<ce>             profitable business again soon."
+
+Message:  1066
+<ce>             As you enter the shop _assistant_
+<ce>             pulls on your arm and whispers, "this store is
+<ce>             used for, how shall I put it, turning money from
+<ce>             our not-entirely legal activities, into perfectly
+<ce>             ordinary money.
+<ce>             
+<ce>             "Ignore the shopkeeper, they're just a puppet.
+<ce>             This operation is run by the accountant,
+<ce>             _accountant_. They'll be around here
+<ce>             somewhere. Maybe we can find something
+<ce>             in the secret ledger?"
+
+Message:  1067
+<ce>             The accountant recognises _assistant_
+<ce>             and reluctantly produces a small, leather-bound
+<ce>             notebook. _assistant_ snatches it,
+<ce>             flicks through it, clearly not understanding
+<ce>             the contents and then hands it to you.
+<ce>             
+<ce>             After studying the ledger for some time your
+<ce>             mastery of the administration of business
+<ce>             finally pays off. Despite the accountant's
+<ce>             attempts to conceal the truth you pinpoint
+<ce>             several transactions that do not add up.
+<ce>             
+<ce>             Faced with evidence of his embezzeling the
+<ce>             accountant's nerve cracks and he begs for
+<ce>             mercy, even forcing a large sack of coins
+<ce>             into _assistant_'s hands.
+<ce>             
+<ce>             "I think this problem is resolved."
+<ce>             _assistant_ beams an insufferable smile.
+<ce>             It's time to move on.
+
+Message:  1068
+<ce>             The accountant recognises _assistant_
+<ce>             and reluctantly produces a small, leather-bound
+<ce>             notebook. _assistant_ snatches it,
+<ce>             flicks through it, clearly not understanding
+<ce>             the contents and then hands it to you.
+<ce>             
+<ce>             The ledger contains a massive list of numbers
+<ce>             that means absolutely nothing to you. With
+<ce>             a smug grin the accountant takes back the
+<ce>             ledger and puts it back in his pocket.
+<ce>             
+<ce>             _assistant_ steers you aside and
+<ce>             whispers, "I seem to recall that _accountant_
+<ce>             has a charming daughter called _daughter_
+<ce>             who lives somewhere in ___daughter_.
+<ce>             Let's pay her a visit..."
+
+Message:  1069
+<ce>             Before you can do anything _assistant_
+<ce>             clamps a cloth over _daughter_'s face.
+<ce>             She immediately slumps into unconsciousness.
+<ce>             
+<ce>             "Don't worry, she'll be fine. As long as
+<ce>             that crooked accountant co-operates."
+
+Message:  1070
+<ce>             The blood drains from _accountant_'s
+<ce>             face as %g1 sees %g3 daughter slumped
+<ce>             over your shoulder.
+<ce>             
+<ce>             _assistant_ starts to toy with a very
+<ce>             small, but very sharp, dagger.
+<ce>             
+<ce>             The point is made. The accountant
+<ce>             reluctantly admits their embezzlement
+<ce>             and hands over several bags of coins
+<ce>             to _assistant_, who produces
+<ce>             the potion required to revive the
+<ce>             unconscious girl.
+<ce>             
+<ce>             Looks like your work here is done.
+
+Message:  1071
+<ce>             "This place is a front for other work our
+<ce>             businesses require", _assistant_
+<ce>             explains. "The raw materials from our
+<ce>             farmsteads are processed here, and in a
+<ce>             few other similiar establishments.
+<ce>             
+<ce>             "_chemistBoss_ is in charge of this
+<ce>             operation. We should talk to %g2,
+<ce>             ignore the goon up front."
+
+Message:  1072
+<ce>             The tame alchemist has clearly been sampling
+<ce>             the merchandise. Despite their condition you
+<ce>             are able to cajole, persuade, inveigle, blandish
+<ce>             coax and induce them to get back to work.
+<ce>             
+<ce>             For good measure _assistant_ then makes
+<ce>             it clear that if productivity drops again then
+<ce>             a serious and debilitating addiction will be the
+<ce>             least of their problems.
+<ce>             
+<ce>             You have no further business here.
+
+Message:  1073
+<ce>             The alchemist half-listens to _assistant_'s
+<ce>             accusations and doesn't seem particularly 
+<ce>             fazed by threats. The nervous twitching and
+<ce>             constantly darting, glazed-over eyes are
+<ce>             symptoms of some sort of addiction.
+<ce>             
+<ce>             When _assistant_'s invective finally
+<ce>             runs out of steam the alchemist mumbles
+<ce>             that they need an antidote to cure their
+<ce>             withdrawal symptoms.
+<ce>             
+<ce>             The 'antidote' is a large piece of _drug2_
+<ce>             which the alchmemist has inexplicably
+<ce>             hidden away in ___dungeon_ for
+<ce>             safe-keeping.
+<ce>             
+<ce>             Looks like you have another detour!
+
+Message:  1074
+<ce>             The alchemist grabs hungrily at the sample
+<ce>             of _drug2_ and devours it. With their
+<ce>             addition sated, at least for the moment,
+<ce>             you are able to communicate clearly.
+<ce>             
+<ce>             _assistant_ makes it clear that next
+<ce>             time production grinds to a halt the
+<ce>             alchmemist will be taken to the farmstead
+<ce>             and used as fertiliser.
+<ce>             
+<ce>             From the look on their face you think the
+<ce>             lesson has been learnt. Time to move on.
+
+Message:  1075
+<ce>             "I can't imagine why you have returned with your
+<ce>             duties unfinished. The clock is ticking, %ra.
+<ce>             Get moving, and remember, I don't pay for a job
+<ce>             half done. Or even ninety-nine percent done."
+
+Message:  1076
+<ce>             This is the secret stash. We can leave now.
 
 
 
 QBN:
 
-Item _gold_ gold range 250 to 500
-Item _talisman1_ talisman used 1041
-Item _talisman2_ talisman used 1042
-
 Person _questgiver_ group Questor male
-Person _rivalMage_ faction The_Mages_Guild
+Person _manager_ face 36 faction The_Thieves_Guild
+Person _assistant_ faction The_Merchants
+Person _warlock_ faction The_Mages_Guild
+Person _accountant_ face 35 faction The_Thieves_Guild
+Person _chemistBoss_ face 34 faction The_Thieves_Guild
+Person _daughter_ face 2 group Resident2 anyInfo 1020
 
-Place _someHouse_ local house2
-Place _rivalGuild_ remote magery
+Item _gold_ gold range 1000 to 1250
+Item _report_ letter used 1050
+Item _drug_ drug
+Item _drug2_ drug
+Item _gem_ gem
 
-Clock _timeLimit_ 30.00:00
+Foe _Bouncers_ is 2 Warrior
+Foe _farmGuards_ is 4 Warrior
+Foe _zombies_ is 3 Zombie
+
+Place _tavern_ remote tavern
+Place _farm_ remote farmhome
+Place _shop_ remote generalstore
+Place _chemist_ remote apothecary
+Place _magesGuild_ remote magery
+Place _dungeon_ remote dungeon4
+
+Clock _timeLimit_ 60.00:00
 
 
 --	Quest start-up:
 	start timer _timeLimit_
-	place item _talisman1_ at _rivalGuild_
+	get item _report_
+	pc at _tavern_ set _playerInTavern_
+	pc at _farm_ set _playerAtFarm_
+	pc at _shop_ set _playerInShop_
+	pc at _chemist_ set _playerInChemist_
+	place npc _manager_ at _tavern_
+	place npc _warlock_ at _magesGuild_
+	place npc _accountant_ at _shop_
+	place npc _accountant_ at _shop_
+	place npc _chemistBoss_ at _chemist_
+	add _assistant_ face
+	pick one of _choice1_ _choice2_
+	reveal _dungeon_
 	log 1040 step 0
 
+variable _choice1_
+variable _choice2_
+
+_tavernFixed_ task:
+	log 1041 step 1
+
+_farmFixed_ task:
+
+_shopFixed_ task:
+	log 1043 step 3
+
+_chemistFixed_ task:
+	log 1044 step 4
+
+_attributeTestSTR_ task:
+	when attribute Strength is at least 85
+
+_attributeTestPER_ task:
+	when attribute Personality is at least 67
+
+_skillTestStreetwise_ task:
+	when skill Streetwise is at least 67
+
+_skillTestEtiquette_ task:
+	when skill Etiquette is at least 67
+
+_skillTestMercantile_ task:
+	when skill  is at least 50
+
+_silverTongue_ task:
+	when _attributeTestPER_ or _skillTestStreetwise_
+
+_playerInTavern_ task:
+	say 1055
+
+_playerAtFarm_ task:
+	say 1057
+	start task _farmTask_
+	_gem_ used do _useGem_
+
+_playerInShop_ task:
+	say 1066
+
+_playerInChemist_ task:
+	say 1071
+
+_talkToChemist_ task:
+	clicked npc _chemistBoss_
+
+_persuadeChemist_ task:
+	when _talkToChemist_ and _silverTongue_
+	say 1072
+	start task _chemistFixed_
+
+_chemistQuest_ task:
+	when _talkToChemist_ and not _silverTongue_ and not _chemistDone_ and not _gotoDungeon_
+	say 1073
+	log 1048 step 7
+	place item _drug2_ at _dungeon_
+	start task _gotoDungeon_
+
+variable _gotoDungeon_
+
+_chemistDone_ task:
+	toting _drug2_ and _chemistBoss_ clicked 
+	say 1074
+	start task _chemistFixed_
+
+_getStash_ task:
+	clicked item _drug2_
+	say 1076
 
 _timeLimit_ task:
+	log 1045 step 8
 	end quest
 
-_confiscateFakeTalisman_ task:
-	toting _talisman1_ and _rivalMage_ clicked
-	say 1043
+_speakWithAccountant_ task:
+	clicked npc _accountant_
 
-_returnFakeTalisman1_ task:
-	toting _talisman1_ and _questgiver_ clicked
-	place item _talisman2_ at _rivalGuild_
-	say 1044
+_inspectLedger_ task:
+	when _speakWithAccountant_ and _skillTestMercantile_ and not _talkToDaughter_
+	say 1067
+	start task _shopFixed_
 
-_returnFakeTalisman2_ task:
-	toting _talisman2_ and _questgiver_ clicked
-	place npc _rivalMage_ at _rivalGuild_
-	say 1045
+_planB_ task:
+	when _speakWithAccountant_ and not _skillTestMercantile_ and not _talkToDaughter_
+	say 1068
+	log 1046 step 5
+	clear _speakWithAccountant_
+
+_threatenAccountant_ task:
+	when _speakWithAccountant_ and _talkToDaughter_
+	drop _daughter_ face
+	say 1070
+	start task _shopFixed_
 
 
+_talkToDaughter_ task:
+	clicked npc _daughter_
+	say 1069
+	hide npc _daughter_
+	add _daughter_ face
 
 
+_farmTask_ task:
+	drop _assistant_ face
+	say 1058
+	add _assistant_ face
+
+_farmFight_ task:
+	when _farmTask_ and _choice1_
+	create foe _farmGuards_ every 0 minutes 1 times with 100% success
+	say 1059
+
+_farmZombie_ task:
+	when _farmTask_ and _choice2_
+	say 1060
+
+_speakWithManager_ task:
+	clicked npc _manager_
+
+_managerIntimidate_ task:
+	when _speakWithManager_ and _attributeTestSTR_ and not _managerTalk_
+	start task _tavernFixed_
+	say 1052
+
+_managerTalk_ task:
+	when _speakWithManager_ and not _managerIntimidate_ and _silverTongue_
+	start task _tavernFixed_
+	say 1053
+
+_managerFail_ task:
+	when _speakWithManager_ and not _attributeTestSTR_ and not _silverTongue_
+	create foe _Bouncers_ every 0 minutes 1 times with 100% success
+	say 1051
+	hide npc _manager_
+	say 1056
+
+_bouncersDead_ task:
+	killed 2 _Bouncers_
+	restore _manager_
+	start task _tavernFixed_
+	say 1054
+	
+_farmGuardsDead_ task:
+	killed 4 _farmGuards_
+	start task _farmFixed_
+	log 1042 step 2
+	say 1061
+
+_warlockClicked_ task:
+	clicked npc _warlock_
+
+_talkToWarlock_ task:
+	when _warlockClicked_ and _farmZombie_
+	get item _gem_ 
+	say 1062
+	log 1047 step 6
+
+_useGem_ task:
+	create foe _zombies_ every 0 minutes 1 times with 100% success
+	restrain foe _zombies_
+	start task _farmFixed_
+	log 1042 step 2
+	say 1063
+	say 1064
+
+_onsite_ task:
+	start task _onsiteFight_
+
+_onsiteFight_ task:
+	say 1050
+	create foe _Warriors1_ every 0 minutes 1 times with 100% success
+
+_killed1Enemy_ task:
+	killed 2 _Warriors1_
+	say 1052
+
+_killedEnemies_ task:
+	killed 4 _Warriors1_
+	log 1041 step 1
+	say 1053
+
+_everythingFixed_ task:
+	when _tavernFixed_ and _farmFixed_ and _shopFixed_ and _chemistFixed_
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _everythingFixed_
+	say 1051
+	clear _questorClicked_ _clearclick_
 
 _rewardPlayer_ task:
-	when _questorClicked_ and _slain_
+	when _questorClicked_ and _everythingFixed_
+	say 1065
 	give pc _gold_
 	end quest

@@ -75,11 +75,11 @@ I'm glad the Fighters took care of those renegade soldiers. That's how you deal 
 
 
 QuestorPostsuccess:  [1008]
-Why if it isn't %pcf. I was just telling someone about how you dealt with those criminal deserters.
+Hello %pcf. Thanks again for retrieving those crystals. They were quite expensive, you know...
 
 
 QuestorPostfailure:  [1009]
-Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
+I hope nobody finds those teleportation crystals and uses them for evil.
 
 
 Message:  1040

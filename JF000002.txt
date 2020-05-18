@@ -80,16 +80,16 @@ Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members
 
 
 Message: 1019
-<ce>             Yeah, that's the last thing that went missing.
+<ce>             "Yeah, that's the last thing that went missing.
 <ce>             I think that counts as damning evidence. We need
 <ce>             to take of this problem quietly. And permanently.
 <ce>             
-<ce>             I'll arrange a meeting with _suspect2_,
+<ce>             "I'll arrange a meeting with _suspect2_,
 <ce>             but you'll be waiting to deal with %g2 when %g1
 <ce>             arrives. Understand?
 <ce>             
-<ce>             Wait in _house_, %g1'll arrive
-<ce>             after midnight.
+<ce>             "Wait in _house_, %g1'll arrive
+<ce>             after midnight."
 
 
 Message: 1020

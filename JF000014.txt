@@ -33,7 +33,7 @@ AcceptQuest:  [1002]
 <ce>             discovered.
 <ce>             
 <ce>             Oh, one more thing. My old rival and arch-nemesis
-<ce>             _rival_ has been sniffing about after that
+<ce>             _rivalNPC_ has been sniffing about after that
 <ce>             gold for years. Keep an eye out, just in case.
 
 
@@ -84,19 +84,19 @@ Message:  1041
 
 
 Message:  1060
-<ce>             Great %god, you have saved an old
+<ce>             "Great %god, you have saved an old
 <ce>             pioneer from spending %g3 final days in
 <ce>             penury and squalor! This gold will be
 <ce>             ample pension for the rest of my days.
 <ce>             
-<ce>             And, as promised, here is your reward.
+<ce>             "And, as promised, here is your reward.
 <ce>             I made these maps by my own hand after
 <ce>             every expedition. Perchance you may already
 <ce>             have stumbled across one or two of these
 <ce>             places but most are long-forgotten, their
 <ce>             names only preserved in these parchments.
 <ce>             
-<ce>             Good hunting %pcf!
+<ce>             "Good hunting %pcf!"
 
 Message: 1061
 <ce>             That must be the gold! Now it's time to
@@ -108,22 +108,34 @@ Message:  1062
 <ce>             
 <ce>             _questgiver_'s arch-rival was pretty
 <ce>             sprightly for an old-timer. No match for you,
-<ce>             of course.
+<ce>             of course!
 
 Message:  1063
-<ce>             Ha! So that old back-stabber finally met
-<ce>             their justly deserved fate. Good riddance!
+<ce>             "Ha! So that old back-stabber _rivalNPC_
+<ce>             finally met their justly-deserved fate.
+<ce>             Good riddance!"
 
-Message:  1064
+Message: 1064
+<ce>             You spend some time copying the details from
+<ce>             _questgiver_'s maps into your own map.
+<ce>             
+<ce>             You also write the names of the dungeons
+<ce>             in your notebook for easy reference.
+
+
+Message:  1070
 _questgiver_ seems happier now. I'm not sure why, with %g3 debts!
 
+Message:  1071
+_rivalNPC_ is an old renegade. Been getting up to no good for years.
 
 
 QBN:
 
 Item _goldBar_ gold_bar
 
-Person _questgiver_ group Questor male anyInfo 1064
+Person _questgiver_ group Questor male anyInfo 1070
+Person _rivalNPC_ face 97 faction The_Thieves_Guild anyInfo 1071
 
 Foe _rival_ is Rogue
 
@@ -149,6 +161,7 @@ Clock _timeLimit_ 45.00:00
 	reveal _questDungeon_
 	place item _goldBar_ at _questDungeon_ 
 	place foe _rival_ at _questDungeon_
+	hide npc _rivalNPC_ 
 
 
 _collectGoldBar_ task:
@@ -181,3 +194,4 @@ _rewardPlayer_ task:
 	reveal _dungeon9_ readmap
 	reveal _dungeon10_ readmap
 	say 1060
+	say 1064

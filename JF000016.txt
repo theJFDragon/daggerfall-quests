@@ -86,46 +86,46 @@ Message:  1041
 
 
 Message:  1060
-<ce>             Yes, you seem like the sort of soul who can take
+<ce>             "Yes, you seem like the sort of soul who can take
 <ce>             care of themself. And a few other things to boot.
 <ce>             
-<ce>             As you may know I was the Chief Justice in these
+<ce>             "As you may know I was the Chief Justice in these
 <ce>             parts for more than twenty years. And a damned
 <ce>             fine one, if I may say so myself. As you can guess,
 <ce>             any Justice worth their salt will make a few
 <ce>             enemies and I've got more than my fair share.
 <ce>             
-<ce>             The most dangerous criminals aren't those pickpockets
+<ce>             "The most dangerous criminals aren't those pickpockets
 <ce>             and footpads in the so-called Thieves' Guild. Make
 <ce>             no mistake, the real criminals are those who hide
 <ce>             behind grandiose titles and fancy crests.
 <ce>             
-<ce>             The local aristocracy don't take it kindly when the
+<ce>             "The local aristocracy don't take it kindly when the
 <ce>             magistrates try to apply the letter of the law to them
 <ce>             as well as to the local peasantry. I did what I could
 <ce>             but, in the end, they took me down. A few words in
 <ce>             the right ears at Court, and plenty of dirty gold,
 <ce>             and I was "honourably retired from service".
 <ce>             
-<ce>             It took me a while but I found out who was behind it.
+<ce>             "It took me a while but I found out who was behind it.
 <ce>             A cabal of some of the most influential nobles in the
 <ce>             realm. And the dirtiest. Smuggling, bribery, theft,
 <ce>             extortion, embezzelement and murder. That's a
 <ce>             normal day for these people. It would be easier to
 <ce>             list the crimes they haven't committed.
 <ce>             
-<ce>             I've talked enough. You get the picture. If you
+<ce>             "I've talked enough. You get the picture. If you
 <ce>             really believe in those slogans that all who belong
 <ce>             to our Order swear to uphold, you'll want to see real
 <ce>             justice done. There are five men. I know four of them.
 <ce>             This document has all the information.
 <ce>             
-<ce>             Until we are ready for the final step I must go into
+<ce>             "Until we are ready for the final step I must go into
 <ce>             hiding. When they are threatened they will surely
 <ce>             come for me. Don't worry, I will send for you.
 <ce>             
-<ce>             Find them and show them that they may have
-<ce>             beaten the law but they didn't escape justice.
+<ce>             "Find them and show them that they may have
+<ce>             beaten the law but they didn't escape justice."
 
 Message: 1061
 <ce>             This dossier contains an extensive collection of names,
@@ -165,18 +165,18 @@ Message: 1061
 <ce>             the shadows.
 
 Message:  1062
-<ce>             I have nothing more to tell you. The dossier I gave
+<ce>             "I have nothing more to tell you. The dossier I gave
 <ce>             you has everything you need. Once you've done your
 <ce>             part I hope that the ringleader behind this
-<ce>             conspiracy can be drawn into the open. And dealt with...
+<ce>             conspiracy can be drawn into the open. And dealt with..."
 
 Message:  1063
-<ce>             _chiefJustice_ sent you? Bah!
+<ce>             "_chiefJustice_ sent you? Bah!
 <ce>             
-<ce>             That old fool! Rest assured that after we've
+<ce>             "That old fool! Rest assured that after we've
 <ce>             killed you, %g'll be next.
 <ce>             
-<ce>             Guards!
+<ce>             "Guards!"
 
 Message:  1064
 <ce>             Benedictus,
@@ -199,22 +199,22 @@ Message:  1064
 <ce>             your corpse so I can eviserate you again.
 
 Message:  1065
-<ce>             What?! Why, this is the most foul accusation!
+<ce>             "What?! Why, this is the most foul accusation!
 <ce>             I find you in contempt of court, you
 <ce>             detestable insect. And now that you are
 <ce>             pronounced guilty it seems only approprate to
 <ce>             sentence you directly. To DEATH!
 <ce>             
-<ce>             Guards!
+<ce>             "Guards!"
 
 Message:  1066
-<ce>             What foul heresy is this?! The stain of such
+<ce>             "What foul heresy is this?! The stain of such
 <ce>             outrageous lies can only be washed away with
 <ce>             blood!
 <ce>             
-<ce>             Specifically, yours!
+<ce>             "Specifically, yours!
 <ce>             
-<ce>             Guards! Kill this vermin!
+<ce>             "Guards! Kill this vermin!"
 
 Message:  1067
 <ce>             An unremarkable peasant in a dirty cloak bumps
@@ -274,7 +274,7 @@ Message:  1095
 <ce>             _chiefJustice_ looks surprised to see you.
 <ce>             In fact he looks distinctly pale. His eyes
 <ce>             follow your hand as you produce the letter
-<ce>             you found on the dead "ringleader".
+<ce>             you found on the dead 'ringleader'.
 <ce>             
 <ce>             The parchment is the same high quality 
 <ce>             material as the dossier you were given at the
@@ -286,22 +286,22 @@ Message:  1095
 <ce>             His face turns defiant, almost snarling...
 
 Message:  1096
-<ce>             Well done my puppet! You've puzzled out this
+<ce>             "Well done my puppet! You've puzzled out this
 <ce>             conspiracy. Or at least most of it. Let me
 <ce>             explain the last few details.
 <ce>             
-<ce>             My former associates and I made a vast sum of
+<ce>             "My former associates and I made a vast sum of
 <ce>             money from our nefarious activities. The plan was
 <ce>             always to stop after three years, split the fortune
 <ce>             equally in five shares, and go our separate ways.
 <ce>             
-<ce>             Of course, why should I give up four-fifths of
+<ce>             "Of course, why should I give up four-fifths of
 <ce>             a fortune that is entirely mine by right?
 <ce>             But thanks to your simple-minded and unquestioning
 <ce>             obedience that is no longer a problem.
 <ce>             
-<ce>             The other witnesses are dead. That just leaves you.
-<ce>             Time that you joined them, in Oblivion!
+<ce>             "The other witnesses are dead. That just leaves you.
+<ce>             Time that you joined them, in Oblivion!"
 
 Message:  1097
 <ce>             The true ringleader of this conspiracy lies dead!
@@ -316,9 +316,9 @@ Message:  1097
 <ce>             darkness. But you'll be waiting for them.
 
 Message:  1099
-<ce>             I didn't give you permission to speak!
+<ce>             "I didn't give you permission to speak!
 <ce>             But you do have permission to die!
-<ce>             Have at you!
+<ce>             Have at you!"
 
 
 QBN:

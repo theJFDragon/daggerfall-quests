@@ -1,13 +1,11 @@
-
 =========================
 How to install new quests
 =========================
 
 You have downloaded some text files but what now?
-Hopefully you have several files named "JF0000x"
-And also "QuestList-JF.txt"
-And this instructions, otherwise how can you be
-reading this?
+Hopefully you have several files named "JF0000x.txt".
+And also "QuestList-JF.txt".
+And these instructions and possibly a change log.
 
 Goto your Daggerfall Unity folder.
 Then goto the "DaggerfallUnity_Data" folder.
@@ -15,24 +13,68 @@ Then goto the "SteamingAssets" folder.
 Then goto the "QuestPacks" folder.
 
 This is where you should already have installed
-Warm Ashes and Jay_H's Quest Pack 1.
+Warm Ashes and Jay_H's Quest Pack 1. If you haven't
+done that yet then I recommend doing so first.
 
-Make a new folder at this location called "JF".
-Put the text files in that folder.
+Make a new folder inside "QuestPacks" called "JF".
+Put the downloaded text files in that folder. It
+makes it easier for you to remove them later.
 
 You are now ready to go! Hopefully I didn't make
-any quest bugs that cause you any problems...
+any quest bugs that cause you any problems, but
+it is possible. Some of these quests are quite
+complex. At least to me.
 
 Note that inside the file "QuestList-JF.txt" it is
 defined which quests are active. Any line that
 begins with a hyphen "-" is inactive. You can
 decide which quests you want and which you don't.
-Some are not active by default.
+Some may not be active by default.
 
-this thread in the daggerfall unity workshop
+This thread in the daggerfall unity workshop
 forums is a good place to report any problems:
 https://forums.dfworkshop.net/viewtopic.php?f=14&t=2895
 
+TO UNINSTALL:
+Just delete the "JF" folder in "QuestPacks".
+
+TO UPDATE:
+You can overwrite the text files, or remove the old
+ones first and paste in the new ones.
+
+MISCELLANEOUS THINGS:
+1) Quest packs are just text files in a specific folder.
+   They are not the same as DFU mods (which are files
+   with .dfmod extension that go into the "Mods" folder).
+   So you won't see quest packs in the "Mods" list in
+   Daggerfall Unity's startup screen.
+
+2) Bug-fixes. Once a bug is confirmed I will _try_ to fix
+   it. Probably not immediately, but in due course*.
+   The fix only becomes effective when the quest is
+   started anew. So if you have a save file with an active
+   quest that is bugged I cannot help you. Try using the
+   console or edit your save text file (pretty tricky)
+   or let the quest expire.
+
+3) It is not needed to start a new game to experience the
+   new quests.
+
+4) Thanks to Jay_H for making the epic Quest Pack 1 and the
+   quest-writing tutorials at forums.dfworkshop.net, without
+   which I would have had lots more free time.
+
+5) Permissions: You can do anything you want with these
+   quests except benefit financially. I doubt it will be a
+   problem.
+
+
+If you have half as much fun playing these than I did
+writing them then I had twice as much fun as you.
 
 Cheers,
 theJF
+
+
+* at the appropriate juncture, in the fullness of time,
+when the necessary procedures have been completed, etc, etc.

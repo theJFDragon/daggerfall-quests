@@ -1,4 +1,19 @@
 
+2020-05-17	20 quests finally complete
+
+		JF000020 [ImpEx Courier Service]
+			new quest added!
+
+		JF000012 [Troubleshooter]
+			new quest added! ("pinball wizard" quest junked)
+
+		JF000019 [Jar Jar High Jinks]
+			made slightly less dumb with a small chance for actual combat
+
+		cosmetic clean-up:
+			copy-pasted rumours and post-quest greetings cleaned-up
+			some bugs involving names of NPCs and locations fixed
+
 -------------------------------------------------------------------------------
 2020-04-19	new quests abound
 
@@ -18,7 +33,7 @@
 			new quest added! (old "holy water" quest is lost to time now...)
 
 -------------------------------------------------------------------------------
-2020-04-12	I forgot about this. Probably it doesn't matter. But anyways...
+2020-04-12	I forgot about this changelog. Probably it doesn't matter. But anyways...
 
 		JF000015 [Do Not Forsake Me Oh My Darling]
 			new quest added!
@@ -110,4 +125,6 @@
 			new quest added!
 
 -------------------------------------------------------------------------------
-2019-10-24	added instructions, change log and correctly de-activated missing quest 9 and the terrible "3 dungeons" quest.
+2019-10-24	added instructions,
+		change log and
+		correctly de-activated missing quest 9 and the terrible "3 dungeons" quest.

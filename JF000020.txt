@@ -1,0 +1,446 @@
+Quest: JF000020
+DisplayName: ImpEx Courier Service
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             Looking for work, but not a Guild member? Hmmm.
+<ce>             Well, we do have a contract with the Imperial
+<ce>             Express courier service. It's simple work, just
+<ce>             delivering and collecting packages, but it's
+<ce>             steady pay. Are you interested?
+<--->
+<ce>             You want some work, eh? But you're not a Guild
+<ce>             member? How about some simple courier jobs?
+<ce>             We have a deal with the Imperial Express service.
+<ce>             Not very exciting but honest pay for honest work.
+<ce>             You up for it?
+<--->
+<ce>             We have a big pile of packages that the Imperial
+<ce>             Express courier service paid us to deliver. Most
+<ce>             Guild members aren't interested in this work, but
+<ce>             it's simple, easy and honest pay.
+<ce>             
+<ce>             It's also the only work I can offer you right now.
+<ce>             What do you say?
+
+RefuseQuest:  [1001]
+<ce>             Suit yourself.
+
+AcceptQuest:  [1002]
+<ce>             Great. I don't know the details and I don't want
+<ce>             to know. I just have this big list of deliveries
+<ce>             to tick off. Let's start at the top. Take this
+<ce>             work order, it has all the details.
+<ce>             
+<ce>             Try to complete the delivery in the next thirty
+<ce>             days. Most of this stuff has already been here
+<ce>             for ages but we should probably not make them
+<ce>             wait forever.
+<ce>             
+<ce>             Good luck. Don't get lost and don't be late.
+
+QuestFail:  [1003]
+<ce>             I don't rate your future if you can't even deliver
+<ce>             a simple package in time. This is as easy as it gets.
+
+QuestComplete:  [1004]
+<ce>             All done? Great, another one off the list. Come back
+<ce>             if you want more of the same. There's still a lot of
+<ce>             packages in the back waiting to be delivered.
+
+
+RumorsDuringQuest:  [1005]
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+<--->
+The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
+
+RumorsPostfailure:  [1006]
+I heard you are an enormous failure. Nice to meet you.
+<--->
+I heard you are an enormous failure. Nice to meet you.
+
+RumorsPostsuccess:  [1007]
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+<--->
+The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
+
+QuestorPostsuccess:  [1008]
+Hail friend! Tell me of the treasurers that my dungeons have yielded up.
+
+QuestorPostfailure:  [1009]
+We have no further business. Leave me.
+
+
+Message:  1040
+%qdt:
+ I've been given a job to deliver
+ a large sack. The details are in
+ the delivery note I was given.
+ 
+ Once I'm done I should head back to
+ _questgiver_ in ___questgiver_
+ to get paid.
+
+Message:  1041
+%qdt:
+ I've been given a delivery job.
+ First I have to visit the Fighters
+ Guild in ___fightersGuild_
+ to collect the package, then take
+ it to the address in the delivery note.
+
+ Once I'm done I should head back to
+ _questgiver_ in ___questgiver_
+ to get paid.
+
+Message:  1042
+%qdt:
+ Some goon tried to kill me. There
+ was no sign of the receipient of
+ the package. I guess this job is
+ a bust?
+
+Message:  1043
+%qdt:
+ The delivery for the Mages Guild
+ did not go entirely smoothly.
+ Whatever was in the bag I delivered
+ managed to summon a daedra!
+
+ Fortunately I am not contractually
+ required to resolve such problems.
+
+Message:  1044
+%qdt:
+ Although the delivery was for a
+ criminal smuggler who was using a
+ fake name and who had since been
+ abducted by a rival gang I was
+ able to successfully find them
+ and make the delivery.
+ 
+ I doubt anyone will appreciate this
+ dedication to duty.
+
+
+Message:  1060
+<ce>             "A package for me? Are you sure?
+<ce>             Alright, then. Thanks, I guess."
+<--->
+<ce>             "I don't remembering asking for any delivery.
+<ce>             Are you sure this is correct? Let me see that
+<ce>             delivery note.
+<ce>             
+<ce>             "Hmm. Well, that IS my name. Okay, well
+<ce>             thanks for delivering whatever this is.
+<--->
+<ce>             "Aha! I've been waiting for this for a long,
+<ce>             long time. I'm glad you finally arrived.
+<ce>             
+<ce>             "Come on, give it here! Thank you and farewell!"
+
+Message:  1061
+<ce>             "You still have a delivery to complete.
+<ce>             Come back when you're done with that.
+<ce>             I can't keep my quest register updated
+<ce>             correctly if people don't finish what
+<ce>             they start."
+
+Message:  1062
+<ce>             This is the place. One of the Guild workers
+<ce>             examines your delivery note, heads off and
+<ce>             comes back with a large sack.
+<ce>             
+<ce>             You can now finish this delivery.
+
+Message:  1063
+<ce>             "You're looking for _person_?
+<ce>             They haven't lived here for a long time.
+<ce>             I guess that package is a little overdue?
+<ce>             
+<ce>             "Anyway, I don't remember their new address.
+<ce>             Somewhere in __house1_. Good luck."
+
+Message:  1064
+<ce>             "Ah! This must be the 'special delivery' I've been
+<ce>             expecting for some time. Finally!
+<ce>             
+<ce>             "One moment courier, I never accept damaged goods.
+<ce>             Let me check everything is in order."
+
+Message:  1065
+<ce>             "Yes, this is in perfect condition! Excellent!
+<ce>             
+<ce>             "Thankyou so much, courier. Safe travels."
+
+Message:  1066
+<ce>             "Oh dear! This doesn't look good at all. Let me
+<ce>             make sure...
+<ce>             
+<ce>             "No, this is definitely not in good order. You'll
+<ce>             have to take it back where it came from.
+<ce>             
+<ce>             "Wait a moment...what is this? This shouldn't be
+<ce>             happening! Oh no! Run for your lives!!"
+
+Message:  1067
+<ce>             There is a crash of thunder and a flash of light.
+<ce>             An unholy laughter echoes from the void.
+<ce>             Something evil is here...
+<ce>             
+<ce>             You are definitely not getting paid to deal with
+<ce>             this! The delivery was made successfully! No
+<ce>             refunds!
+
+Message:  1068
+<ce>             "Good grief! I don't know how you managed to deal
+<ce>             with that abomination! But you have doubtless
+<ce>             saved all our lives.
+<ce>             
+<ce>             "Please take this diamond as a small token of
+<ce>             our gratitude!"
+
+Message:  1069
+<ce>             "A package for me? How did you find me?!
+<ce>             
+<ce>             "It doesn't matter now. I'm in big trouble
+<ce>             and this just might be my ticket out of here.
+<ce>             
+<ce>             "Thanks! I'm off!"
+
+
+Message:  1071
+<ce>             Imperial Express Courier Service
+<ce>             
+<ce>             Work Instruction:
+<ce>             
+<ce>             Package for: _person_
+<ce>             Town/City: __house1_
+<ce>             
+
+Message:  1072
+<ce>             Imperial Express Courier Service
+<ce>             
+<ce>             Work Instruction:
+<ce>             
+<ce>             Collect package from the depot at
+<ce>             the Fighters Guild in ___fightersGuild_.
+<ce>             
+<ce>             Package for: _person_
+<ce>             Town/City: __house2_
+<ce>             
+
+Message:  1073
+<ce>             Imperial Express Courier Service
+<ce>             
+<ce>             Work Instruction:
+<ce>             
+<ce>             Package for: _person_
+<ce>             Town/City: __house3_
+<ce>             
+
+Message:  1074
+<ce>             Imperial Express Courier Service
+<ce>             
+<ce>             Work Instruction:
+<ce>             
+<ce>             Package for: _person_
+<ce>             Town/City: __house4_
+<ce>             
+
+Message:  1075
+<ce>             Imperial Express Courier Service
+<ce>             
+<ce>             Work Instruction:
+<ce>             
+<ce>             Package for: _person_
+<ce>             Address: Mages Guild
+<ce>             Town/City: ___magesGuild_
+<ce>             
+
+Message:  1076
+<ce>             I discovered that idiot _otherPerson_
+<ce>             is sending their stuff through the Imperial
+<ce>             Express courier service. We need to intercept
+<ce>             the next package before they find out what's
+<ce>             going on. At least %g1 had the brains to use a
+<ce>             false name.
+<ce>             
+<ce>             Don't worry about %g2, I've arranged for %g2
+<ce>             to be in __house3_ for a few days.
+<ce>             
+<ce>             Take care of things and I'll cut you in for a
+<ce>             bigger slice on the next job.
+
+
+
+QBN:
+
+Person _questgiver_ group Questor male
+Person _person_ face 97 faction The_Thieves_Guild
+Person _otherPerson_ group Local_3.1 male
+
+Item _gold_ gold range 50 to 100
+Item _bonus_ diamond
+Item _bag_ large_sack
+Item _letter1_ letter used 1071
+Item _letter2_ letter used 1072
+Item _letter3_ letter used 1073
+Item _letter4_ letter used 1074
+Item _letter5_ letter used 1075
+Item _note_ letter used 1076
+
+Place _house1_ remote house1
+Place _house2_ remote house2
+Place _house3_ remote house3
+Place _house4_ remote house4
+Place _magesGuild_ remote magery
+Place _fightersGuild_ remote fighters
+
+Foe _warrior_ is Warrior
+Foe _seducer_ is 1 Daedra_seducer
+
+Clock _timeLimit_ 30.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	pick one of _choice1_ _choice2_ _choice3_ _choice4_ _choice5_
+	pick one of _mageOption1_ _mageOption1_ _mageOption2_
+	pc at _fightersGuild_ set _playerInFG_
+
+
+variable _choice1_
+variable _choice2_
+variable _choice3_
+variable _choice4_
+variable _choice5_
+variable _questDone_
+variable _playerInFG_
+variable _mageOption1_
+variable _mageOption2_
+
+
+_timeLimit_ task:
+	end quest
+
+
+_mission1_ task:
+	when _choice1_
+	get item _letter1_
+	get item _bag_
+	place npc _person_ at _house1_
+	log 1040 step 0
+
+_mission2_ task:
+	when _choice2_
+	get item _letter2_
+	place npc _person_ at _house2_
+	log 1041 step 0
+
+_mission3_ task:
+	when _choice3_
+	get item _letter3_
+	get item _bag_
+	place npc _otherPerson_ at _house3_
+	log 1040 step 0
+
+_mission4_ task:
+	when _choice4_
+	get item _letter4_
+	get item _bag_
+	place npc _person_ at _house4_
+	hide npc _person_
+	place foe _warrior_ at _house4_
+	give item _note_ to _warrior_
+	log 1040 step 0
+
+_warriorDead_ task:
+	killed _warrior_
+	add dialog for person _otherPerson_
+	place npc _otherPerson_ at _house3_
+	log 1042 step 2
+
+_mission5_ task:
+	when _choice5_
+	get item _letter5_
+	get item _bag_
+	place npc _person_ at _magesGuild_
+	log 1040 step 0
+
+_collectPackage_ task:
+	when _playerInFG_
+	get item _bag_
+	say 1062
+
+
+_talkToPerson_ task:
+	toting _bag_ and _person_ clicked
+
+_deliveryMade1_ task:
+	when _talkToPerson_ and _choice1_
+	say 1060
+	start task _questDone_
+
+_deliveryMade2_ task:
+	when _talkToPerson_ and _choice2_
+	say 1060
+	start task _questDone_
+
+_deliveryMade3_ task:
+	when _talkToPerson_ and _choice3_
+	say 1060
+	start task _questDone_
+
+_deliveryMade4_ task:
+	when _talkToOtherPerson_ and _choice4_
+	say 1069
+	log 1044 step 4
+	start task _questDone_
+
+_deliveryMade5_ task:
+	when _talkToPerson_ and _choice5_ and _mageOption1_
+	say 1064
+	say 1065
+	start task _questDone_
+
+_deliveryMade5ALT_ task:
+	when _talkToPerson_ and _choice5_ and _mageOption2_
+	say 1064
+	say 1066
+	create foe _seducer_ every 0 minutes 1 times with 100% success
+	start task _questDone_
+	say 1067
+	log 1043 step 3
+
+_slain_ task:
+	killed 1 _seducer_
+
+_getBonus2_ task:
+	when _slain_
+	get item _bonus_
+	make _bonus_ permanent
+	say 1068
+
+_talkToOtherPerson_ task:
+	clicked npc _otherPerson_
+
+_partialDelivery_ task:
+	when _talkToOtherPerson_ and _choice3_
+	place npc _person_ at _house1_
+	say 1063
+
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_rewardPlayer_ task:
+	when _questorClicked_ and _questDone_
+	give pc _gold_
+	end quest
+
+_clearclick_ task:
+	when _questorClicked_ and not _questDone_
+	say 1061
+	clear _questorClicked_ _clearclick_

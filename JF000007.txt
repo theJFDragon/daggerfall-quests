@@ -67,11 +67,11 @@ I'm glad the Fighters took care of those renegade soldiers. That's how you deal 
 
 
 QuestorPostsuccess:  [1008]
-Why if it isn't %pcf. I was just telling someone about how you dealt with those criminal deserters.
+Greetings %pcf. Thanks for clearing up that unpleasantness. My headache is almost gone now.
 
 
 QuestorPostfailure:  [1009]
-Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
+There might be an official investigation into the...incident. Please keep your mouth shut, eh?
 
 
 Message: 1019

@@ -64,10 +64,10 @@ The Cartographers are excited. I wonder why? Probably something to do with maps,
 The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
 
 QuestorPostsuccess:  [1008]
-Hail friend! Tell me of the treasurers that my dungeons have yielded up.
+Hail friend! I'm afraid I ate all of the fruit preserve. Sorry.
 
 QuestorPostfailure:  [1009]
-We have no further business. Leave me.
+You already failed to open my jar. All that fruity goodness is locked away forever!
 
 
 Message:  1040
@@ -77,6 +77,9 @@ Message:  1040
  the top has been screwed on very tightly and
  they lack the physical prowess to open it
  by themselves.
+
+ The jar is in my inventory, in case it was
+ not abundantly clear.
 
 
 Message:  1060
@@ -91,6 +94,18 @@ Message:  1061
 <ce>             nay, undignified panting and straining
 <ce>             you are forced to admit defeat.
 
+Message:  1062
+<ce>             Oh no! That jar was actually a magical
+<ce>             prison holding the restrained spirit
+<ce>             of an evil daedra!
+<ce>             
+<ce>             And you just released him into Tamriel!
+
+Message:  1063
+<ce>             Phew! The daedroth is dead. Sadly this
+<ce>             means that there is no fruit preserve
+<ce>             for anybody to enjoy...
+
 
 QBN:
 
@@ -98,23 +113,53 @@ Person _questgiver_ group Questor male anyInfo 1070
 
 Item _jar_ decanter
 
-Clock _timeLimit_ 0.06:00
+Foe _Daedroth_ is Daedroth
+
+Clock _timeLimit_ 0.30:00
 
 
 --	Quest start-up:
 	start timer _timeLimit_
+	pick one of _choice1_ _choice2_ _choice4_ _choice5_
+	pick one of _choice6_ _choice7_ _choice9_ _choice10_
 	get item _jar_
 	_jar_ used do _AttemptToOpenJar_
 	log 1040 step 0
+
+variable _choice1_
+variable _choice2_
+variable _choice4_
+variable _choice5_
+variable _choice6_
+variable _choice7_
+variable _choice9_
+variable _choice10_
+
+_ofCourseItIs_ task:
+	when _choice5_ and _choice10_
 
 _timeLimit_ task:
 	end quest
 
 _OpenJarSuccess_ task:
 	when _AttemptToOpenJar_ and _strengthTest_
+	
+_OpenJarEasy_ task:
+	when _OpenJarSuccess_ and not _ofCourseItIs_
 	say 1060
 	say 1004
 	change repute with _questgiver_ by +5
+	end quest
+
+_OpenJarWithHilariousSurprise_ task:
+	when _OpenJarSuccess_ and _ofCourseItIs_
+	create foe _Daedroth_ every 0 minutes 1 times with 100% success
+	say 1062
+
+_deaded_ task:
+	killed _Daedroth_
+	say 1063
+	change repute with _questgiver_ by +15
 	end quest
 
 _OpenJarFailure_ task:
@@ -126,4 +171,4 @@ _OpenJarFailure_ task:
 _AttemptToOpenJar_ task:
 
 _strengthTest_ task:
-	when attribute Strength is at least 250
+	when attribute Strength is at least 50

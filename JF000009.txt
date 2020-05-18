@@ -85,50 +85,50 @@ Message:  1021
 <ce>		and is certified guarenteed.
 
 Message:  1022
-<ce>		%oth! This is exactly what I need!
+<ce>		"%oth! This is exactly what I need!
 <ce>		Of course, the rumours are totally false, spread
 <ce>		no doubt by a malcontent with too much time on
 <ce>		their hands. Now I can show my face in the local
 <ce>		tavern again.
 <ce>		
-<ce>		Here, let me give you a consideration for your
+<ce>		"Here, let me give you a consideration for your
 <ce>		Temple's good works.
 <ce>		
-<ce>		Safe travels, %ra.
+<ce>		"Safe travels, %ra."
 
 Message:  1023
-<ce>		Do you take me for a fool, %ra?
+<ce>		"Do you take me for a fool, %ra?
 <ce>		
-<ce>		Nobody takes these idle rumours seriously.
+<ce>		"Nobody takes these idle rumours seriously.
 <ce>		No doubt it was the product of a child's
 <ce>		playful imagination.
 <ce>		
-<ce>		If I was to produce one of these "documents"
+<ce>		"If I was to produce one of these "documents"
 <ce>		in respectable company then there's a story
 <ce>		that would take me a long time to live down.
 <ce>		
-<ce>		Now get out of here before I set the dogs on you!
+<ce>		"Now get out of here before I set the dogs on you!"
 
 Message:  1024
-<ce>		They refused! How tiresome! Let me think....
+<ce>		"They refused! How tiresome! Let me think....
 <ce>		
-<ce>		Right, I have an idea. Head on over to the Mages
+<ce>		"Right, I have an idea. Head on over to the Mages
 <ce>		Guild in ___MagesGuild_. We've had
 <ce>		some dealings with them in the past.
 <ce>		
-<ce>		Speak to _Mage_ and get a magic
+<ce>		"Speak to _Mage_ and get a magic
 <ce>		gemstone of conjuration. Then head back to
 <ce>		___person_ and show them that they
 <ce>		could really, really benefit from purchasing
-<ce>		one of our certificates.
+<ce>		one of our certificates."
 
 Message:  1025
-<ce>		What's that? Ah, I see that _questgiver_
+<ce>		"What's that? Ah, I see that _questgiver_
 <ce>		is up to their old tricks again. Well, I'm not
 <ce>		one to judge. Not after that accident with
 <ce>		the fire atronachs.
 <ce>		
-<ce>		Here, this gemstone should be what you need.
+<ce>		"Here, this gemstone should be what you need."
 
 Message:  1026
 <ce>		The gem glows brightly. The conjuration effect

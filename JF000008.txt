@@ -3,31 +3,32 @@ DisplayName: Beat the Beastmaster
 QRC:
 
 QuestorOffer:  [1000]
-<ce>Maybe you can take care of this little problem?
-<ce>There's a strange wizard in ___dungeon_
-<ce>who seems to have special powers over the local
-<ce>wildlife. As you can probably imagine he's not
-<ce>using this ability to help anyone.
-<ce>
-<ce>Can you head over there and take care of things?
-<ce>And by "take care of things" I mean can you kill
-<ce>him and his army of beasts?
+<ce>             Maybe you can take care of this little problem?
+<ce>             There's a strange wizard in ___dungeon_
+<ce>             who seems to have special powers over the local
+<ce>             wildlife. As you can probably imagine he's not
+<ce>             using this ability to help anyone.
+<ce>             
+<ce>             Can you head over there and take care of things?
+<ce>             
+<ce>             And by "take care of things" I mean can you kill
+<ce>             him and his army of beasts?
 
 
 RefuseQuest:  [1001]
-<ce>How disappointing.
+<ce>             How disappointing.
 
 
 AcceptQuest:  [1002]
-<ce>Thankyou. On your way then!
+<ce>             Thank you. On your way then!
 
 
 QuestFail:  [1003]
-<ce>You are a disgrace to the Guild!
+<ce>             You are a disgrace to the Guild!
 
 
 QuestComplete:  [1004]
-<ce>Congratulations! Enjoy your well-earned gold.
+<ce>             Congratulations! Enjoy your well-earned gold.
 
 
 RumorsDuringQuest:  [1005]
@@ -73,9 +74,9 @@ Message:  1030
 
 
 Message:  1080
-<ce>		Good work on dealing with the Beastmaster's army
+<ce>		"Good work on dealing with the Beastmaster's army
 <ce>		of beasts. Here's a little something extra, a
-<ce>		long-lost map of a secret dungeon!
+<ce>		long-lost map of a secret dungeon!"
 
 
 QBN:

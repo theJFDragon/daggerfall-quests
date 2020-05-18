@@ -90,37 +90,37 @@ Message:  1044
 
 
 Message:  1045
-<ce>             I'm grateful you didn't kill me, stranger. I have
+<ce>             "I'm grateful you didn't kill me, stranger. I have
 <ce>             been afflicted with a terrible curse.
 <ce>             
-<ce>             I used to be a Warlock in the Mages Guild. One
+<ce>             "I used to be a Warlock in the Mages Guild. One
 <ce>             fateful night I was undertaking an extremely
 <ce>             hazardous experiment in ultra-high energy magical
 <ce>             forces. I don't know exactly what happened but
 <ce>             the magical energy got out of control and I was
 <ce>             caught in its sphere of influence.
 <ce>             
-<ce>             Since that day, whenever I am sufficiently angered,
+<ce>             "Since that day, whenever I am sufficiently angered,
 <ce>             the rage is physically manifested in my person and
 <ce>             I am transformed into a frenzied giant.
 <ce>             
-<ce>             You say that _questgiver_ sent you?
+<ce>             "You say that _questgiver_ sent you?
 <ce>             I pray you do not reveal my condition. Please, say
 <ce>             that the giant is gone and that I am safe.
 <ce>             
-<ce>             A thousand thanks, stranger. Fare well.
+<ce>             "A thousand thanks, stranger. Fare well."
 
 
 Message:  1046
-<ce>             Thank you for getting rid of that foul giant.
+<ce>             "Thank you for getting rid of that foul giant.
 <ce>             I can only hope that my brother also fled and that
-<ce>             he will soon return.
+<ce>             he will soon return."
 
 
 Message:  1047
-<ce>             Thank you stranger! I am so relieved to hear that
+<ce>             "Thank you stranger! I am so relieved to hear that
 <ce>             my dear brother is safe. I will be able to face his
-<ce>             ill-temper with a smile after this narrow escape.
+<ce>             ill-temper with a smile after this narrow escape."
 
 
 QBN:

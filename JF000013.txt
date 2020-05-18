@@ -157,18 +157,18 @@ Message:  1060
 <ce>             Healer of %god
 
 Message: 1061
-<ce>             Forgive me %ra but I am afflicted with a
+<ce>             "Forgive me %ra but I am afflicted with a
 <ce>             disease that has confounded all the healers and
 <ce>             experts in the district. For your own safety
 <ce>             please keep away.
 <ce>             
-<ce>             I have engaged the services of _healer_.
+<ce>             "I have engaged the services of _healer_.
 <ce>             If you have any ideas maybe you can talk to %g2.
 <ce>             I must rest now, I feel very weak. But be
-<ce>             assured that I am grateful for your help.
+<ce>             assured that I am grateful for your help."
 
 Message:  1062
-<ce>             _sister_'s condition is very grave.
+<ce>             "_sister_'s condition is very grave.
 <ce>             There is, however, a thin sliver of hope. One of
 <ce>             my learned compatriots is perfecting a potion
 <ce>             that they hope will work. The problem is that
@@ -176,32 +176,32 @@ Message:  1062
 <ce>             sample must come from a specific location.
 <ce>             Something to do with unique mineral properties.
 <ce>             
-<ce>             The ingredients are _ingredient1_ and
+<ce>             "The ingredients are _ingredient1_ and
 <ce>             _ingredient2_. Our diviners have identified
 <ce>             a suitable sample of _ingredient1_ somewhere
 <ce>             in the depths of ___dungeon_.
 <ce>             
-<ce>             The spellcasters are still trying to conjure up
+<ce>             "The spellcasters are still trying to conjure up
 <ce>             the location of the second ingredient. Take the
 <ce>             sample directly to _potionMaker_, who is
 <ce>             concoting the potion for us. You will find
-<ce>             %g2 in the Mages Guild of ___magesGuild_. Good luck!
+<ce>             %g2 in the Mages Guild of ___magesGuild_. Good luck!"
 
 Message:  1063
-<ce>             Great %god! Your reputation proceeds you
+<ce>             "Great %god! Your reputation proceeds you
 <ce>             %pcf! What fortune to have a
 <ce>             Master of Restoration at
 <ce>             hand in this situation.
 <ce>             
-<ce>             _sister_'s disease has resisted
+<ce>             "_sister_'s disease has resisted
 <ce>             every attempt at a cure. But surely you
 <ce>             will succeed where we lesser mortals have
 <ce>             tried and failed.
 <ce>             
-<ce>             I beseech you, make haste for ___sister_.
+<ce>             "I beseech you, make haste for ___sister_.
 <ce>             but take care, for bandit gangs are openly
 <ce>             roaming the countryside and have even
-<ce>             been seen openly in the streets after dark.
+<ce>             been seen openly in the streets after dark."
 
 Message:  1064
 <ce>             Thanks to your mastery of the magical school of
@@ -248,16 +248,16 @@ Message:  1066
 <ce>             Whatever. Time to take out the trash...
 
 Message:  1067
-<ce>             Ah, %pcf, we've been expecting you.
+<ce>             "Ah, %pcf, we've been expecting you.
 <ce>             We're in luck, the other ingredient was just
 <ce>             delivered to me by an alchemist of my
 <ce>             aquaintance. With the sample that you have
 <ce>             found I can complete the preparation of this
 <ce>             potent potion.
 <ce>             
-<ce>             Yes, it's ready! Deliver it to the patient
+<ce>             "Yes, it's ready! Deliver it to the patient
 <ce>             as soon as possible. A pleasure to work
-<ce>             with you, %pcf.
+<ce>             with you, %pcf."
 
 Message:  1068
 <ce>             You give _sister_ the potion and help
@@ -275,37 +275,37 @@ Message:  1068
 <ce>             It is a good deed that you have done this day.
 
 Message:  1069
-<ce>             Ah, %pcf, we've been expecting you.
+<ce>             "Ah, %pcf, we've been expecting you.
 <ce>             I'm afraid I have bad news. A sample of
 <ce>             _ingredient2_ has been detected in
 <ce>             ___dungeon2_ and a volunteer
 <ce>             sent to retrieve it.
 <ce>             
-<ce>             But they should have returned by now...
+<ce>             "But they should have returned by now...
 <ce>             
-<ce>             I fear they have met an unfortunate
+<ce>             "I fear they have met an unfortunate
 <ce>             end in the depths of that accursed
 <ce>             pit. Time is running out. You are now
 <ce>             our only hope of recovering the
-<ce>             sample we desperately need.
+<ce>             sample we desperately need."
 <ce>             
 <ce>             Are willing and able to delve into
 <ce>             ___dungeon2_ and find the
 <ce>             _ingredient2_?
 
 Message:  1070
-<ce>             Our hero returns! And with the _ingredient2_
+<ce>             "Our hero returns! And with the _ingredient2_
 <ce>             no less! Word of your deeds will echo
 <ce>             across this land for years to come!
 <ce>             
-<ce>             But enough flattery, no matter how well
+<ce>             "But enough flattery, no matter how well
 <ce>             deserved. I must prepare the potion.
 <ce>             Everything is waiting. It will take
 <ce>             but a few moments...
 <ce>             
-<ce>             Yes, it's ready! Deliver it to the patient
+<ce>             "Yes, it's ready! Deliver it to the patient
 <ce>             as soon as possible. A pleasure to work
-<ce>             with you, %ra.
+<ce>             with you, %ra."
 
 Message:  1071
 <ce>             This is unquestionably the sample that

@@ -68,7 +68,7 @@ The Baroness seems happier these days. At least somebody around here has had som
 
 
 QuestorPostsuccess:  [1008]
-Greetings %pcf. I was just telling someone about how you helped me sort out that renegade and %g3 duplicates.
+Greetings %pcf. I was just telling someone about how you helped me sort out that ransom problem.
 
 
 QuestorPostfailure:  [1009]
@@ -102,9 +102,9 @@ Message:  1043
 
 
 Message:  1044
-<ce>             It's been a pleasure doing business.
+<ce>             "It's been a pleasure doing business.
 <ce>             The merchandise will be delivered directly
-<ce>             and in perfect condition.
+<ce>             and in perfect condition."
 
 
 Message:  1045

@@ -7,7 +7,7 @@ QuestorOffer:  [1000]
 <ce>             Ah, %ra, I was just thinking about somebody like you.
 <ce>             Specifically, somebody motivated by gold, entirely
 <ce>             lacking in moral scruple and not afraid of a little
-<ce>             blood. Or a lot. Or actually quite fond of it.
+<ce>             blood. Or a lot blood.
 <ce>             
 <ce>             For reasons that need not concern you I need to
 <ce>             take possession of a plot of land. Suffice it to say
@@ -16,7 +16,7 @@ QuestorOffer:  [1000]
 <ce>             
 <ce>             Well, some fool does oppose it. The selfish
 <ce>             malfesant who happens to own the farmstead at
-<ce>             ___farmstead_. Instead of selling
+<ce>             __farmstead_. Instead of selling
 <ce>             the property for a perfectly reasonable amount
 <ce>             they have refused even to consider negociating!
 <ce>             
@@ -38,9 +38,9 @@ AcceptQuest:  [1002]
 <ce>             Good. This is very simple. But I'll speak slowly
 <ce>             so you can write it down in your journal.
 <ce>             
-<ce>             Travel to ___farmstead_.
+<ce>             Travel to __farmstead_.
 <ce>             
-<ce>             If they've managed to rustle up a mob consider them
+<ce>             If they've managed to rustle up a mob, consider them
 <ce>             as bandits. Kill everyone in possession of a weapon.
 <ce>             
 <ce>             Then speak to the owner. My new offer for the property
@@ -79,10 +79,10 @@ The Cartographers are excited. I wonder why? Probably something to do with maps,
 The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
 
 QuestorPostsuccess:  [1008]
-Hail fair dispenser of justice!
+If you find anyone who knows how to mine ebony send them my way, eh?
 
 QuestorPostfailure:  [1009]
-We have no further business. Leave me.
+We have no further business. Leave. Now.
 
 
 Message:  1040
@@ -96,7 +96,7 @@ Message:  1040
 
  It is not clear that _questgiver_
  has the authority to issue these orders
- but he pays well.
+ but he pays well enough.
 
 Message:  1041
 %qdt:
@@ -106,21 +106,21 @@ Message:  1041
  Time to head back and get paid.
 
 Message:  1050
-<ce>             We were expecting _questgiver_ would
+<ce>             "We were expecting _questgiver_ would
 <ce>             try something like this. No matter what that
 <ce>             corrupt, greedy vulture wants we're not
 <ce>             selling and we're not leaving.
 <ce>             
-<ce>             You've got five seconds. You can either walk
+<ce>             "You've got five seconds. You can either walk
 <ce>             out of here now or end up buried under the
 <ce>             cabbages with the other unwanted salesmen.
 <ce>             
-<ce>             Your choice, %ra.
+<ce>             "Your choice, %ra."
 
 Message:  1051
-<ce>             Your duties are incomplete. It is not necessary,
+<ce>             "Your duties are incomplete. It is not necessary,
 <ce>             nor, indeed, appropriate, for us to converse until
-<ce>             your assigned tasks are completed.
+<ce>             your assigned tasks are completed."
 
 Message:  1052
 <ce>             Looks like the former owner of ___farmstead_ 

@@ -123,11 +123,11 @@ Message: 1043
 
 
 Message:  1050
-<ce>             I'm not sure what you did but
+<ce>             "I'm not sure what you did but
 <ce>             it wasn't entirely correct. It
 <ce>             seems we have a few uninvited
 <ce>             guests ourselves. Take care of
-<ce>             this, would you, %pcf?
+<ce>             this, would you, %pcf?"
 
 
 QBN:
