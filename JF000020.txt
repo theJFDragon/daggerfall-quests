@@ -66,10 +66,10 @@ The Cartographers are excited. I wonder why? Probably something to do with maps,
 The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
 
 QuestorPostsuccess:  [1008]
-Hail friend! Tell me of the treasurers that my dungeons have yielded up.
+Hail friend!
 
 QuestorPostfailure:  [1009]
-We have no further business. Leave me.
+Oh. It's you.
 
 
 Message:  1040

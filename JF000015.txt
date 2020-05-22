@@ -58,7 +58,7 @@ QuestorPostsuccess:  [1008]
 Do I know you?
 
 QuestorPostfailure:  [1009]
-We have no further business, %ra.
+We have nothing more to discuss, %ra.
 
 
 Message:  1040

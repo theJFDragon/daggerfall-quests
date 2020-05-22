@@ -64,7 +64,7 @@ The Cartographers are excited. I wonder why? Probably something to do with maps,
 The Cartographers are excited. I wonder why? Probably something to do with maps, I guess.
 
 QuestorPostsuccess:  [1008]
-Hail friend! I'm afraid I ate all of the fruit preserve. Sorry.
+Hail friend! I'm sorry to report that I have no more jars that need opening.
 
 QuestorPostfailure:  [1009]
 You already failed to open my jar. All that fruity goodness is locked away forever!

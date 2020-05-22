@@ -39,7 +39,8 @@ AcceptQuest:  [1002]
 <ce>             in town. After that you're on your own.
 <ce>             
 <ce>             Do not deviate from their instructions. Just give
-<ce>             them their ill-begotten ransom.
+<ce>             them their ill-begotten ransom. Every minute is
+<ce>             vital so do not waste a moment.
 <ce>             
 <ce>             Good luck %pcf.
 
@@ -115,17 +116,17 @@ Message:  1045
 
 Message:  1051
 %qdt:
- The next place to go is  _inn_.
+ The next place to go is _inn_.
 
 
 Message:  1052
 %qdt:
- The next place is  _shop_.
+ The next place is _shop_.
 
 
 Message:  1053
 %qdt:
- The last place is  _pawnshop_.
+ The last place is _pawnshop_.
 
 
 Message:  1054

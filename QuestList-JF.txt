@@ -13,7 +13,7 @@ JF000001, FightersGuild, M, 5, 0, [Bounty on the Mutiny] kill a bandit gang and 
 JF000002, FightersGuild, M, 2, 0, [Sticky Fingers] find a thief in the fighter's guild and wack 'em
 JF000003, KnightlyOrder, M, 2, 0, [Runaround] runaround for delivering ransom to kidnapper dirty harry style
 JF000004, MagesGuild, M, 3, 0, [Attack the Clones] kill a renegade mage who is cloning himself. Vigourously.
-JF000005, MagesGuild, M, 1, 0, [The Three Dungeons] tiresome hunt through 3 dungeons! you love it...
+JF000005, MagesGuild, M, 4, 0, [The Three Dungeons] tiresome hunt through 3 dungeons! you love it...
 JF000006, MagesGuild, M, 3, 0, [Rent-a-Ghost] join up with the fighters guild to scam innocent townsfolk!
 JF000007, HolyOrder, N, 1, 0, [The Morning After] purify a shrine
 JF000008, FightersGuild, M, 1, 0, [Beat the Beastmaster] another generic dungeon hunt

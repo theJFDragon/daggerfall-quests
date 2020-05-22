@@ -57,14 +57,19 @@ AcceptQuest:  [1002]
 <ce>             All relevant information is in this letter.
 <ce>             The name of the guilty and their last known
 <ce>             location.
+<ce>             
+<ce>             Make no additional notes and destroy the
+<ce>             letter when your task is complete.
+<ce>             Sometimes agents of the light must work
+<ce>             in the shadows.
 
 QuestFail:  [1003]
 <ce>             It is a dark day for our Order.
 <ce>             And for you in particular.
 
 QuestComplete:  [1004]
-<ce>             You have done well %lev, but
-<ce>             for both our sakes we shall not
+<ce>             You have done well %lev, but,
+<ce>             for both our sakes, we shall not
 <ce>             speak of this business again.
 
 
@@ -98,14 +103,15 @@ Message:  1040
 
 Message:  1041
 %qdt:
- My instructions have been carried out.
+ My orders have been executed.
  Time to head back.
 
 
 Message:  1060
-<ce>             You have slain the target.
-<ce>             Let's hope those wise, noble
-<ce>             statesmen didn't make a mistake...
+<ce>             You have slain the target. It is done.
+<ce>             
+<ce>             Let's hope the wise, noble statesmen
+<ce>             who gave this order didn't make a mistake...
 
 Message: 1061
 <ce>             "Yes, I am _npc_. What of it?
@@ -116,6 +122,46 @@ Message: 1061
 <ce>             being poisoned! It was a co-incidence!
 <ce>             
 <ce>             "Somebody help me! I'm being attacked!"
+<--->
+<ce>             "_npc_, at your service, %ra.
+<ce>             
+<ce>             "What's that you said? 'Cheating justice'?
+<ce>             I have no idea what you are talking about.
+<ce>             I was honourably acquitted by a jury of
+<ce>             my peers.
+<ce>             
+<ce>             "So what if most of them were members of
+<ce>             my own family. It was a very small village!
+<ce>             And I have a very large family!
+<ce>             
+<ce>             "Help! Somebody help me!"
+<--->
+<ce>             "I told the Chief Justice and the Officer
+<ce>             of the Watch. And now I'm telling you.
+<ce>             You can't pin anything on me.
+<ce>             
+<ce>             "Anyways, the judge's daughter turned up
+<ce>             safe and sound didn't she? No harm done.
+<ce>             
+<ce>             "What are you doing?! No! You can't do
+<ce>             this! Somebody help me!"
+
+Message: 1062
+<ce>             There's a flash of light and _npc_
+<ce>             has vanished! Must have had an illusion spell...
+<ce>             
+<ce>             Invisibility or not, they're still around here
+<ce>             somewhere. Sooner or later the spell will wear off.
+<ce>             Find them and finish this.
+<--->
+<ce>             Before you can react _npc_ flings a
+<ce>             handful of dust in your face! You are blinded
+<ce>             for several seconds but quickly recover.
+<ce>             
+<ce>             _npc_ couldn't have gotten far.
+<ce>             They're still very close by. Find them and
+<ce>             put an end to this.
+
 
 Message: 1071
 <ce>             _npc_
@@ -191,10 +237,12 @@ _mission3_ task:
 	place npc _npc_ at _temple_
 
 _mission4_ task:
+	when _choice4_
 	get item _letter4_
 	place npc _npc_ at _palace_
 
 _mission5_ task:
+	when _choice5_
 	get item _letter5_
 	place npc _npc_ at _house_
 
@@ -202,11 +250,13 @@ _identifyTarget_ task:
 	clicked npc _npc_
 	say 1061
 	hide npc _npc_
+	say 1062
 	create foe _target_ every 0 minutes 1 times with 100% success
 
 _slain_ task:
 	killed _target_
 	say 1060
+	log 1041 step 1
 
 _questorClicked_ task:
 	clicked npc _questgiver_
