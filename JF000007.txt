@@ -4,7 +4,7 @@ DisplayName: The Morning After
 QRC:
 
 QuestorOffer:  [1000]
-<ce>             What? Who? oh, it's you %pcf. Apologies for the
+<ce>             What? Who? Oh, it's you %pcf. Apologies for the
 <ce>             groggy welcome. Everyone is still recovering
 <ce>             from last night's annual celebration...ritual.
 <ce>             
@@ -15,11 +15,9 @@ QuestorOffer:  [1000]
 <ce>             around. Anyway, as your head is by far the
 <ce>             clearest around here, can you do us a big favour?
 
-
 RefuseQuest:  [1001]
 <ce>             Suit yourself %pcf. Must be nice to be
 <ce>             able to turn down work, eh?
-
 
 AcceptQuest:  [1002]
 <ce>             Thanks %pcf, nobody here is up for anything
@@ -35,19 +33,24 @@ AcceptQuest:  [1002]
 <ce>             Can you head over to ___cult_ and
 <ce>             make sure that anything supernatural is
 <ce>             shuffled back to where it came from?
-
+<ce>             
+<ce>             ___cult_ is a very secluded, private place, so
+<ce>             there's no great urgency. But please take no
+<ce>             longer than 30 days to tidy up, otherwise
+<ce>             unpleasant rumours may start to circulate.
 
 QuestFail:  [1003]
-<ce>             Disappointing %pcf. The Guild has a
+<ce>             Disappointing %pcf. The Temple has a
 <ce>             reputation to maintain and yours just
 <ce>             took a right beating. Get out of here.
 
-
 QuestComplete:  [1004]
+<ce>             Wow! So many, eh? Things must have been
+<ce>             really wild! I'm almost happy it's all
+<ce>             a blur.
 <ce>             
-<ce>             
-<ce>             
-<ce>             
+<ce>             Thanks for taking care of things and
+<ce>             keeping a lid on this.
 
 
 RumorsDuringQuest:  [1005]
@@ -55,20 +58,16 @@ Did you hear about that platoon of soldiers who went rogue and started pillaging
 <--->
 The army sent some men to clear up the bandit problem. Then they decided they'd rather be the bandits!
 
-
 RumorsPostfailure:  [1006]
 Seems the Fighters Guild couldn't handle those renegade soldiers. Maybe the army will send more troops? I hope they stay loyal!
 <--->
 The Fighters Guild are fine at dealing with normal bandits. But those army deserters are too much for them. Shame!
 
-
 RumorsPostsuccess:  [1007]
 I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
 
-
 QuestorPostsuccess:  [1008]
 Greetings %pcf. Thanks for clearing up that unpleasantness. My headache is almost gone now.
-
 
 QuestorPostfailure:  [1009]
 There might be an official investigation into the...incident. Please keep your mouth shut, eh?
@@ -77,7 +76,6 @@ There might be an official investigation into the...incident. Please keep your m
 Message: 1019
 <ce>             This is the place. I wonder what
 <ce>             they were up to last night?
-
 
 Message:  1020
 <ce>             The shrine is cleansed.
@@ -93,24 +91,26 @@ Message:  1040
  nothing untoward left after
  their "ceremonial ritual".
 
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. Rumours about the
+<ce>             less than saintly behaviour of certain Temple
+<ce>             members have gained wide currency.
 
 
 QBN:
 
 Item _gold_ gold range 800 to 1200
 
---Item _map_ letter used 1015
-
 Person _questgiver_ group Questor male
 
 Place _cult_ remote cult
 
 Foe _seducer_ is 2 Daedra_seducer
-Foe _nymph_ is 5 Nymph
+Foe _nymph_ is 4 Nymph
 
 Clock _timeLimit_ 30.00:00
 
-Foe _en1_ is 7 Warrior
 
 --	Quest start-up:
 	start timer _timeLimit_
@@ -118,23 +118,26 @@ Foe _en1_ is 7 Warrior
 	pc at _cult_ set _onsite_
 	log 1040 step 0
 
+
 _timeLimit_ task:
+	say 1099
 	end quest
 
 _onsite_ task:
-	say 1019
 	create foe _seducer_ every 0 minutes 1 times with 100% success
 	create foe _nymph_ every 0 minutes 1 times with 100% success
+	say 1019
 
 _slain_ task:
 	killed 2 _seducer_
 
 _slain2_ task:
-	killed 5 _nymph_
+	killed 4 _nymph_
 
 _slain3_ task:
 	when _slain_ and _slain2_
 	say 1020
+	stop timer _timeLimit_
 
 _questorClicked_ task:
 	clicked npc _questgiver_

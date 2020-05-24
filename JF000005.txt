@@ -15,13 +15,14 @@ QuestorOffer:  [1000]
 <ce>             of knowledge? It might take a while. A really,
 <ce>             really long while, but I can't imagine you have
 <ce>             anything better to do?
-
+<ce>             
+<ce>             Oh, it also involves dungeons. Quite a few
+<ce>             dungeons, in fact. You like dungeons, don't you?
 
 RefuseQuest:  [1001]
 <ce>             With that attitude you won't go far
 <ce>             in the Mages Guild. But you might
 <ce>             live longer, to be fair.
-
 
 AcceptQuest:  [1002]
 <ce>             Splendid! The idea was that my teleportation
@@ -35,15 +36,14 @@ AcceptQuest:  [1002]
 <ce>             one and so on. Clear? Splendid. Remember, get
 <ce>             the three gems and come back here, OK?
 <ce>             
+<ce>             I think that 99 days should be more than ample.
 <ce>             Well, I'm sure you're all prepared so I'll
 <ce>             just send you on your way immediately!
-
 
 QuestFail:  [1003]
 <ce>             Disappointing %pcf. The Guild has a
 <ce>             reputation to maintain and yours just
 <ce>             took a right beating. Leave me.
-
 
 QuestComplete:  [1004]
 <ce>             %pcf, I haven't seen you for a while.
@@ -63,20 +63,16 @@ Did you hear about that platoon of soldiers who went rogue and started pillaging
 <--->
 The army sent some men to clear up the bandit problem. Then they decided they'd rather be the bandits!
 
-
 RumorsPostfailure:  [1006]
 Seems the Fighters Guild couldn't handle those renegade soldiers. Maybe the army will send more troops? I hope they stay loyal!
 <--->
 The Fighters Guild are fine at dealing with normal bandits. But those army deserters are too much for them. Shame!
 
-
 RumorsPostsuccess:  [1007]
 I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
 
-
 QuestorPostsuccess:  [1008]
 Hello %pcf. Thanks again for retrieving those crystals. They were quite expensive, you know...
-
 
 QuestorPostfailure:  [1009]
 I hope nobody finds those teleportation crystals and uses them for evil.
@@ -131,6 +127,14 @@ Message:  1051
 
 Message:  1052
 <ce>             You now have the full set of crystals.
+
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. _questgiver_
+<ce>             will be disappointed to have lost his magic
+<ce>             teleportation crystals but at least no harm
+<ce>             was done. As far as you know.
+
 
 
 QBN:
@@ -192,6 +196,7 @@ _usedGem3_ task:
 	teleport pc to _randomDungeon_
 
 _timeLimit_ task:
+	say 1099
 	end quest
 
 _rewardPlayer_ task:

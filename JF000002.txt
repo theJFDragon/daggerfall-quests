@@ -11,34 +11,36 @@ QuestorOffer:  [1000]
 <ce>             people upstairs know who to keep on
 <ce>             the right side of.
 
-
 RefuseQuest:  [1001]
 <ce>             I just hope this doesn't come back to
 <ce>             bite us all in the you-know-where.
 
-
 AcceptQuest:  [1002]
-<ce>             Thanks %pcf. The problem is that one of our
-<ce>             Guild members has got sticky fingers. All kinds
-<ce>             of things have been going missing. Weapons,
-<ce>             supplies, gold, even stuff we've been hired to
-<ce>             recover. The last thing that's gone missing was
-<ce>             a client's weapon. I'm not sure who's the
-<ce>             culprit, but I've narrowed it down to three.
+<ce>             Thanks %pcf. The problem is that one of our Guild members
+<ce>             has got sticky fingers. All kinds of things have been
+<ce>             going missing. Weapons, supplies, gold, even stuff we've
+<ce>             been hired to recover. The last thing was a client's weapon.
+<ce>             They paid a lot of money to get that back and they won't
+<ce>             be happy to find out that we've "misplaced" it.
 <ce>             
-<ce>             _suspect1_ is a veteran fighter but
-<ce>             %g1's not taken many jobs lately.
+<ce>             I'm not sure who's the culprit, but I've narrowed it
+<ce>             down to three.
+<ce>             
+<ce>             _suspect1_ is a veteran fighter but %g1's not
+<ce>             taken many jobs lately.
 <ce>             
 <ce>             _suspect2_ used to be really reliable. Now
 <ce>             %g1 spends most %g3 time in the local tavern.
 <ce>             
 <ce>             _suspect3_ is a newcomer. I don't know much
-<ce>             about %g2 but %g1 usually hangs around
-<ce>             the Guildhall at night.
+<ce>             about %g2 but %g1 often hangs around the
+<ce>             Guildhall at night.
 <ce>             
-<ce>             Have a nose around and see what you can find.
+<ce>             We have to sort this out quickly. I can put off the
+<ce>             client for forty-eight hours but then word will get
+<ce>             out. Have a nose around and see what you can find.
+<ce>             
 <ce>             And keep it low key, eh?
-
 
 QuestComplete:  [1004]
 <ce>             Thanks %pcf, if this rot hadn't been cut out
@@ -47,7 +49,6 @@ QuestComplete:  [1004]
 <ce>             Although this was off-the-books there is a
 <ce>             special fund for miscellaneous expenses.
 <ce>             I know it's not much...
-
 
 QuestFail:  [1003]
 <ce>             Disappointing %pcf. The Guild has a
@@ -60,44 +61,38 @@ I'm not sure what's going on but some people seem to be losing confidence in the
 <--->
 The Sheriff used to regularly call on the Fighters Guild for their services. But lately, not so much.
 
-
 RumorsPostfailure:  [1006]
 Nobody is telling me why, but some people are steering well clear of the Fighters Guild these days.
 <--->
 I hear bad things about the Fighters Guild. Wouldn't want to say more than that.
 
-
 RumorsPostsuccess:  [1007]
 The Fighters Guild reputation in the town has never been higher. I feel safer already.
 
-
 QuestorPostsuccess:  [1008]
 Greetings my dear %pcf. Thanks again for dealing with that problem.
-
 
 QuestorPostfailure:  [1009]
 Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
 
 
 Message: 1019
-<ce>             "Yeah, that's the last thing that went missing.
+<ce>             Yeah, that's the last thing that went missing.
 <ce>             I think that counts as damning evidence. We need
 <ce>             to take of this problem quietly. And permanently.
 <ce>             
-<ce>             "I'll arrange a meeting with _suspect2_,
+<ce>             I'll arrange a meeting with _suspect2_,
 <ce>             but you'll be waiting to deal with %g2 when %g1
 <ce>             arrives. Understand?
 <ce>             
-<ce>             "Wait in _house_, %g1'll arrive
-<ce>             after midnight."
-
+<ce>             Wait in _house_, %g1'll arrive
+<ce>             after midnight.
 
 Message: 1020
 <ce>             Looks like the only thing %g1'll be taking now
 <ce>             is a space...in the local cemetery.
 <ce>             
 <ce>             *lowers visor*
-
 
 Message: 1021
 <ce>             This matches the description of the client's
@@ -114,14 +109,12 @@ I'm sure they live around here. Or they used to. Been a while.
 <--->
 Sorry, couldn't tell you anything about _suspect1_.
 
-
 Message:  1027
 _suspect2_ is renting a room at _inn_. It's odd because they've got a house here in town.
 <--->
 I've seen _suspect2_ hanging around _inn_. I don't know why, it's not a nice place.
 <--->
 _suspect2_, eh? I'd check out _inn_. But you didn't hear that from me, right?
-
 
 Message:  1028
 Oh yeah, I know _suspect3_. Only been in town a few weeks. Seems an alright sort.
@@ -131,21 +124,20 @@ _suspect3_? Nope. Never heard of a _suspect3_.
 _suspect3_? I don't like 'em. Bad knees. Really bad.
 
 
-
 Message:  1040
 %qdt:
  It seems that the Fighters have a
  problem with someone who's in the
  wrong Guild. _questgiver_ gave
  me three names:
- _suspect1_
- _suspect2_
- _suspect3_
+    _suspect1_
+    _suspect2_
+    _suspect3_
  I need to find some evidence to nail
  the thief and then deliver it to
  _questgiver_ in ___questgiver_.
-
-
+ Time is of the essence, this needs
+ to be resolved in 2 days.
 
 Message:  1041
 %qdt:
@@ -155,6 +147,12 @@ Message:  1041
  done in _house_
  after midnight.
 
+Message:  1099
+<ce>             It has taken you too much time to deal
+<ce>             with the pilfering in the Fighters Guild.
+<ce>             Angry clients are now calling on the
+<ce>             local Watch to investigate the Guild,
+<ce>             whose reputation is now in tatters.
 
 
 QBN:
@@ -186,6 +184,7 @@ Clock _timeLimit_ 2.00:00
 
 
 _timeLimit_ task:
+	say 1099
 	end quest
 
 _day_ task:

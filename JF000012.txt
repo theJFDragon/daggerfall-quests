@@ -161,11 +161,11 @@ Message:  1050
 <ce>             registered in __chemist_.
 
 Message:  1051
-<ce>             "I don't know who you are and I don't care. I'm the boss of this
+<ce>             I don't know who you are and I don't care. I'm the boss of this
 <ce>             establishment and our absent landlord had better get used to it.
 <ce>             
-<ce>             "Now, I think it's time for you to leave. To make sure that you
-<ce>             don't find your way back inside our security will take care of you."
+<ce>             Now, I think it's time for you to leave. To make sure that you
+<ce>             don't find your way back inside our security will take care of you.
 
 Message:  1052
 <ce>             The manager denies, most unconvincingly, ever skimming profits
@@ -312,14 +312,14 @@ Message:  1064
 <ce>             Time to move on...
 
 Message:  1065
-<ce>             "Well done %ra, I am actually impressed.
+<ce>             Well done %ra, I am actually impressed.
 <ce>             Of course _assistant_'s report
 <ce>             tried to steal most of the credit, but naturally,
 <ce>             I don't believe everything that snivelling
 <ce>             lickspittle says.
 <ce>             
-<ce>             "Here's your payment. I hope we can do equally
-<ce>             profitable business again soon."
+<ce>             Here's your payment. I hope we can do equally
+<ce>             profitable business again soon.
 
 Message:  1066
 <ce>             As you enter the shop _assistant_
@@ -457,13 +457,19 @@ Message:  1074
 <ce>             lesson has been learnt. Time to move on.
 
 Message:  1075
-<ce>             "I can't imagine why you have returned with your
+<ce>             I can't imagine why you have returned with your
 <ce>             duties unfinished. The clock is ticking, %ra.
 <ce>             Get moving, and remember, I don't pay for a job
-<ce>             half done. Or even ninety-nine percent done."
+<ce>             half done. Or even ninety-nine percent done.
 
 Message:  1076
 <ce>             This is the secret stash. We can leave now.
+
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. _questgiver_ will
+<ce>             doubtless find, and pay, somebody else to
+<ce>             sort out %g3 ailing businesses.
 
 
 
@@ -588,6 +594,7 @@ _getStash_ task:
 
 _timeLimit_ task:
 	log 1045 step 8
+	say 1099
 	end quest
 
 _speakWithAccountant_ task:

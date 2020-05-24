@@ -1,5 +1,5 @@
 Quest: JF000008
-DisplayName: Beat the Beastmaster
+DisplayName: Best the Beastmaster
 QRC:
 
 QuestorOffer:  [1000]
@@ -11,41 +11,39 @@ QuestorOffer:  [1000]
 <ce>             
 <ce>             Can you head over there and take care of things?
 <ce>             
-<ce>             And by "take care of things" I mean can you kill
+<ce>             And by "take care of things" I mean, can you kill
 <ce>             him and his army of beasts?
-
 
 RefuseQuest:  [1001]
 <ce>             How disappointing.
 
-
 AcceptQuest:  [1002]
-<ce>             Thank you. On your way then!
-
+<ce>             Very good! This contract expires in =timer_ days
+<ce>             so make sure this Beastmaster character
+<ce>             expires first.
+<ce>             
+<ce>             On your way then.
 
 QuestFail:  [1003]
 <ce>             You are a disgrace to the Guild!
 
-
 QuestComplete:  [1004]
-<ce>             Congratulations! Enjoy your well-earned gold.
+<ce>             Maybe the "army of beasts" was over-stated but
+<ce>             it's best to deal with these things early on
+<ce>             before they get out of hand.
 
 
 RumorsDuringQuest:  [1005]
 I know of many amazing and unbelievable things. Or do I? I forget. Who are you?
 
-
 RumorsPostfailure:  [1006]
 I heard something about you. I forget the details but something about "neolithic incompetence"?
-
 
 RumorsPostsuccess:  [1007]
 You killed what now? Why are you telling me? Get lost!
 
-
 QuestorPostsuccess:  [1008]
 <ce>		Well done on getting rid of the evil Beastmaster!
-
 
 QuestorPostfailure:  [1009]
 <ce>		I am still not happy with your failure to handle the evil Beastmaster.
@@ -55,28 +53,40 @@ Message:  1020
 <ce>		The Beastmaster is dead! Now they're just
 <ce>		food for the worms. Good riddance.
 
-
 Message:  1021
-<ce>		A spider and a bat. It looks like
-<ce>		reports of the Beastmaster's
-<ce>		prowess have been somewhat
-<ce>		exaggerated.
+<ce>		A spider and a bat.
+<ce>		
+<ce>		It looks like reports of the Beastmaster's
+<ce>		prowess have been somewhat exaggerated.
+
+Message:  1022
+<ce>		Isn't there some mystical maniac that
+<ce>		we're paying you to hunt down and kill?
 
 
 Message:  1030
 %qdt:
  The Fighters Guild over in
- ___questgiver_ have hired
- me to kill a bad guy in
- ___dungeon_.
+ ___questgiver_ have hired me
+ to kill another madman. This
+ one is lurking somewhere in
+ ___dungeon_
+ and goes by the name of the
+ Beastmaster! How cliche...
  When it's done I'll report
  back to _questgiver_.
 
 
 Message:  1080
-<ce>		"Good work on dealing with the Beastmaster's army
+<ce>		Good work on dealing with the Beastmaster's army
 <ce>		of beasts. Here's a little something extra, a
-<ce>		long-lost map of a secret dungeon!"
+<ce>		long-lost map of a secret dungeon!
+
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. The Beastmaster is free
+<ce>             continue their reign of terror until a more
+<ce>             competent hero can be found.
 
 
 QBN:
@@ -101,13 +111,19 @@ Foe _bat_ is Giant_bat
 	place foe _bat_ at _dungeon_
 	log 1030 step 0 
 
+
+_timer_ task:
+	say 1099
+	end quest
+
 _beastmasterKilled_ task:
 	killed _beastmaster_
 	say 1020
+	stop timer _timeLimit_
 
 _spiderKilled_ task:
 	killed _spider_
-	
+
 _batKilled_ task:
 	killed _bat_
 
@@ -115,20 +131,20 @@ _beastsKilled_ task:
 	when _spiderKilled_ and _batKilled_
 	say 1021
 
-_pcgetsgold_ task:
-	when _qgclicked_ and _beastmasterKilled_ 
-	give pc _reward_ 
-	end quest 
-
 _qgclicked_ task:
-	clicked npc _questgiver_ 
+	clicked npc _questgiver_
 
 _clearclick_ task:
-	when _qgclicked_ and not _beastmasterKilled_ 
-	say 1003
-	clear _qgclicked_ _clearclick_ 
+	when _qgclicked_ and not _beastmasterKilled_
+	say 1022
+	clear _qgclicked_ _clearclick_
+
+_pcgetsgold_ task:
+	when _qgclicked_ and _beastmasterKilled_ and not _beastsKilled_
+	give pc _reward_
+	end quest
 
 _bonusReward_ task:
-	when _beastsKilled_ and _pcgetsgold_ 
-	say 1080
+	when _qgclicked_ and _beastmasterKilled_ and _beastsKilled_
 	reveal _newdungeon_ readmap
+	say 1080

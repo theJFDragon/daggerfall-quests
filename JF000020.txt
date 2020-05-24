@@ -36,7 +36,8 @@ AcceptQuest:  [1002]
 <ce>             Try to complete the delivery in the next thirty
 <ce>             days. Most of this stuff has already been here
 <ce>             for ages but we should probably not make them
-<ce>             wait forever.
+<ce>             wait forever. I'll give you thirty days to make
+<ce>             the delivery, that should be plenty.
 <ce>             
 <ce>             Good luck. Don't get lost and don't be late.
 
@@ -125,27 +126,27 @@ Message:  1044
 
 
 Message:  1060
-<ce>             "A package for me? Are you sure?
-<ce>             Alright, then. Thanks, I guess."
+<ce>             A package for me? Are you sure?
+<ce>             Alright, then. Thanks, I guess.
 <--->
-<ce>             "I don't remembering asking for any delivery.
+<ce>             I don't remembering asking for any delivery.
 <ce>             Are you sure this is correct? Let me see that
 <ce>             delivery note.
 <ce>             
-<ce>             "Hmm. Well, that IS my name. Okay, well
+<ce>             Hmm. Well, that IS my name. Okay, well
 <ce>             thanks for delivering whatever this is.
 <--->
-<ce>             "Aha! I've been waiting for this for a long,
+<ce>             Aha! I've been waiting for this for a long,
 <ce>             long time. I'm glad you finally arrived.
 <ce>             
-<ce>             "Come on, give it here! Thank you and farewell!"
+<ce>             Come on, give it here! Thank you and farewell!
 
 Message:  1061
-<ce>             "You still have a delivery to complete.
+<ce>             You still have a delivery to complete.
 <ce>             Come back when you're done with that.
 <ce>             I can't keep my quest register updated
 <ce>             correctly if people don't finish what
-<ce>             they start."
+<ce>             they start.
 
 Message:  1062
 <ce>             This is the place. One of the Guild workers
@@ -155,34 +156,34 @@ Message:  1062
 <ce>             You can now finish this delivery.
 
 Message:  1063
-<ce>             "You're looking for _person_?
+<ce>             You're looking for _person_?
 <ce>             They haven't lived here for a long time.
 <ce>             I guess that package is a little overdue?
 <ce>             
-<ce>             "Anyway, I don't remember their new address.
-<ce>             Somewhere in __house1_. Good luck."
+<ce>             Anyway, I don't remember their new address.
+<ce>             Somewhere in __house1_. Good luck.
 
 Message:  1064
-<ce>             "Ah! This must be the 'special delivery' I've been
+<ce>             Ah! This must be the 'special delivery' I've been
 <ce>             expecting for some time. Finally!
 <ce>             
-<ce>             "One moment courier, I never accept damaged goods.
-<ce>             Let me check everything is in order."
+<ce>             One moment courier, I never accept damaged goods.
+<ce>             Let me check everything is in order.
 
 Message:  1065
-<ce>             "Yes, this is in perfect condition! Excellent!
+<ce>             Yes, this is in perfect condition! Excellent!
 <ce>             
-<ce>             "Thankyou so much, courier. Safe travels."
+<ce>             Thankyou so much, courier. Safe travels.
 
 Message:  1066
-<ce>             "Oh dear! This doesn't look good at all. Let me
+<ce>             Oh dear! This doesn't look good at all. Let me
 <ce>             make sure...
 <ce>             
-<ce>             "No, this is definitely not in good order. You'll
+<ce>             No, this is definitely not in good order. You'll
 <ce>             have to take it back where it came from.
 <ce>             
-<ce>             "Wait a moment...what is this? This shouldn't be
-<ce>             happening! Oh no! Run for your lives!!"
+<ce>             Wait a moment...what is this? This shouldn't be
+<ce>             happening! Oh no! Run for your lives!!
 
 Message:  1067
 <ce>             There is a crash of thunder and a flash of light.
@@ -194,20 +195,20 @@ Message:  1067
 <ce>             refunds!
 
 Message:  1068
-<ce>             "Good grief! I don't know how you managed to deal
+<ce>             Good grief! I don't know how you managed to deal
 <ce>             with that abomination! But you have doubtless
 <ce>             saved all our lives.
 <ce>             
-<ce>             "Please take this diamond as a small token of
-<ce>             our gratitude!"
+<ce>             Please take this diamond as a small token of
+<ce>             our gratitude!
 
 Message:  1069
-<ce>             "A package for me? How did you find me?!
+<ce>             A package for me? How did you find me?!
 <ce>             
-<ce>             "It doesn't matter now. I'm in big trouble
+<ce>             It doesn't matter now. I'm in big trouble
 <ce>             and this just might be my ticket out of here.
 <ce>             
-<ce>             "Thanks! I'm off!"
+<ce>             Thanks! I'm off!
 
 
 Message:  1071
@@ -273,6 +274,11 @@ Message:  1076
 <ce>             Take care of things and I'll cut you in for a
 <ce>             bigger slice on the next job.
 
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. Sadly this level of
+<ce>             customer service is not uncommon for the
+<ce>             Imperial Express courier service.
 
 
 QBN:
@@ -323,8 +329,8 @@ variable _mageOption2_
 
 
 _timeLimit_ task:
+	say 1099
 	end quest
-
 
 _mission1_ task:
 	when _choice1_

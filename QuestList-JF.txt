@@ -9,23 +9,23 @@
 
 schema: *name, group, membership, minReq, flag, notes
 
-JF000001, FightersGuild, M, 5, 0, [Bounty on the Mutiny] kill a bandit gang and then hunt down their captain
+JF000001, FightersGuild, M, 4, 0, [Bounty on the Mutiny] kill a bandit gang and then hunt down their captain
 JF000002, FightersGuild, M, 2, 0, [Sticky Fingers] find a thief in the fighter's guild and wack 'em
 JF000003, KnightlyOrder, M, 2, 0, [Runaround] runaround for delivering ransom to kidnapper dirty harry style
 JF000004, MagesGuild, M, 3, 0, [Attack the Clones] kill a renegade mage who is cloning himself. Vigourously.
 JF000005, MagesGuild, M, 4, 0, [The Three Dungeons] tiresome hunt through 3 dungeons! you love it...
 JF000006, MagesGuild, M, 3, 0, [Rent-a-Ghost] join up with the fighters guild to scam innocent townsfolk!
-JF000007, HolyOrder, N, 1, 0, [The Morning After] purify a shrine
-JF000008, FightersGuild, M, 1, 0, [Beat the Beastmaster] another generic dungeon hunt
-JF000009, HolyOrder, M, 1, 0, [Certified Exorcised] another scam quest
+JF000007, HolyOrder, M, 5, 0, [The Morning After] purify a shrine ISSUE
+JF000008, FightersGuild, M, 1, 0, [Best the Beastmaster] another generic dungeon hunt
+JF000009, HolyOrder, M, 2, 0, [Certified Exorcised] another scam quest
 JF000010, Commoners, N, 0, 0, [Incredible Bulk] you won't like him when he's angry
 JF000011, Commoners, N, 0, 0, [Speaking in Tongues] this is epic. so many paragraphs...
 JF000012, Nobility, N, 0, 0, [Troubleshooter] aristocratic chicanery volume 2
 JF000013, Commoners, N, 0, 0, [Doctor You] enhanced version of "cure my relative" quest
 JF000014, Commoners, N, 0, 0, [Dungeon Master] get the big book of dungeons
 JF000015, Commoners, N, 0, 0, [Do Not Forsake Me Oh My Darling] cherche la femme
-JF000016, KnightlyOrder, M, 4, 0, [And Then There Was One] vigilante/tontine clean-out
-JF000017, KnightlyOrder, M, 5, 0, [Star Chamber] vigilante quests (still in progress)
+JF000016, KnightlyOrder, M, 7, 0, [And Then There Was One] vigilante/tontine clean-out
+JF000017, KnightlyOrder, M, 4, 0, [Star Chamber] vigilante quests
 JF000018, Nobility, N, 0, 0, [Market Forces] aristocratic chicanery volume 1
 JF000019, Commoners, N, 0, 0, [Jar Jar High Jinks] a jar has the lid screwed on very tight can YOU open it?
 JF000020, FightersGuild, N, 0, 0, [ImpEx Courier Service] Imperial Express courier services for prospective FG members

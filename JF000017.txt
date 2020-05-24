@@ -62,6 +62,8 @@ AcceptQuest:  [1002]
 <ce>             letter when your task is complete.
 <ce>             Sometimes agents of the light must work
 <ce>             in the shadows.
+<ce>             
+<ce>             You have thirty days to complete your task.
 
 QuestFail:  [1003]
 <ce>             It is a dark day for our Order.
@@ -114,37 +116,37 @@ Message:  1060
 <ce>             who gave this order didn't make a mistake...
 
 Message: 1061
-<ce>             "Yes, I am _npc_. What of it?
+<ce>             Yes, I am _npc_. What of it?
 <ce>             
-<ce>             "Justice? What are you talking about?
+<ce>             Justice? What are you talking about?
 <ce>             I was acquitted of those baseless rumours.
 <ce>             I had nothing to do with those jurors
 <ce>             being poisoned! It was a co-incidence!
 <ce>             
-<ce>             "Somebody help me! I'm being attacked!"
+<ce>             Somebody help me! I'm being attacked!
 <--->
-<ce>             "_npc_, at your service, %ra.
+<ce>             _npc_, at your service, %ra.
 <ce>             
-<ce>             "What's that you said? 'Cheating justice'?
+<ce>             What's that you said? 'Cheating justice'?
 <ce>             I have no idea what you are talking about.
 <ce>             I was honourably acquitted by a jury of
 <ce>             my peers.
 <ce>             
-<ce>             "So what if most of them were members of
+<ce>             So what if most of them were members of
 <ce>             my own family. It was a very small village!
 <ce>             And I have a very large family!
 <ce>             
-<ce>             "Help! Somebody help me!"
+<ce>             Help! Somebody help me!
 <--->
-<ce>             "I told the Chief Justice and the Officer
+<ce>             I told the Chief Justice and the Officer
 <ce>             of the Watch. And now I'm telling you.
 <ce>             You can't pin anything on me.
 <ce>             
-<ce>             "Anyways, the judge's daughter turned up
+<ce>             Anyways, the judge's daughter turned up
 <ce>             safe and sound didn't she? No harm done.
 <ce>             
-<ce>             "What are you doing?! No! You can't do
-<ce>             this! Somebody help me!"
+<ce>             What are you doing?! No! You can't do
+<ce>             this! Somebody help me!
 
 Message: 1062
 <ce>             There's a flash of light and _npc_
@@ -183,6 +185,12 @@ Message: 1075
 <ce>             _npc_
 <ce>             ___house_
 
+Message:  1099
+<ce>             You have failed to complete your mission
+<ce>             within the alloted time period. The
+<ce>             target has fled, leaving no trace of their
+<ce>             current whereabouts.
+
 
 
 QBN:
@@ -204,7 +212,7 @@ Place _temple_ remote temple
 Place _palace_ remote palace
 Place _house_ remote house2
 
-Clock _timeLimit_ 90.00:00
+Clock _timeLimit_ 30.00:00
 
 
 --	Quest start-up:
@@ -218,6 +226,10 @@ variable _choice2_
 variable _choice3_
 variable _choice4_
 variable _choice5_
+
+_timeLimit_ task:
+	say 1099
+	end quest
 
 _mission1_ task:
 	when _choice1_
@@ -257,6 +269,7 @@ _slain_ task:
 	killed _target_
 	say 1060
 	log 1041 step 1
+	stop timer _timeLimit_
 
 _questorClicked_ task:
 	clicked npc _questgiver_
@@ -268,4 +281,5 @@ _clearclick_ task:
 _rewardPlayer_ task:
 	when _questorClicked_ and _slain_
 	say 1004
+	legal repute +2
 	end quest

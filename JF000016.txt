@@ -11,7 +11,7 @@ QuestorOffer:  [1000]
 <ce>             
 <ce>             _chiefJustice_ used to be the Chief
 <ce>             Justice of the Peace in this district. Been
-<ce>             retired for a few years now but still a person
+<ce>             retired for while now but still a person
 <ce>             of great influence and respect.
 <ce>             
 <ce>             I expect %g will want your help in some
@@ -76,56 +76,100 @@ Message:  1040
 
 Message:  1041
 %qdt:
- _chiefJustice_  has uncovered a
+ _chiefJustice_ has uncovered a
  criminal conspiracy amongst the
  local aristocracy. I have a big
  dossier which contains all the
  information.
+ 
  Oh, just to be clear, I have to
  kill them all...
 
+Message:  1042
+%qdt:
+ _target1_ has been dealt with.
+
+Message:  1043
+%qdt:
+ _target2_ has departed this life.
+
+Message:  1044
+%qdt:
+ _target3_ has fought %g3 last battle.
+
+Message:  1045
+%qdt:
+ _target4_'s life has been adjourned. Permanently.
+
+Message:  1046
+%qdt:
+ The four known leaders of the
+ criminal conspiracy have been
+ dealt with.
+ 
+ Now I must wait until _chiefJustice_
+ contacts me with our next move.
+ I am confident they will be in
+ touch very soon...
+
+Message:  1047
+%qdt:
+ I found and killed the man named by
+ _chiefJustice_ as the secret
+ leader of the criminal cabal.
+ 
+ They had in their possession a
+ letter. A very suspicious letter
+ that suggests something about this
+ entire affair is very, very fishy.
+ 
+ Thinking back over this entire
+ enterprise, and studying the
+ suspicious letter in detail, I
+ think I know where to go next...
+
 
 Message:  1060
-<ce>             "Yes, you seem like the sort of soul who can take
+<ce>             Yes, you seem like the sort of soul who can take
 <ce>             care of themself. And a few other things to boot.
 <ce>             
-<ce>             "As you may know I was the Chief Justice in these
+<ce>             As you may know I was the Chief Justice in these
 <ce>             parts for more than twenty years. And a damned
 <ce>             fine one, if I may say so myself. As you can guess,
 <ce>             any Justice worth their salt will make a few
 <ce>             enemies and I've got more than my fair share.
 <ce>             
-<ce>             "The most dangerous criminals aren't those pickpockets
+<ce>             The most dangerous criminals aren't those pickpockets
 <ce>             and footpads in the so-called Thieves' Guild. Make
 <ce>             no mistake, the real criminals are those who hide
 <ce>             behind grandiose titles and fancy crests.
 <ce>             
-<ce>             "The local aristocracy don't take it kindly when the
+<ce>             The local aristocracy don't take it kindly when the
 <ce>             magistrates try to apply the letter of the law to them
 <ce>             as well as to the local peasantry. I did what I could
 <ce>             but, in the end, they took me down. A few words in
 <ce>             the right ears at Court, and plenty of dirty gold,
 <ce>             and I was "honourably retired from service".
 <ce>             
-<ce>             "It took me a while but I found out who was behind it.
+<ce>             It took me a while but I found out who was behind it.
 <ce>             A cabal of some of the most influential nobles in the
 <ce>             realm. And the dirtiest. Smuggling, bribery, theft,
 <ce>             extortion, embezzelement and murder. That's a
 <ce>             normal day for these people. It would be easier to
 <ce>             list the crimes they haven't committed.
 <ce>             
-<ce>             "I've talked enough. You get the picture. If you
+<ce>             I've talked enough. You get the picture. If you
 <ce>             really believe in those slogans that all who belong
 <ce>             to our Order swear to uphold, you'll want to see real
 <ce>             justice done. There are five men. I know four of them.
 <ce>             This document has all the information.
 <ce>             
-<ce>             "Until we are ready for the final step I must go into
+<ce>             Until we are ready for the final step I must go into
 <ce>             hiding. When they are threatened they will surely
 <ce>             come for me. Don't worry, I will send for you.
 <ce>             
-<ce>             "Find them and show them that they may have
-<ce>             beaten the law but they didn't escape justice."
+<ce>             Find them and show them that they may have
+<ce>             beaten the law but they didn't escape justice.
 
 Message: 1061
 <ce>             This dossier contains an extensive collection of names,
@@ -165,18 +209,18 @@ Message: 1061
 <ce>             the shadows.
 
 Message:  1062
-<ce>             "I have nothing more to tell you. The dossier I gave
+<ce>             I have nothing more to tell you. The dossier I gave
 <ce>             you has everything you need. Once you've done your
 <ce>             part I hope that the ringleader behind this
-<ce>             conspiracy can be drawn into the open. And dealt with..."
+<ce>             conspiracy can be drawn into the open. And dealt with...
 
 Message:  1063
-<ce>             "_chiefJustice_ sent you? Bah!
+<ce>             _chiefJustice_ sent you? Bah!
 <ce>             
-<ce>             "That old fool! Rest assured that after we've
+<ce>             That old fool! Rest assured that after we've
 <ce>             killed you, %g'll be next.
 <ce>             
-<ce>             "Guards!"
+<ce>             Guards!
 
 Message:  1064
 <ce>             Benedictus,
@@ -199,22 +243,22 @@ Message:  1064
 <ce>             your corpse so I can eviserate you again.
 
 Message:  1065
-<ce>             "What?! Why, this is the most foul accusation!
+<ce>             What?! Why, this is the most foul accusation!
 <ce>             I find you in contempt of court, you
 <ce>             detestable insect. And now that you are
 <ce>             pronounced guilty it seems only approprate to
 <ce>             sentence you directly. To DEATH!
 <ce>             
-<ce>             "Guards!"
+<ce>             Guards!
 
 Message:  1066
-<ce>             "What foul heresy is this?! The stain of such
+<ce>             What foul heresy is this?! The stain of such
 <ce>             outrageous lies can only be washed away with
 <ce>             blood!
 <ce>             
-<ce>             "Specifically, yours!
+<ce>             Specifically, yours!
 <ce>             
-<ce>             "Guards! Kill this vermin!"
+<ce>             Guards! Kill this vermin!
 
 Message:  1067
 <ce>             An unremarkable peasant in a dirty cloak bumps
@@ -279,46 +323,56 @@ Message:  1095
 <ce>             The parchment is the same high quality 
 <ce>             material as the dossier you were given at the
 <ce>             start of this charade. The handwriting looks
-<ce>             identical to your untrained eye, but even the
-<ce>             style matches the letter that you received
-<ce>             from the peasant messenger.
+<ce>             the same to your untrained eye and, when
+<ce>             compared to the letter you received from the
+<ce>             peasant messenger there is no doubt that
+<ce>             both were written by the same hand.
 <ce>             
 <ce>             His face turns defiant, almost snarling...
 
 Message:  1096
-<ce>             "Well done my puppet! You've puzzled out this
+<ce>             Well done my puppet! You've puzzled out this
 <ce>             conspiracy. Or at least most of it. Let me
 <ce>             explain the last few details.
 <ce>             
-<ce>             "My former associates and I made a vast sum of
+<ce>             My former associates and I made a vast sum of
 <ce>             money from our nefarious activities. The plan was
 <ce>             always to stop after three years, split the fortune
 <ce>             equally in five shares, and go our separate ways.
 <ce>             
-<ce>             "Of course, why should I give up four-fifths of
+<ce>             Of course, why should I give up four-fifths of
 <ce>             a fortune that is entirely mine by right?
 <ce>             But thanks to your simple-minded and unquestioning
 <ce>             obedience that is no longer a problem.
 <ce>             
-<ce>             "The other witnesses are dead. That just leaves you.
-<ce>             Time that you joined them, in Oblivion!"
+<ce>             The other witnesses are dead. That just leaves you.
+<ce>             Time that you joined them. In Oblivion!
 
 Message:  1097
 <ce>             The true ringleader of this conspiracy lies dead!
 <ce>             Their foul plot has been broken and the largest
-<ce>             criminal conspiracy in the kingdom has been
+<ce>             criminal organisation in the kingdom has been
 <ce>             shut down for good.
 <ce>             
 <ce>             Or at least for a while...
 <ce>             
 <ce>             ...until the next power-crazed, money-hungry,
 <ce>             back-stabbing degenerate crawls out of the
-<ce>             darkness. But you'll be waiting for them.
+<ce>             darkness.
+<ce>             
+<ce>             But you'll be waiting for them.
+
+Message:  1098
+<ce>             I didn't give you permission to speak!
+<ce>             But you do have my permission to die!
+<ce>             Have at you!
 
 Message:  1099
-<ce>             "I didn't give you permission to speak!
-<ce>             But you do have permission to die!
-<ce>             Have at you!"
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. The conspirators have
+<ce>             gone to ground, covering their tracks and
+<ce>             leaving neither evidence nor witnesses.
+
 
 
 QBN:
@@ -358,13 +412,17 @@ Place _priestHome_ remote house2
 
 Clock _timeLimit_ 90.00:00
 Clock _letter2delivery_ 00.03:00
-Clock _timeAccusation_ 5.00:00
 
 
 --	Quest start-up:
 	start timer _timeLimit_
 	log 1040 step 0
 
+
+
+_timeLimit_ task:
+	say 1099
+	end quest
 
 _target1_ task:
 	clicked npc _target1_
@@ -383,7 +441,7 @@ _target2_ task:
 
 _target3_ task:
 	clicked npc _target3_
-	say 1099
+	say 1098
 	hide npc _target3_
 	create foe _General_ every 0 minutes 1 times with 100% success
 	create foe _Knight3_ every 0 minutes 1 times with 100% success
@@ -399,22 +457,25 @@ _target4_ task:
 _killedTarget1_ task:
 	killed _Squire_
 	say 1090
+	log 1042 step 3
 
 _killedTarget2_ task:
 	killed _Priest_
 	say 1091
+	log 1043 step 3
 
 _killedTarget3_ task:
 	killed _General_
 	say 1092
+	log 1044 step 3
 
 _killedTarget4_ task:
 	killed _Judge_
 	say 1093
+	log 1045 step 3
 
 _slainPatsy_ task:
 	killed _Knight1_
-	start timer _timeAccusation_
 
 _chiefJusticeClicked_ task:
 	clicked npc _chiefJustice_
@@ -443,6 +504,7 @@ _fourDown_ task:
 	place foe _Knight7_ at _dungeon_
 	place foe _Knight8_ at _dungeon_
 	say 1068
+	log 1046 step 5
 
 _letter2delivery_ task:
 	get item _letter2_
@@ -452,6 +514,7 @@ _pickupLetter_ task:
 	clicked item _letter_
 	restore _chiefJustice_
 	say 1094
+	log 1047 step 6
 
 _clearJusticeclick1_ task:
 	when _chiefJusticeClicked_ and not _pickupLetter_
@@ -466,12 +529,10 @@ _lastManStanding_ task:
 	create foe _Knight3_ every 0 minutes 1 times with 100% success
 	create foe _Knight4_ every 0 minutes 1 times with 100% success
 
-_timeAccusation_ task:
-	end quest
-
 _killedBoss_ task:
 	killed _BigBoss_
 	say 1097
+	legal repute +9
 	end quest
 
 _questorClicked_ task:

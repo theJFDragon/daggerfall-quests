@@ -14,12 +14,10 @@ QuestorOffer:  [1000]
 <ce>             
 <ce>             What do you say?
 
-
 RefuseQuest:  [1001]
 <ce>             You disappoint me %pcf. How can I solve these
 <ce>             problems myself when my duties forbid me from
 <ce>             moving at all from this exact location? How?!?!
-
 
 AcceptQuest:  [1002]
 <ce>             Jolly good! Now then...it seems that a former Guild member
@@ -43,10 +41,8 @@ AcceptQuest:  [1002]
 <ce>             
 <ce>             I promise I won't move from this spot until you return!
 
-
 QuestFail:  [1003]
 <ce>             Really now %pcf. Was this really so difficult a task?
-
 
 QuestComplete:  [1004]
 <ce>             Excellent! Thanks for helping me, I mean, the
@@ -63,18 +59,14 @@ QuestComplete:  [1004]
 RumorsDuringQuest:  [1005]
 Have you heard about that mage who's been showing up all over the kingdom? And at the same time?!?!
 
-
 RumorsPostfailure:  [1006]
 Did you hear about that sorcerer who just took over a whole chunk of the kingdom? Weird.
-
 
 RumorsPostsuccess:  [1007]
 The Mages Guild sometimes causes a lot of problems. At least they clean up some of them, eh?
 
-
 QuestorPostsuccess:  [1008]
 Why if it isn't %pcf. I was just telling someone about how you helped me sort out that renegade and %g3 duplicates.
-
 
 QuestorPostfailure:  [1009]
 I still haven't forgiven you for letting me, I mean, the Guild, down over that duplicates business.
@@ -101,7 +93,22 @@ Message:  1040
  bring magic gem from corpse.
  Also note to self:  This job is
  for _questgiver_ in ___questgiver_.
+ Final note to self: Due to the
+ mathematical law of duplication
+ the Mage must be terminated in
+ thirty days, otherwise there will
+ be too many duplicates to resist.
 
+
+Message:  1099
+<ce>             You have failed to complete your mission
+<ce>             within the alloted time period. The crazed
+<ce>             wizard will continue to create duplicates
+<ce>             until the power of the magic gemstone is
+<ce>             exhausted.
+<ce>             
+<ce>             Another hero will be dispatched to succeed
+<ce>             where you have failed.
 
 
 QBN:
@@ -134,8 +141,13 @@ _spawn_ task:
 	when _inside_ and not _slain_
 	create foe _CloneEnemy_ every 120 minutes 100 times with 50% success
 
+_timeLimit_ task:
+	say 1099
+	end quest
+
 _slain_ task:
 	killed _RealEnemy_
+	stop timer _timeLimit_
 	say 1021
 
 _rewardPlayer_ task:

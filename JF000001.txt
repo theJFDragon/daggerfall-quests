@@ -14,34 +14,36 @@ QuestorOffer:  [1000]
 <ce>             
 <ce>             Interested?
 
-
 RefuseQuest:  [1001]
 <ce>             Suit yourself %pcf. Must be nice to be
 <ce>             able to turn down work, eh?
 
-
 AcceptQuest:  [1002]
 <ce>             Good, here's the deal.
 <ce>             
-<ce>             First, take out the gang. They were last
-<ce>             seen close to ___graveyard_.
+<ce>             First, take out the gang. They were last seen
+<ce>             in the vicinity of ___graveyard_.
 <ce>             I don't know exactly where that is.
-<ce>             Somewhere here in %crn,
-<ce>             but you have a map, right?
+<ce>             Somewhere here in %crn, but you
+<ce>             have one of those special maps that marks
+<ce>             every cemetery, graveyard and crypt in the
+<ce>             Iliac Bay on it, right?
 <ce>             
-<ce>             Their former officer, and current boss,
-<ce>             we don't know where %g1 is. We're hoping
-<ce>             you'll get a lead on %g2. That's why its
-<ce>             called bounty hunting, no?
+<ce>             Their former officer, and current boss, we don't
+<ce>             know where %g1 is. We're hoping you'll get a lead
+<ce>             on %g2. That's why its called bounty hunting, no?
+<ce>             
+<ce>             By the way, we've only got thirty days to take
+<ce>             care of this before the authorities give the
+<ce>             contract to one of the Knightly Orders, and we
+<ce>             really want this one!
 <ce>             
 <ce>             Good luck %pcf.
-
 
 QuestFail:  [1003]
 <ce>             Disappointing %pcf. The Guild has a
 <ce>             reputation to maintain and yours just
 <ce>             took a right beating. Get out of here.
-
 
 QuestComplete:  [1004]
 <ce>             Good work %pcf! These are the contracts
@@ -55,34 +57,36 @@ Did you hear about that platoon of soldiers who went rogue and started pillaging
 <--->
 The army sent some men to clear up the bandit problem. Then they decided they'd rather be the bandits!
 
-
 RumorsPostfailure:  [1006]
 Seems the Fighters Guild couldn't handle those renegade soldiers. Maybe the army will send more troops? I hope they stay loyal!
 <--->
 The Fighters Guild are fine at dealing with normal bandits. But those army deserters are too much for them. Shame!
 
-
 RumorsPostsuccess:  [1007]
 I'm glad the Fighters took care of those renegade soldiers. That's how you deal with traitors!
 
-
 QuestorPostsuccess:  [1008]
 Why if it isn't %pcf. I was just telling someone about how you dealt with those criminal deserters.
-
 
 QuestorPostfailure:  [1009]
 Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
 
 
+Message:  1015
+<ce>             This place isn't secure enough. I've got
+<ce>             a lead on a much better hide-out, some
+<ce>             abandoned hole called ___mondung_.
+<ce>             If it looks as good as it sounds I'll send for
+<ce>             you and we can plan our next move.
+
 Message: 1019
 <ce>             This is the place. Might have to wait
-<ce>             for them to come back home.
-
+<ce>             for them to show up.
 
 Message:  1020
 <ce>             Was that all of them?
+<ce>             
 <ce>             Now to get a lead on their boss...
-
 
 Message:  1021
 <ce>             You leave the former officer and
@@ -91,27 +95,28 @@ Message:  1021
 <ce>             
 <ce>             Now it's time to get paid!
 
+Message:  1099
+<ce>             You have failed to complete your mission
+<ce>             within the alloted time period. The bandit
+<ce>             leader has escaped and the Fighters Guild
+<ce>             contract is null and void.
+
 
 Message:  1040
 %qdt:
  I have to clean out a gang of
  bandits from ___graveyard_
  in %crn and then hunt down
- their leader, %g3 current location
- is unknown. Hopefully there'll be
- some sort of clue which I can find
- without too much trouble.
+ their leader whose current location
+ is unknown.
+ Hopefully there'll be some sort of
+ clue which I can find without too
+ much trouble.
  When I'm done I'll head back to
  _questgiver_ in
  ___questgiver_ to get paid.
+ This has to be done within 30 days.
 
-
-Message:  1015
- This place isn't secure enough. I've got
- a lead on a much better hide-out, some
- abandoned hole called ___mondung_.
- If it looks as good as it sounds I'll send for
- you and we can plan our next move.
 
 
 QBN:
@@ -134,6 +139,7 @@ Foe _banditboss_ is Knight
 
 Foe _en1_ is 4 Warrior
 
+
 --	Quest start-up:
 	start timer _timeLimit_
 	reveal _graveyard_
@@ -141,7 +147,9 @@ Foe _en1_ is 4 Warrior
 	pc at _graveyard_ set _onsite_
 	log 1040 step 0
 
+
 _timeLimit_ task:
+	say 1099
 	end quest
 
 _onsite_ task:
@@ -166,6 +174,7 @@ _slain3_ task:
 
 _slainboss_ task:
 	killed _banditboss_
+	stop timer _timeLimit_
 	say 1021
 
 _questorClicked_ task:

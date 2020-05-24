@@ -28,7 +28,7 @@ RefuseQuest:  [1001]
 <ce>		I expected better of you. How disappointing.
 
 AcceptQuest:  [1002]
-<ce>		Good good! Oh, here's a blank copy of the
+<ce>		Good, good! Oh, here's a blank copy of the
 <ce>		Exorcism Certificate. You can fill in the
 <ce>		details on your journey.
 <ce>		
@@ -85,50 +85,50 @@ Message:  1021
 <ce>		and is certified guarenteed.
 
 Message:  1022
-<ce>		"%oth! This is exactly what I need!
+<ce>		%oth! This is exactly what I need!
 <ce>		Of course, the rumours are totally false, spread
 <ce>		no doubt by a malcontent with too much time on
 <ce>		their hands. Now I can show my face in the local
 <ce>		tavern again.
 <ce>		
-<ce>		"Here, let me give you a consideration for your
+<ce>		Here, let me give you a consideration for your
 <ce>		Temple's good works.
 <ce>		
-<ce>		"Safe travels, %ra."
+<ce>		Safe travels, %ra.
 
 Message:  1023
-<ce>		"Do you take me for a fool, %ra?
+<ce>		Do you take me for a fool, %ra?
 <ce>		
-<ce>		"Nobody takes these idle rumours seriously.
+<ce>		Nobody takes these idle rumours seriously.
 <ce>		No doubt it was the product of a child's
 <ce>		playful imagination.
 <ce>		
-<ce>		"If I was to produce one of these "documents"
+<ce>		If I was to produce one of these "documents"
 <ce>		in respectable company then there's a story
 <ce>		that would take me a long time to live down.
 <ce>		
-<ce>		"Now get out of here before I set the dogs on you!"
+<ce>		Now get out of here before I set the dogs on you!
 
 Message:  1024
-<ce>		"They refused! How tiresome! Let me think....
+<ce>		They refused! How tiresome! Let me think....
 <ce>		
-<ce>		"Right, I have an idea. Head on over to the Mages
+<ce>		Right, I have an idea. Head on over to the Mages
 <ce>		Guild in ___MagesGuild_. We've had
 <ce>		some dealings with them in the past.
 <ce>		
-<ce>		"Speak to _Mage_ and get a magic
+<ce>		Speak to _Mage_ and get a magic
 <ce>		gemstone of conjuration. Then head back to
 <ce>		___person_ and show them that they
 <ce>		could really, really benefit from purchasing
-<ce>		one of our certificates."
+<ce>		one of our certificates.
 
 Message:  1025
-<ce>		"What's that? Ah, I see that _questgiver_
+<ce>		What's that? Ah, I see that _questgiver_
 <ce>		is up to their old tricks again. Well, I'm not
 <ce>		one to judge. Not after that accident with
 <ce>		the fire atronachs.
 <ce>		
-<ce>		"Here, this gemstone should be what you need."
+<ce>		Here, this gemstone should be what you need.
 
 Message:  1026
 <ce>		The gem glows brightly. The conjuration effect
@@ -138,9 +138,9 @@ Message:  1026
 <ce>		exactly what spell this gem is invoking...
 
 Message:  1027
-<ce>		"Enough! Enough! Stop this insanity!
+<ce>		Enough! Enough! Stop this insanity!
 <ce>		Look, here's a bag of gold coins. Take
-<ce>		it. Now get out and never return!"
+<ce>		it. Now get out and never return!
 
 
 Message:  1030
@@ -172,6 +172,13 @@ Message:  1032
  _person_ to change his mind
  about buying our certificate.
 
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. So much time has passed
+<ce>             that everyone has forgotten about _person_
+<ce>             and there'll be no reason for %g2 to buy one
+<ce>             of the Temple certificates.
+
 
 QBN:
 Item _gold_ gold range 25 to 50
@@ -195,6 +202,10 @@ Clock _timeLimit_ 30.00:00
 	log 1030 step 0 
 
 
+_timeLimit_ task:
+	say 1099
+	end quest
+
 _personalityTest_ task:
 	when attribute Personality is at least 65
 
@@ -210,6 +221,7 @@ _talkToPerson_ task:
 _successfullSale_ task:
 	when _talkToPerson_ and _silverTongue_
 	say 1022
+	stop timer _timeLimit_
 
 _noSale_ task:
 	when _talkToPerson_ and not _silverTongue_
@@ -224,6 +236,7 @@ _extortion_ task:
 _exorcism_ task:
 	killed 2 _skeleton_
 	say 1027
+	stop timer _timeLimit_
 
 _qgclicked_ task:
 	clicked npc _questgiver_ 

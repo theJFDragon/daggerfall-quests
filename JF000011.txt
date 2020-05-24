@@ -332,7 +332,7 @@ Place _DoctorShop_ remote apothecary
 Item _medicine_ large_plant
 Item _talisman_ talisman
 
-Clock _timeLimit_ 30.00:00
+Clock _timeLimit_ 60.00:00
 
 Foe _monster_ is Gargoyle
 

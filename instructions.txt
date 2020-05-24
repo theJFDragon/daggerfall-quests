@@ -68,6 +68,17 @@ MISCELLANEOUS THINGS:
    quests except benefit financially. I doubt it will be a
    problem.
 
+6) KNOWN ISSUES:
+   JF000007 [The Morning After] sometimes DFU doesn't
+   register that the player is at the shrine, but sometimes
+   it does. Very weird. If it doesn't then the quest cannot
+   continue.
+
+7) Some Guild/Temple/Order quests are locked behind your
+   membership rank. This is controlled in the questlist
+   file. You can change, or even remove, membership/rank
+   requirements there if you like.
+
 
 If you have half as much fun playing these than I did
 writing them then I had twice as much fun as you.

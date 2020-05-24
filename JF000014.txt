@@ -84,19 +84,19 @@ Message:  1041
 
 
 Message:  1060
-<ce>             "Great %god, you have saved an old
+<ce>             Great %god, you have saved an old
 <ce>             pioneer from spending %g3 final days in
 <ce>             penury and squalor! This gold will be
 <ce>             ample pension for the rest of my days.
 <ce>             
-<ce>             "And, as promised, here is your reward.
+<ce>             And, as promised, here is your reward.
 <ce>             I made these maps by my own hand after
 <ce>             every expedition. Perchance you may already
 <ce>             have stumbled across one or two of these
 <ce>             places but most are long-forgotten, their
 <ce>             names only preserved in these parchments.
 <ce>             
-<ce>             "Good hunting %pcf!"
+<ce>             Good hunting %pcf!
 
 Message: 1061
 <ce>             That must be the gold! Now it's time to
@@ -111,9 +111,9 @@ Message:  1062
 <ce>             of course!
 
 Message:  1063
-<ce>             "Ha! So that old back-stabber _rivalNPC_
+<ce>             Ha! So that old back-stabber _rivalNPC_
 <ce>             finally met their justly-deserved fate.
-<ce>             Good riddance!"
+<ce>             Good riddance!
 
 Message: 1064
 <ce>             You spend some time copying the details from
@@ -128,6 +128,14 @@ _questgiver_ seems happier now. I'm not sure why, with %g3 debts!
 
 Message:  1071
 _rivalNPC_ is an old renegade. Been getting up to no good for years.
+
+
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. _questgiver_'s debts
+<ce>             could not wait any longer. They have fled the
+<ce>             region, taking their invaluable maps with them.
+
 
 
 QBN:
@@ -163,6 +171,9 @@ Clock _timeLimit_ 45.00:00
 	place foe _rival_ at _questDungeon_
 	hide npc _rivalNPC_ 
 
+_timeLimit_ task:
+	say 1099
+	end quest
 
 _collectGoldBar_ task:
 	clicked item _goldBar_

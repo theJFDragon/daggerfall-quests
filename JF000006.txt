@@ -34,7 +34,7 @@ AcceptQuest:  [1002]
 <ce>             
 <ce>             Unfortunately for them there's not a lot of money in
 <ce>             such...conventional...house cleaning. What really brings
-<ce>             in the coin is super-natural infestations. Wraiths,
+<ce>             in the coin is supernatural infestations. Wraiths,
 <ce>             ghosts and zombies are a lot more expensive to handle.
 <ce>             
 <ce>             Of course these encounters don't happen every day. Some
@@ -96,19 +96,17 @@ Message:  1040
  spirits in _someHouse_
  using this enchanted gemstone.
 
-
 Message:  1041
 <ce>             This is the place. Time to bring
 <ce>             back the dead for fun and profit!
 
-
 Message:  1042
+%qdt:
  The deed is done! Now to head
  back to the Mages Guild. I am
  totally certain that nothing
  unexpected or untoward could
  possibly have happened...
-
 
 Message: 1043
 <ce>             The gem glows very brightly and then goes dull.
@@ -121,13 +119,46 @@ Message: 1043
 <ce>             horrifying spectral apparitions are also strong
 <ce>             hints that you should probably leave now...
 
+Message:  1044
+%qdt:
+ I seem to have had a change of
+ heart. Instead of following
+ through with this scheme I
+ decided to kill the Wraiths
+ instead. I guess _questgiver_
+ will not be too happy.
 
 Message:  1050
-<ce>             "I'm not sure what you did but
+<ce>             I'm not sure what you did but
 <ce>             it wasn't entirely correct. It
 <ce>             seems we have a few uninvited
 <ce>             guests ourselves. Take care of
-<ce>             this, would you, %pcf?"
+<ce>             this, would you, %pcf?
+
+Message:  1051
+<ce>             You are not supposed to kill the ghosts!
+<ce>             Were you not paying attention?
+
+Message:  1052
+<ce>             I guess you really aren't paying attention!
+<ce>             Now that you've killed all the summoned
+<ce>             spectres this sneaky scheme is sunk!
+
+Message:  1053
+<ce>             Given that you are unable to follow simple
+<ce>             instructions I am surprised that you were
+<ce>             able to find your way back here unaided.
+<ce>             
+<ce>             In any event, you've ruined this scheme
+<ce>             and I can't recharge the summoning gem
+<ce>             before my deal with the Fighters Guild
+<ce>             runs out. So thanks for nothing %lev.
+
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. Your inactivity has
+<ce>             ruined _questgiver_'s deal with the
+<ce>             Fighters Guild.
 
 
 QBN:
@@ -158,14 +189,24 @@ _onsite_ task:
 	_gem_ used do _useGem_
 
 _useGem_ task:
-	say 1043
-	log 1042 step 2
 	create foe _wraith_ every 0 minutes 1 times with 100% success
+	log 1042 step 2
+	say 1043
+
+_ghostsbusted_ task:
+	killed 1 _wraith_
+	say 1051
+
+_ghostsbustedMax_ task:
+	killed 3 _wraith_
+	log 1044 step 3
+	say 1052
 
 _slain_ task:
 	killed 1 _wraith2_
 
 _timeLimit_ task:
+	say 1099
 	end quest
 
 _questorClicked_ task:
@@ -175,12 +216,17 @@ _clearclick_ task:
 	when _questorClicked_ and not _useGem_
 	clear _questorClicked_ _clearclick_
 
+_venkman_ task:
+	when _questorClicked_ and _ghostsbustedMax_
+	say 1053
+	end quest
+
 _oops_ task:
-	when _questorClicked_ and _useGem_ and not _slain_
+	when _questorClicked_ and _useGem_ and not _slain_ and not _ghostsbustedMax_
 	create foe _wraith2_ every 0 minutes 1 times with 100% success
 	say 1050
 
 _rewardPlayer_ task:
-	when _questorClicked_ and _slain_
+	when _questorClicked_ and _slain_ and not _ghostsbustedMax_
 	give pc _gold_
 	end quest

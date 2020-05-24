@@ -46,6 +46,9 @@ AcceptQuest:  [1002]
 <ce>             Then speak to the owner. My new offer for the property
 <ce>             is 10 gold coins. Somewhat less than the former price
 <ce>             but my generosity didn't take kindly to rejection.
+<ce>             
+<ce>             I expect to hear that everyone is resolved within
+<ce>             the next thirty days.
 
 QuestFail:  [1003]
 <ce>             Neolithic incompetence is such an unattractive trait.
@@ -106,21 +109,21 @@ Message:  1041
  Time to head back and get paid.
 
 Message:  1050
-<ce>             "We were expecting _questgiver_ would
+<ce>             We were expecting _questgiver_ would
 <ce>             try something like this. No matter what that
 <ce>             corrupt, greedy vulture wants we're not
 <ce>             selling and we're not leaving.
 <ce>             
-<ce>             "You've got five seconds. You can either walk
+<ce>             You've got five seconds. You can either walk
 <ce>             out of here now or end up buried under the
 <ce>             cabbages with the other unwanted salesmen.
 <ce>             
-<ce>             "Your choice, %ra."
+<ce>             Your choice, %ra.
 
 Message:  1051
-<ce>             "Your duties are incomplete. It is not necessary,
+<ce>             Your duties are incomplete. It is not necessary,
 <ce>             nor, indeed, appropriate, for us to converse until
-<ce>             your assigned tasks are completed."
+<ce>             your assigned tasks are completed.
 
 Message:  1052
 <ce>             Looks like the former owner of ___farmstead_ 
@@ -130,6 +133,11 @@ Message:  1053
 <ce>             Peace has finally returned to the troubled environs of
 <ce>             ___farmstead_, albeit by virtue of
 <ce>             you having killed everyone under arms.
+
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. _questgiver_ will
+<ce>             not be pleased with this negligence.
 
 
 QBN:
@@ -142,7 +150,7 @@ Foe _Warriors1_ is 4 Warrior
 
 Place _farmstead_ remote farmhome
 
-Clock _timeLimit_ 45.00:00
+Clock _timeLimit_ 30.00:00
 
 
 --	Quest start-up:
@@ -152,6 +160,7 @@ Clock _timeLimit_ 45.00:00
 
 
 _timeLimit_ task:
+	say 1099
 	end quest
 
 _onsite_ task:

@@ -1,5 +1,15 @@
 
 -------------------------------------------------------------------------------
+2020-05-24	more feedback from Jay_H received and acted upon
+		more information about quest time limits
+		player is (mostly) informed when quests time-out
+		apostrophe/quotation mark usage revised
+		tweaked some quest membership/rank requirements
+		[The Morning After] discovered that JF000007 sometimes fails because the _onsite_ task doesn't register. Weird.
+		[Rent-a-Ghost] quest is failed if player decides to kill the ghosts they spawned
+		[Best the Beastmaster] renamed from "beat" to "best".
+
+-------------------------------------------------------------------------------
 2020-05-20	fixed bugs with JF000017 (thanks to forum member Ostar for reporting)
 
 -------------------------------------------------------------------------------
@@ -17,118 +27,3 @@
 		cosmetic clean-up:
 			copy-pasted rumours and post-quest greetings cleaned-up
 			some bugs involving names of NPCs and locations fixed
-
--------------------------------------------------------------------------------
-2020-04-19	new quests abound
-
-		JF000019 [Jar Jar High Jinks]
-			new quest added!
-
-		JF000018 [Market Forces]
-			new quest added! (first quest for the nobles)
-
-		JF000017 [Star Chamber]
-			new quest added!
-
-		JF000016 [And Then There Was One]
-			quest finally completed!
-
-		JF000009 [Certified Exorcised]
-			new quest added! (old "holy water" quest is lost to time now...)
-
--------------------------------------------------------------------------------
-2020-04-12	I forgot about this changelog. Probably it doesn't matter. But anyways...
-
-		JF000015 [Do Not Forsake Me Oh My Darling]
-			new quest added!
-
-		JF000016 [And Then There Was One]
-			new quest added! (this one isn't entirely finished yet)
-
-		JF000005 [The Three Dungeons]
-			this one got activated at some point. may as well stay
-
-		JF000009 [Holy Water]
-			this should be de-activated. it was never finished. then got lost
-
--------------------------------------------------------------------------------
-2020-01-25	2 new quests and 1 inactivated
-
-		JF000013 [Doctor You]
-			new quest added!
-
-		JF000014 [Dungeon Master]
-			new quest added!
-
-		JF000012 [Pinball Wizard]
-			seems this was never finished. inactivating for now.
-
--------------------------------------------------------------------------------
-2019-12-13	Some general polishing of rumours, typo-fixing, etc
-
-		JF000012 [Pinball Wizard]
-			new quest added!
-
--------------------------------------------------------------------------------
-2019-11-18	incorporating Jay_H's feedback:
-
-		JF000001 [Bounty on the Mutiny]
-			rank 5 required
-			number of enemies reduced
-			quest timer increased to 30 days
-
-		JF000002 [Sticky Fingers]
-			changed messages 1026-1028
-			rank 2 required
-			more player feedback
-			added quest-specific rumours
-			reward reduced as per quest prompt
-			reputation boost added
-
-		JF000003 [Runaround]
-			changed to knightly order, not fighters guild
-			timelimit timer set to 1 day and ends quest silently
-			3 quest timers very slightly longer
-			added quest-specific rumours
-			reward slightly reduced
-
-		JF000004 [Attack the Clones]
-			less intense enemy spawn rate
-			quest prompt hints at combat
-			dungeon type changed
-			rank 3 required
-			quest timer increased to 30 days
-
-		JF000005 [The Three Dungeons]
-			<this quest is still inactive by default>
-			dungeon types changed
-			quest timer increased to 99 days
-
-		JF000006 [Rent-a-Ghost]
-			typos fixed
-			added quest-specific rumours
-			increased reward
-			rank 3 required
-			only 1 bonus wraith now
-			more player feedback
-			changed log to have more info
-
-		JF000007 [The Morning After]
-			quest timer increased to 30 days
-
-		JF000008 [Beat the Beastmaster]
-			added quest-specific rumours
-			dungeon type changed
-			made map bonus clearer
-			more player feedback
-
-		JF000010 [Incredible Bulk]
-			new quest added!
-
-		JF000011 [Speaking In Tongues]
-			new quest added!
-
--------------------------------------------------------------------------------
-2019-10-24	added instructions,
-		change log and
-		correctly de-activated missing quest 9 and the terrible "3 dungeons" quest.
