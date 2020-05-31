@@ -29,3 +29,4 @@ JF000017, KnightlyOrder, M, 4, 0, [Star Chamber] vigilante quests
 JF000018, Nobility, N, 0, 0, [Market Forces] aristocratic chicanery volume 1
 JF000019, Commoners, N, 0, 0, [Jar Jar High Jinks] a jar has the lid screwed on very tight can YOU open it?
 JF000020, FightersGuild, N, 0, 0, [ImpEx Courier Service] Imperial Express courier services for prospective FG members
+JF000021, KnightlyOrder, M, 5, 0, [A Dish Served Cold] avenge a fellow knight's brother and something else????

@@ -49,8 +49,14 @@ QuestFail:  [1003]
 <ce>             Depart. And do not return.
 
 QuestComplete:  [1004]
-<ce>             Well done %ra, you have proven significantly more
-<ce>             competent than I expected.
+<ce>             Well done %ra, I am actually impressed.
+<ce>             Of course _assistant_'s report
+<ce>             tried to steal most of the credit, but naturally,
+<ce>             I don't believe everything that snivelling
+<ce>             lickspittle says.
+<ce>             
+<ce>             Here's your payment. I hope we can do equally
+<ce>             profitable business again soon.
 
 
 
@@ -310,16 +316,6 @@ Message:  1064
 <ce>             to run. Our work here is done."
 <ce>             
 <ce>             Time to move on...
-
-Message:  1065
-<ce>             Well done %ra, I am actually impressed.
-<ce>             Of course _assistant_'s report
-<ce>             tried to steal most of the credit, but naturally,
-<ce>             I don't believe everything that snivelling
-<ce>             lickspittle says.
-<ce>             
-<ce>             Here's your payment. I hope we can do equally
-<ce>             profitable business again soon.
 
 Message:  1066
 <ce>             As you enter the shop _assistant_
@@ -717,6 +713,5 @@ _clearclick_ task:
 
 _rewardPlayer_ task:
 	when _questorClicked_ and _everythingFixed_
-	say 1065
 	give pc _gold_
 	end quest

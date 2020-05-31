@@ -30,14 +30,17 @@ AcceptQuest:  [1002]
 <ce>             Please, god speed and good luck!
 
 QuestFail:  [1003]
-<ce>             
-<ce>             
-<ce>             
-<ce>             
+<ce>             What terrible news! This quest is failed!
 
 QuestComplete:  [1004]
+<ce>             Yet again you have selflessly interfered
+<ce>             in the private business of other people and
+<ce>             sorted out their petty problems for them!
 <ce>             
-<ce>             
+<ce>             You hope the citizens of the Illiac Bay
+<ce>             appreciate how beneficial your interventions
+<ce>             are to their otherwise disasterous lives!
+
 
 RumorsDuringQuest:  [1005]
 The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
@@ -251,14 +254,12 @@ Message:  1068
 <ce>             before it gets embarrasing.
 
 Message:  1069
-<ce>             Finally! Home, at last! I can't thank you
-<ce>             enough for saving me from this horrible
-<ce>             ordeal.
+<ce>             Finally! Home, at last! I can't thank you enough
+<ce>             for saving me from this horrible ordeal.
 <ce>             
-<ce>             My nerves are in pieces, I must get some
-<ce>             rest. But if you ever find yourself in these
-<ce>             parts again (snicker) please drop in and
-<ce>             I can reward you properly...
+<ce>             My nerves are in pieces, I must get some rest.
+<ce>             But if you ever find yourself in these parts again
+<ce>             please drop in and I can reward you properly...
 
 Message:  1070
 <ce>             He lives somewhere in ___questgiver_. I think.
@@ -403,11 +404,13 @@ _slain_ task:
 _rewardPlayer1_ task:
 	toting _ring_ and _questgiver_ clicked 
 	say 1064
+	give pc nothing
 	end quest
 
 _rewardPlayer2_ task:
 	toting _letter_ and _questgiver_ clicked 
 	say 1065
+	give pc nothing
 	end quest
 
 _rewardPlayer3a_ task:
@@ -418,6 +421,7 @@ _rewardPlayer3b_ task:
 	change repute with _questgiver_ by +20
 	legal repute +5
 	say 1068
+	give pc nothing
 	end quest
 
 _rewardPlayer4_ task:
@@ -425,4 +429,5 @@ _rewardPlayer4_ task:
 	drop _friend_ face
 	legal repute +5
 	say 1069
+	give pc nothing
 	end quest

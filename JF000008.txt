@@ -148,3 +148,5 @@ _bonusReward_ task:
 	when _qgclicked_ and _beastmasterKilled_ and _beastsKilled_
 	reveal _newdungeon_ readmap
 	say 1080
+	give pc _reward_
+	end quest

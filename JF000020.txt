@@ -437,7 +437,6 @@ _partialDelivery_ task:
 	place npc _person_ at _house1_
 	say 1063
 
-
 _questorClicked_ task:
 	clicked npc _questgiver_
 

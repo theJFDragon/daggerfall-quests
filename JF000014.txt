@@ -45,8 +45,19 @@ QuestFail:  [1003]
 
 
 QuestComplete:  [1004]
-<ce>             Bravo! Bravo! Thank %god you have succeeded
-<ce>             where I failed all those years ago.
+<ce>             Great %god, you have saved an old
+<ce>             pioneer from spending %g3 final days in
+<ce>             penury and squalor! This gold will be
+<ce>             ample pension for the rest of my days.
+<ce>             
+<ce>             And, as promised, here is your reward.
+<ce>             I made these maps by my own hand after
+<ce>             every expedition. Perchance you may already
+<ce>             have stumbled across one or two of these
+<ce>             places but most are long-forgotten, their
+<ce>             names only preserved in these parchments.
+<ce>             
+<ce>             Good hunting %pcf!
 
 
 RumorsDuringQuest:  [1005]
@@ -79,26 +90,7 @@ Message:  1040
  ___questDungeon_.
 
 
-Message:  1041
-%qdt:
-
-
-Message:  1060
-<ce>             Great %god, you have saved an old
-<ce>             pioneer from spending %g3 final days in
-<ce>             penury and squalor! This gold will be
-<ce>             ample pension for the rest of my days.
-<ce>             
-<ce>             And, as promised, here is your reward.
-<ce>             I made these maps by my own hand after
-<ce>             every expedition. Perchance you may already
-<ce>             have stumbled across one or two of these
-<ce>             places but most are long-forgotten, their
-<ce>             names only preserved in these parchments.
-<ce>             
-<ce>             Good hunting %pcf!
-
-Message: 1061
+Message:  1061
 <ce>             That must be the gold! Now it's time to
 <ce>             head back to ___questgiver_.
 
@@ -186,10 +178,12 @@ _killedRival_ task:
 _rivalryEnded_ task:
 	when _killedRival_ and _rewardPlayer_
 	say 1063
+	give pc nothing
 	end quest
 
 _rivalryNotEnded_ task:
 	when not _killedRival_ and _rewardPlayer_
+	give pc nothing
 	end quest
 
 _rewardPlayer_ task:
@@ -204,5 +198,4 @@ _rewardPlayer_ task:
 	reveal _dungeon8_ readmap
 	reveal _dungeon9_ readmap
 	reveal _dungeon10_ readmap
-	say 1060
 	say 1064

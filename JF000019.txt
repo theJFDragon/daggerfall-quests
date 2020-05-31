@@ -147,8 +147,8 @@ _OpenJarSuccess_ task:
 _OpenJarEasy_ task:
 	when _OpenJarSuccess_ and not _ofCourseItIs_
 	say 1060
-	say 1004
 	change repute with _questgiver_ by +5
+	give pc nothing
 	end quest
 
 _OpenJarWithHilariousSurprise_ task:
@@ -160,6 +160,7 @@ _deaded_ task:
 	killed _Daedroth_
 	say 1063
 	change repute with _questgiver_ by +15
+	give pc nothing
 	end quest
 
 _OpenJarFailure_ task:

@@ -40,8 +40,18 @@ QuestFail:  [1003]
 <ce>             And for you in particular.
 
 QuestComplete:  [1004]
-<ce>             I don't want to know what happened, but I'm sure
-<ce>             that, in the end, it will have been for the best.
+<ce>             The true ringleader of this conspiracy lies dead!
+<ce>             Their foul plot has been broken and the largest
+<ce>             criminal organisation in the kingdom has been
+<ce>             shut down for good.
+<ce>             
+<ce>             Or at least for a while...
+<ce>             
+<ce>             ...until the next power-crazed, money-hungry,
+<ce>             back-stabbing degenerate crawls out of the
+<ce>             darkness.
+<ce>             
+<ce>             But you'll be waiting for them.
 
 RumorsDuringQuest:  [1005]
 The Fruitloops of Zenither are plotting to declare war on the Paperclip-unfolders of Mara. War is hell.
@@ -348,20 +358,6 @@ Message:  1096
 <ce>             The other witnesses are dead. That just leaves you.
 <ce>             Time that you joined them. In Oblivion!
 
-Message:  1097
-<ce>             The true ringleader of this conspiracy lies dead!
-<ce>             Their foul plot has been broken and the largest
-<ce>             criminal organisation in the kingdom has been
-<ce>             shut down for good.
-<ce>             
-<ce>             Or at least for a while...
-<ce>             
-<ce>             ...until the next power-crazed, money-hungry,
-<ce>             back-stabbing degenerate crawls out of the
-<ce>             darkness.
-<ce>             
-<ce>             But you'll be waiting for them.
-
 Message:  1098
 <ce>             I didn't give you permission to speak!
 <ce>             But you do have my permission to die!
@@ -531,8 +527,8 @@ _lastManStanding_ task:
 
 _killedBoss_ task:
 	killed _BigBoss_
-	say 1097
 	legal repute +9
+	give pc nothing
 	end quest
 
 _questorClicked_ task:

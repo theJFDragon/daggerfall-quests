@@ -280,6 +280,6 @@ _clearclick_ task:
 
 _rewardPlayer_ task:
 	when _questorClicked_ and _slain_
-	say 1004
 	legal repute +2
+	give pc nothing
 	end quest

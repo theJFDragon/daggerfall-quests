@@ -1,0 +1,416 @@
+Quest: JF000021
+DisplayName: A Dish Served Cold
+
+QRC:
+
+QuestorOffer:  [1000]
+<ce>             %lev, your timing is, as always, impeccable.
+<ce>             I feel certain that you will not hestitate to help
+<ce>             a fellow knight during a particularly dark time.
+<ce>             
+<ce>             _knight_ is one of this Order's most
+<ce>             accomplished soldiers. Unfortunately we have just
+<ce>             received word that his brother has met a warrior's
+<ce>             death at the hands of an army of foul, cursed orcs
+<ce>             in the depths of ___dungeon_.
+<ce>             
+<ce>             Naturally _knight_ is determined to avenge
+<ce>             his brother and he intends to set off immediately.
+<ce>             I don't want to lose another brave soul to those
+<ce>             stinking beasts, will you accompany
+<ce>             _knight_ and even the odds?
+<ce>             
+<ce>             It is only fair to warn you that ___dungeon_
+<ce>             is absolutely infested with orcs. But the greater
+<ce>             the danger, the greater the honour, no?
+
+RefuseQuest:  [1001]
+<ce>             I can only assume you have some sort of phobia
+<ce>             of orcs. You should try to overcome it, it does not
+<ce>             become a member of this Order.
+
+AcceptQuest:  [1002]
+<ce>             Excellent! With you by his side I am confident
+<ce>             that _knight_ will do his brother proud
+<ce>             and make it home safely.
+<ce>             
+<ce>             May %god go with you, %lev.
+
+QuestFail:  [1003]
+<ce>             You are a massive failure!
+
+QuestComplete:  [1004]
+<ce>             Take care, %lev. I feel sure you are destined
+<ce>             for the highest ranks in our Order.
+
+
+RumorsDuringQuest:  [1005]
+I'm hearing lots more talk of hauntings and supernatural goings-on these days. Curious, eh?
+<--->
+I thought it was only Daggerfall city having problems with the undead. But it's getting a bit unlively around here, if you catch my drift.
+
+RumorsPostfailure:  [1006]
+I don't know the details but the local Mages and Fighters Guilds seem a little more unfriendly these days.
+<--->
+I hear whispers of illegal conspiracies but I can't say any more than that. People should keep their mouths shut.
+
+RumorsPostsuccess:  [1007]
+How am I doing? Me? I'm doing very well, thanks for asking! It's nice not be constantly asked for directions for once!
+
+QuestorPostsuccess:  [1008]
+Why, if it isn't %pcf, my partner-in-crime. As it were. So to speak. *Ahem*.
+
+QuestorPostfailure:  [1009]
+Hmmm. I've been asked to keep the...sensitive jobs for our more reliable members.
+
+
+Message:  1040
+%qdt:
+ _questgiver_ in ___questgiver_
+ has assigned me to accompany a fellow knight,
+ _knight_, on a mission to
+ ___dungeon_ to avenge
+ his brother's death at the hands of an
+ army of orcs.
+
+Message:  1041
+%qdt:
+ It turned out that this entire quest
+ was a deception. _knight_
+ tricked his own brother into
+ coming to this dungeon under-supplied
+ so that his death would leave him as
+ the sole beneficiary of their father's
+ legacy.
+
+Message:  1042
+%qdt:
+ The deceiver _knight_ has
+ been dealt with and his brother truly
+ avenged, though not in the way that
+ _knight_ had in mind.
+
+Message:  1043
+%qdt:
+ _knight_ has gone off solo, for
+ the time being. He insisted on avenging
+ his brother alone. Once enough orcs
+ have been slain to sate his vegeance
+ he will find me again.
+
+
+Message: 1050
+<ce>             A man clad in dented but high-quality plate
+<ce>             armour steps forward. He looks like he hasn't
+<ce>             slept in days but the glint of ruthless
+<ce>             determination in his eyes is unmistakable.
+<ce>             
+<ce>             "%lev, your repution proceeds you. I would
+<ce>             prefer to avenge my brother alone, but if the
+<ce>             Order demands it then I must oblige.
+<ce>             
+<ce>             "You will appreciate I am eager to begin
+<ce>             at once."
+
+Message:  1051
+<ce>             _knight_ is clearly restless as you
+<ce>             enter the underground domain. Understandable, as
+<ce>             his brother's body lies somewhere in these depths.
+<ce>             
+<ce>             "This is the place, as if that foul stench wasn't
+<ce>             a big enough clue. This stronghold is one of the
+<ce>             largest orc bases outside of Orsinium.
+<ce>             
+<ce>             "Look, I appreciate your coming, but this is
+<ce>             something I must do alone. These beasts must
+<ce>             atone for my brother's death, but if you want to
+<ce>             add a few more to the pile I won't spurn your help.
+<ce>             
+<ce>             "I'll find you when I'm done killing. It'll
+<ce>             take a while..."
+<ce>             
+<ce>             With that he hurries away into the darkness.
+
+Message:  1052
+<ce>             You have found the body of _knight_'s
+<ce>             brother. Looks like he fought bravely but
+<ce>             was horribly outnumbered.
+
+Message:  1053
+<ce>             There you are! And covered in almost as much
+<ce>             of this foul orc blood as I am. My brother
+<ce>             can never be properly avenged whilst a single
+<ce>             orc still lives in Tamriel, but, for today,
+<ce>             enough have been accounted for.
+<ce>             
+<ce>             Let's get out of here. I need ale. A lot
+<ce>             of ale.
+
+Message:  1054
+<ce>             My dear brother,
+<ce>             
+<ce>             I trust this letter finds you in good health. I have
+<ce>             both good news and bad, though the bad outweighs the
+<ce>             good, as is so often the case.
+<ce>             
+<ce>             Our beloved father's condition continues to worsen.
+<ce>             I fear he has very little time left. I pray that,
+<ce>             as soon as you are able, you visit him. It is likely
+<ce>             to be the last chance you'll have.
+<ce>             
+<ce>             The good news concerns your expedition to
+<ce>             ___dungeon_. I have it on the best
+<ce>             authority that the Orcish presence has been
+<ce>             massively reduced. Their so-called "king" has ordered
+<ce>             his forces re-deployed for some other purpose. I
+<ce>             doubt you will encounter more than a couple of
+<ce>             caretakers in that hole.
+<ce>             
+<ce>             I know you were planning to gather more equipment
+<ce>             and supplies first, but with this new information, I
+<ce>             suggest you complete your mission as soon as possible
+<ce>             and head home.
+<ce>             
+<ce>             I will see you soon,
+<ce>             _knight_
+
+Message:  1055
+<ce>             "This is not a place anyone would choose
+<ce>             for a burial, but we have no option. Please,
+<ce>             help me lay my brother's remains to rest."
+<ce>             
+<ce>             You and _knight_ carve out a makeshift
+<ce>             grave as best you are able. The knight
+<ce>             mumbles a few words under his breath and
+<ce>             stabs a sword into the ground as a marker.
+<ce>             
+<ce>             "We are done here."
+
+Message:  1056
+<ce>             This is not a place anyone would choose
+<ce>             for a burial, but you have no option.
+<ce>             
+<ce>             You carve out a makeshift grave as best
+<ce>             you are able and, when you are finished,
+<ce>             you drive a sword into the ground as a marker.
+
+Message:  1057
+<ce>             You put the letter away but it troubles you greatly.
+<ce>             You cannot shake the notion that _knight_
+<ce>             deliberately deceived his brother into starting
+<ce>             his quest with insufficient supplies, resulting in
+<ce>             his death.
+<ce>             
+<ce>             When you next meet _knight_ you will
+<ce>             see what he has to say about this...
+
+Message:  1058
+<ce>             _knight_ looks at you with suspicion in
+<ce>             his eyes, which widen as you produce the letter
+<ce>             you found next to his brother's body. You hand
+<ce>             him the letter and ask him to explain.
+
+Message:  1059
+<ce>             "You meddling cretin! This is why I didn't want
+<ce>             anyone to come with me. I had no intention of
+<ce>             coming to this place. Instead this whole
+<ce>             charade is for nothing!
+<ce>             
+<ce>             "My brother was a fool and I was not going to
+<ce>             let him take half my rightful inheritance.
+<ce>             My father is close to death, but not as close
+<ce>             as you!"
+<ce>             
+<ce>             _knight_ draws his blade and turns on
+<ce>             you. Defend yourself, and smite this traitor.
+
+Message:  1060
+<ce>             <you read the letter>
+
+Message:  1061
+<ce>             You notice a blood-stained parchment on the floor.
+<ce>             _knight_ rushes to reach for it but is
+<ce>             too slow. Your eyes widen as you read the
+<ce>             letter. This was not a mission of vengeance, it
+<ce>             was a trap. _knight_ snatches the letter.
+
+Message:  1062
+<ce>             _knight_ lies in a bloody pile at your feet.
+<ce>             Justice has been done, but not in the way you
+<ce>             expected at the start of this quest.
+<ce>             
+<ce>             You leave the body of the murderer for the
+<ce>             vermin and take your leave of this dark place.
+<ce>             
+<ce>             Though the orcs are monsters you cannot repress
+<ce>             a slight pang of remorse at what happened here.
+
+Message:  1063
+<ce>             Well done brave knights! Those orcish scum
+<ce>             will surely think twice before they tangle
+<ce>             with members of our Order again.
+<ce>             
+<ce>             Now, let us honour our fallen comrade and
+<ce>             pay tribute to his memory.
+<ce>             
+<ce>             Thank your, %lev, for your sterling work.
+
+Message:  1064
+<ce>             I am both astounded and astonished! One of our
+<ce>             finest swordsmen is a murderer! And what is
+<ce>             even worse is you have allowed him to escape!
+<ce>             
+<ce>             We will have to send somebody else, somebody
+<ce>             more dedicated to our ideals, to hunt him
+<ce>             down and clear our Order's good name.
+<ce>             
+<ce>             Why don't you hide your face until things
+<ce>             have calmed down?
+
+Message:  1065
+<ce>             I cannot believe it! One of our finest warriors
+<ce>             a murderer! And of his own brother! I can only
+<ce>             thank you for dealing with this scandal with the
+<ce>             efficiency and discretion that is fast becoming
+<ce>             your hallmark.
+<ce>             
+<ce>             Please, speak of this affair to no-one. We alone
+<ce>             know that justice has been done, and we must
+<ce>             keep this truth to ourselves. I am sure you
+<ce>             understand, %lev.
+
+Message:  1099
+<ce>             You have failed to complete your mission within
+<ce>             the alloted time period. _questgiver_ will
+<ce>             be disappointed but it's not the end of the world.
+
+
+QBN:
+
+Item _corpse_ dead_body
+Item _letter_ letter used 1054
+
+Person _questgiver_ group Questor male
+Person _knight_ faction Generic_Knightly_Order male
+
+Foe _orc is 3 Orc
+Foe _orcSergeant_ is 2 Orc_sergeant
+Foe _orcWarlord_ is 1 Orc_warlord
+Foe _orcShaman_ is 1 Orc_shaman
+Foe _knightEnemy_ is Knight
+
+Place _dungeon_ remote dungeon1
+
+Clock _timeLimit_ 45.00:00
+
+
+--	Quest start-up:
+	start timer _timeLimit_
+	reveal _dungeon_
+	pc at _dungeon_ do _onsite_
+	add _knight_ face
+	say 1050
+	place item _corpse_ at _dungeon_
+	place item _letter_ at _dungeon_
+	_letter_ used do _readletter_
+	log 1040 step 0
+
+
+variable _scenario1_
+variable _scenario2_
+
+_readletter_ task:
+	-say 1060
+
+_foundCorpse_ task:
+	clicked item _corpse_
+	say 1052
+	take _corpse_ from pc
+
+_foundCorpseWithKnight_ task:
+	when _foundCorpse_ and _killedEnoughOrcsYet_ and not _scenario2_
+	start task _scenario1_
+	say 1055
+
+_foundCorpseWithoutKnight_ task:
+	when _foundCorpse_ and not _scenario1_
+	start task _scenario2_
+	say 1056
+
+_onsite_ task:
+	say 1051
+	log 1043 step 1
+	drop _knight_ face
+
+_spawnOrcs_ task:
+	when _onsite_ and not _killedEnoughOrcsYet_
+	create foe _orc_ every 90 minutes 100 times with 50% success
+	create foe _orcSergeant_ every 120 minutes 100 times with 40% success
+	create foe _orcWarlord_ every 150 minutes 100 times with 30% success
+	create foe _orcShaman_ every 180 minutes 100 times with 20% success
+
+_revelationA_ task:
+	when _readletter_ and _scenario2_ and not _killedEnoughOrcsYet_
+	say 1057
+
+_revelationB_ task:
+	when _readletter_ and _scenario2_ and _killedEnoughOrcsYet_
+	say 1058
+
+_relevationC_ task:
+	when _readletter_ and _scenario1_
+	say 1061
+
+_exposed_ task:
+	when _revelationB_ or _relevationC_
+
+_timeLimit_ task:
+	say 1099
+	end quest
+
+_killedEnoughOrcsYet_ task:
+	killed 20 _orc_
+	killed 14 _orcSergeant_
+	killed 8 _orcWarlord_
+	killed 4 _orcShaman_
+	add _knight_ face
+	say 1053
+
+_killTheTraitor_ task:
+	when _exposed_
+	create foe _knightEnemy_ every 0 minutes 1 times with 100% success
+	drop _knight_ face
+	say 1059
+	log 1041 step 2
+
+_traitorIsDead_ task:
+	killed _knightEnemy_
+	say 1062
+	log 1042 step 3
+
+_questorClicked_ task:
+	clicked npc _questgiver_
+
+_clearclick_ task:
+	when _questorClicked_ and not _killedEnoughOrcsYet_
+	clear _questorClicked_ _clearclick_
+
+_rewardPlayer1_ task:
+	when _questorClicked_ and _killedEnoughOrcsYet_ and not _readletter_
+	legal repute +1
+	say 1063
+	give pc nothing
+	end quest
+
+_rewardPlayer2_ task:
+	when _questorClicked_ and _killedEnoughOrcsYet_ and _readletter_ and not _traitorIsDead_
+	legal repute -2
+	say 1064
+	end quest
+
+_rewardPlayer3_ task:
+	when _questorClicked_ and _killedEnoughOrcsYet_ and _readletter_ and _traitorIsDead_
+	legal repute +5
+	say 1065
+	give pc nothing
+	end quest

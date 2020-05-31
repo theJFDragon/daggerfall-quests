@@ -1,5 +1,14 @@
 
 -------------------------------------------------------------------------------
+2020-05-31	today I learnt about the difference between ending a quest
+		and ending a quest successfully. all quests that did not involve
+		the player getting a reward were actually failing. they needed
+		the command "give pc nothing" to indicate a successful outcome.
+
+		JF000021 [A Dish Served Cold]
+			new quest added for Knights
+
+-------------------------------------------------------------------------------
 2020-05-24	more feedback from Jay_H received and acted upon
 		more information about quest time limits
 		player is (mostly) informed when quests time-out
