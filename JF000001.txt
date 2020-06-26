@@ -154,6 +154,9 @@ _timeLimit_ task:
 
 _onsite_ task:
 	say 1019
+	start task _gangFight_
+
+_gangFight_ task:
 	create foe _bandit_ every 3 minutes 1 times with 100% success
 	create foe _en1_ every 3 minutes 1 times with 100% success
 	give item _map_ to _bandit_
