@@ -1,0 +1,229 @@
+-- Quest: N0B41Y24.Qbn.
+-- StartsBy: NPC
+-- Questee: member
+-- Questor: mage
+-- Repute: 41
+-- QuestId: 24
+Messages: 16
+Quest: N0B41Y24
+DisplayName: The Forbidden Scroll
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                 If you have some time on your hands,
+<ce>                I have a very important mission for you.
+<ce>                The risks are high, but I will pay well.
+<ce>                              Interested?
+                                     <--->
+<ce>                It seems that I must ask for your help
+<ce>                 in a very dangerous matter.  The Mages
+<ce>                 Guild has found the location of a very
+<ce>                dangerous, magical scroll.  We fear that
+<ce>                 someone may use it unknowingly, and so
+<ce>               we must find it ourselves.  I will pay you
+<ce>             well if you are the one that brings it to me.
+
+RefuseQuest:  [1001]
+<ce>                      I see that your loyalty to
+<ce>                        the guild, and that your
+<ce>                        care for your safety is
+<ce>                                limited.
+
+AcceptQuest:  [1002]
+<ce>             Good.  Now, the scroll I seek is hidden away
+<ce>             in ___mondung_.  It has been here for hundreds
+<ce>             of years, but the guild never knew of it until
+<ce>           just recently.  The powers within it could destroy
+<ce>               an entire city, if used improperly.  Go to
+<ce>                 ___mondung_, and find it.  Do not read
+<ce>            it, for that will unleash the powers within it.
+<ce>              Bring it back to me, and I will give you an
+<ce>              enchanted _mitem_.  You have =queston_ days.
+<ce>                         Please do not fail me.
+
+QuestComplete:  [1004]
+<ce>                 You have done well.  I hope that you
+<ce>               did not read the scroll.  Now, I promised
+<ce>                      you a _mitem_.  Here you go.
+
+RumorsDuringQuest:  [1005]
+I got a boil the other day ... but it healed.
+<--->
+I just had a three hour conversation about the weather.
+<--->
+The weather is pretty usual for this time of year.
+<--->
+It seems a trifle coolish in %cn for this time of year.
+<--->
+It sure is a lot warmer today than this time last year.
+<--->
+My great aunt is going to a specialist across the Bay.
+<--->
+It's always funny what time it gets dark around here.
+<--->
+We should erect a war statue around here.
+<--->
+The kids these days with their magic. %oth, I don't know.
+<--->
+I had the weirdest dream last night.
+<--->
+I heard a great joke. %jok
+<--->
+%jok Actually, that's a joke.
+<--->
+%jok Can you explain that to me?
+<--->
+The legal system in %reg has it good points and bad ones.
+
+RumorsPostfailure:  [1006]
+I got a boil the other day ... but it healed.
+<--->
+I just had a three hour conversation about the weather.
+<--->
+The weather is pretty usual for this time of year.
+<--->
+It seems a trifle coolish in %cn for this time of year.
+<--->
+It sure is a lot warmer today than this time last year.
+<--->
+My great aunt is going to a specialist across the Bay.
+<--->
+It's always funny what time it gets dark around here.
+<--->
+We should erect a war statue around here.
+<--->
+The kids these days with their magic. %oth, I don't know.
+<--->
+I had the weirdest dream last night.
+<--->
+I heard a great joke. %jok
+<--->
+%jok Actually, that's a joke.
+<--->
+%jok Can you explain that to me?
+<--->
+The legal system in %reg has it good points and bad ones.
+
+RumorsPostsuccess:  [1007]
+The Mages Guild is conducting some wierd research.
+<--->
+I wonder what goes on behind the closed doors of the Mages Guild?
+
+QuestorPostsuccess:  [1008]
+Welcome, my friend!  I trust you are feeling well?
+
+QuestorPostfailure:  [1009]
+You are the one that could not get me that scroll!  Begone!
+
+QuestLogEntry:  [1010]
+%qdt:
+ The Mages guild of ___qgiver_
+ has asked me to find a magical scroll
+ in ___mondung_.  It is
+ considered very dangerous, and I should
+ not read it.  I have =queston_ days.
+
+Message:  1011
+Hinarosho, su mako no.
+ Gebique! Maramaha no skervook,
+ ama da Mephala. Miro! Maro!
+ Khagu, rhano, monoto. Tegnir no Maro.
+ Scnifigagh, burona. Miro! Maro!
+ Khagu, rhano, monoto. Verinsa, bu
+ doba. Mephala, su no Nao'me. Shisheemo
+ quu cackooni monoto. Miro! Maro!
+ Khagu, rhano, monoto. Bubidonago.
+ 
+ Hapisho, Malicnao, Mephala.
+
+Message:  1012
+<ce>                   You pick up the scroll, and feel
+<ce>                   it burning your hand.  You quickly
+<ce>                   put it into your backpack, and you
+<ce>                     hear a strange moaning sound.
+
+Message:  1013
+<ce>                     A large ball of fire explodes
+<ce>                    from the scroll.  You jump away
+<ce>                   from it, and watch as the strange
+<ce>                   scroll burns to nothing.  Horrible
+<ce>                    moans and screams fill the air,
+<ce>                    and it seems as if the scroll is
+<ce>                  letting something out of it.  Then,
+<ce>                    as quick as it started, the fire
+<ce>                    disappears.  The scroll is gone.
+
+Message:  1014
+<ce>                       You have meddled with the
+<ce>                       powers of a Death Scroll.
+<ce>                        Now I must destroy you.
+
+Message:  1015
+<ce>                   As you finish reading the scroll,
+<ce>                     a pain begins to grow in your
+<ce>                   chest.   You scream, and it feels
+<ce>                   as though something is inside you,
+<ce>                trying to get out.  Suddenly, the scroll
+<ce>                    you hold begins to glow, and the
+<ce>                    pain goes away.  The energy from
+<ce>                  the scroll leaves it, and creates a
+<ce>                        vampire in front of you!
+
+
+-- Symbols used in the QRC file:
+--
+--               %cn occurs 2 times.
+--              %jok occurs 6 times.
+--              %oth occurs 10 times.
+--              %qdt occurs 1 time.
+--              %reg occurs 2 times.
+--         =queston_ occurs 5 times.
+--       ___mondung_ occurs 3 times.
+--         __qgiver_ occurs 1 time.
+--           _mitem_ occurs 3 times.
+
+QBN:
+Item _bothdorjii_ letter used 1011
+Item _I.01_ small_sack
+Item _mitem_ magic_item
+
+Person _qgiver_ group Questor male
+
+Place _mondung_ remote dungeon4
+
+Clock _queston_ 00:00 0 flag 17 range 0 2
+
+Foe _guardian_ is Skeletal_warrior
+Foe _F.01_ is Ancient_vampire
+
+--	Quest start-up:
+	place item _I.01_ at _mondung_ 
+	start timer _queston_ 
+	reveal _mondung_ 
+	log 1010 step 0 
+	place foe _guardian_ at _mondung_ 
+
+_queston_ task:
+	end quest 
+
+_S.01_ task:
+	clicked item _I.01_ 
+	_bothdorjii_ used saying 1015 do _S.02_ 
+	say 1012 
+
+_S.02_ task:
+	create foe _F.01_ every 0 minutes 1 times with 100% success 
+
+_S.03_ task:
+	when _queston_ and _S.01_ 
+	say 1013 
+
+_S.04_ task:
+	toting _bothdorjii_ and _qgiver_ clicked 
+	give pc _mitem_ 
+	end quest 
+
+_S.05_ task:
+	injured _F.01_ 
+	say 1014 
