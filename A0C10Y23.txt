@@ -1,0 +1,153 @@
+-- Quest: A0C10Y23.Qbn.
+-- StartsBy: NPC
+-- Questee: anyone
+-- Questor: peasant
+-- Repute: 10
+-- QuestId: 23
+Messages: 81
+Quest: A0C10Y23
+DisplayName: Rivalry among Vampires
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                        %pcn! I have found you.
+<ce>               I have been looking for you for many days.
+<ce>                I have an important job for you, but may
+<ce>               not tell you more unless you will promise
+<ce>                              to do it...
+
+RefuseQuest:  [1001]
+<ce>                       The vampire clan will be
+<ce>                              angry, %pcn.
+
+AcceptQuest:  [1002]
+<ce>                  Good. Now, what I am about to tell
+<ce>                 you, you must promise not to speak of
+<ce>                 to anyone else. I am a vampire. I was
+<ce>               infected many years before you were born,
+<ce>                 and have since become one of the most
+<ce>                    powerful clan leaders. However,
+<ce>                  another is rising. A pitiful excuse
+<ce>                  for a vampire, but others listen to
+<ce>                him. He speaks out against me, trying to
+<ce>                 destroy everything I spent hundreds of
+<ce>                  years building up. I need him dead.
+<ce>                      Go to ___dungeon_ where this
+<ce>                 filth resides. Kill him within =2dung_
+<ce>                     days. I will be waiting here.
+
+QuestComplete:  [1004]
+<ce>                          You have done well.
+<ce>                    The vampires will not bother you
+<ce>                   for a long time, because of this.
+<ce>                       We will meet again, %pcn.
+<ce>                               I know it.
+
+RumorsDuringQuest:  [1005]
+<ce>	Vampires are dangerous in these parts. They even walk the streets at night.
+
+RumorsPostfailure:  [1006]
+<ce>                    Did you hear? Someone caught a
+<ce>                    vampire staying at a tavern here
+<ce>                     in town! They're going to burn
+<ce>                           him in a few days.
+
+RumorsPostsuccess:  [1007]
+<ce>                  Nothing new that I've heard. Sorry.
+
+QuestorPostsuccess:  [1008]
+<ce>                      You served the clans well.
+<ce>                           What do you need?
+
+QuestorPostfailure:  [1009]
+<ce>                You! Thanks to you, I was almost burned
+<ce>                at the stake! Get out of here, before I
+<ce>                               kill you!
+
+QuestLogEntry:  [1010]
+On %qdt,
+ _qgiver_ in __qgiver_
+ of ___qgiver_ is a vampire.
+ He wants me to go to ___dungeon_
+ and kill another vampire. I have
+ =2dung_ days to finish the task.
+
+Message:  1011
+<ce>                         The vampire is dead.
+<ce>                         The vampire clans will
+<ce>                          be pleased with you.
+
+Message:  1080
+
+
+
+-- Symbols used in the QRC file:
+--
+--              %pcn occurs 6 times.
+--              %qdt occurs 1 time.
+--           =2dung_ occurs 5 times.
+--       ___dungeon_ occurs 2 times.
+--        ___qgiver_ occurs 3 times.
+
+QBN:
+Item _gold_ gold
+
+Person _qgiver_ group Questor male
+
+Place _dungeon_ remote dungeon
+Place _newdung_ remote dungeon
+
+Clock _2dung_ 00:00 0 flag 17 range 0 2
+
+Foe _F.00_ is Vampire
+Foe _F.01_ is Vampire
+Foe _F.02_ is Ancient_vampire
+Foe _F.03_ is Vampire
+
+--	Quest start-up:
+	start timer _2dung_ 
+	reveal _dungeon_ 
+	log 1010 step 0 
+	pick one of _map_ _nomap_ _nomap_ _nomap_ 
+	pick one of _S.04_ _S.05_ _S.06_ _S.07_ 
+
+_2dung_ task:
+	end quest 
+
+_S.01_ task:
+	killed 1 _F.03_ saying 1011
+	killed 1 _F.00_ saying 1011
+	killed 1 _F.01_ saying 1011
+	killed 1 _F.02_ saying 1011
+
+_S.02_ task:
+	clicked npc _qgiver_ 
+
+_pcgetsgold_ task:
+	when _S.02_ and _S.01_ 
+	give pc _gold_ 
+	end quest 
+
+_clearclick_ task:
+	when _S.02_ and not _S.01_ 
+	clear _S.02_ _clearclick_ 
+
+_S.04_ task:
+	place foe _F.02_ at _dungeon_ 
+
+_S.05_ task:
+	place foe _F.03_ at _dungeon_ 
+
+_S.06_ task:
+	place foe _F.01_ at _dungeon_ 
+
+_S.07_ task:
+	place foe _F.00_ at _dungeon_ 
+
+variable _map_
+variable _nomap_
+_S.10_ task:
+	when _map_ and _S.02_ 
+	reveal _newdung_
+	say 1080 
